@@ -1,0 +1,755 @@
+/*
+ Customize default theme styling by overriding CSS variables:
+ https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/* Colors */
+:root {
+/* Tema Chiaro - Azzurro Corporate Veryant */
+  --vp-c-brand-1: #3b82f6; /* Colore principale per link e testi evidenziati */
+  --vp-c-brand-2: #2563eb; /* Colore per lo stato hover */
+  --vp-c-brand-3: #1d4ed8; /* Colore per stati attivi o sfondi solidi */
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+}
+.dark {
+/* Tema Scuro - Azzurro Brillante per contrasto elevato */
+  --vp-c-brand-1: #60a5fa; 
+  --vp-c-brand-2: #93c5fd;
+  --vp-c-brand-3: #bfdbfe;
+  --vp-c-brand-soft: rgba(96, 165, 250, 0.2);
+}
+
+/* Component: Button */
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+}
+
+.dark {
+  --vp-button-brand-text: #000000;       /* Testo nero in modalità scura */
+  --vp-button-brand-hover-text: #000000; /* Mantiene il testo nero al passaggio del mouse */
+  --vp-button-brand-active-text: #000000;/* Mantiene il testo nero al click */
+}
+
+/* Component: Home */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #3b82f6 30%,
+    #60a5fa
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #3b82f6 50%,
+    #93c5fd 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/* Component: Custom Block */
+:root {
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+}
+
+/* Component: local search */
+
+:root {
+  /* Variabili per coerenza cromatica Veryant */
+  --vp-local-search-bg: var(--vp-c-bg-elevated);
+  --vp-local-search-result-bg: var(--vp-c-bg-soft);
+  --vp-local-search-result-hover-bg: var(--vp-c-brand-soft);
+}
+
+/* 1. Finestra di ricerca (Shell): Solida e definita */
+.VPLocalSearchBox .shell {
+  background-color: var(--vp-c-bg) !important; /* Sfondo non trasparente */
+  opacity: 1 !important;
+  
+  /* Supporto Safari e Safari su iOS */
+  -webkit-backdrop-filter: none !important; 
+  backdrop-filter: none !important; 
+  
+  border-radius: 16px !important;
+  border: 2px solid var(--vp-c-brand-1) !important; /* Bordo azzurro Veryant */
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.6), 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important; /* Oscuramento pagina totale */
+  overflow: hidden;
+}
+
+/* 2. Sfondo oscurato (Backdrop) */
+.VPLocalSearchBox .backdrop {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Massima separazione dal resto del sito */
+}
+
+/* 3. Barra di input e campo di ricerca */
+.VPLocalSearchBox .search-bar {
+  padding: 12px 16px !important;
+  background-color: var(--vp-c-bg-alt) !important;
+  border-bottom: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--vp-c-divider) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+/* Effetto quando l'utente clicca nella barra */
+.VPLocalSearchBox .search-bar:focus-within {
+  border-color: var(--vp-c-brand-1) !important;
+  background-color: var(--vp-c-bg) !important;
+  box-shadow: 0 0 0 4px var(--vp-c-brand-soft) !important;
+  transform: translateY(-1px);
+}
+.VPLocalSearchBox input {
+  font-weight: 500 !important;
+  color: var(--vp-c-text-1) !important;
+}
+/* stile placeholder ricerca */
+.VPLocalSearchBox input::placeholder { 
+  color: #94a3b8 !important;
+  font-style: italic; 
+  font-size: 0.95em;
+  opacity: 0.8;
+}
+/* stile footer ricerca */
+.VPLocalSearchBox .footer .key {
+  border-bottom: 2px solid var(--vp-c-divider) !important;
+  padding: 0 6px !important;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* 4. Stilizzazione Risultati */
+.VPLocalSearchBox .result {
+  border-radius: 8px !important;
+  margin: 6px 12px !important;
+  padding: 12px !important;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border: 1px solid transparent;
+  animation: slideUp 0.3s ease-out forwards;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- CONTEGGIO RISULTATI RICERCA (VERSIONE UNIVERSALE) --- */
+/* 1. Inizializziamo il contatore sul contenitore che racchiude TUTTA la lista */
+.VPLocalSearchBox .results {
+  counter-reset: search-counter;
+  position: relative;
+  padding-top: 55px !important; /* Aumentato per dare respiro al badge */
+}
+/* 2. Incrementiamo per ogni elemento che ha la classe 'result' 
+   USIAMO LO SPAZIO (discente generico) invece di '>' per essere sicuri di trovarli */
+.VPLocalSearchBox .results .result {
+  counter-increment: search-counter;
+}
+/* 3. Creazione del badge */
+.VPLocalSearchBox .results::before {
+  content: "Search results found: " counter(search-counter);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  /* Stile Brand */
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--vp-c-brand-1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  z-index: 100; /* Assicuriamoci che stia sopra a tutto */
+}
+/* 4. Se la ricerca è vuota, il CSS counter mostrerà 0 automaticamente.  
+   Se vuoi nasconderlo del tutto quando non scrivi nulla: */
+.VPLocalSearchBox .results:empty::before {
+  display: none !important; 
+} 
+
+/* Risultato selezionato/hover */
+.VPLocalSearchBox .result.selected {
+  background-color: var(--vp-local-search-result-hover-bg) !important;
+  border-color: var(--vp-c-brand-2) !important;
+  transform: translateX(4px); /* Effetto scivolamento a destra */
+}
+
+/* Testo evidenziato (Match) */
+.VPLocalSearchBox .result mark {
+  background-color: transparent !important;
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Titoli e descrizioni nei risultati */
+.VPLocalSearchBox .result .title {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600 !important;
+}
+
+.VPLocalSearchBox .result .excerpt {
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+  color: var(--vp-c-text-1) !important; /* Contrasto massimo per la lettura */
+  opacity: 1 !important;
+}
+
+/* 5. Footer del modal (Scorciatoie tastiera) */
+.VPLocalSearchBox .footer {
+  background-color: var(--vp-c-bg-alt) !important;
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 10px 16px !important;
+}
+
+.VPLocalSearchBox .footer .key {
+  background: var(--vp-c-bg-elevated) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}
+
+/* 6. Bottone di ricerca nella Navbar */
+.VPNavBarSearch .DocSearch-Button {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+  background-color: var(--vp-c-bg-alt);
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
+}
+
+/* 1. EVIDENZIAZIONE PAROLA RICERCATA */
+/* Questo colora le lettere mentre l'utente scrive nella barra di ricerca */
+.ui-mark {
+  background-color: rgba(253, 224, 71, 0.35) !important; /* Giallo tenue */
+  color: #000 !important; /* Testo nero per leggibilità massima sul giallo */
+  font-weight: bold;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+/* 2. EVIDENZIAZIONE SULLA PAGINA (Dopo il click) */
+mark.page-highlight {
+  background-color: rgba(253, 224, 71, 0.4); /* Giallo tenue invece dell'azzurro */
+  color: var(--vp-c-brand-1);              /* Manteniamo il testo azzurro scuro per brand */
+  font-weight: bold;
+  padding: 0 2px;
+  border-radius: 4px;
+  border-bottom: 2px solid var(--vp-c-brand-1); 
+  text-decoration: none;
+  /* Applichiamo l'animazione che avevi creato */
+  animation: highlight-pulse 2s infinite;
+}
+/* 3. SELEZIONE RISULTATO NELLA LISTA */
+:root {
+  --vp-local-search-result-selected-bg: rgba(96, 165, 250, 0.2); 
+  --vp-local-search-result-selected-border: #60a5fa;
+}
+.local-search-result.selected {
+  border: 1px solid var(--vp-local-search-result-selected-border) !important;
+  background-color: var(--vp-local-search-result-selected-bg) !important;
+}
+/* 4. ANIMAZIONE PULSAZIONE */
+@keyframes highlight-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+
+/* Component: Algolia / Local Search */
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+/* bottone AI */
+.ask-ai-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 12px;
+  transition: all 0.2s;
+}
+
+.ask-ai-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.ai-icon {
+  font-size: 16px;
+}
+
+/* Nota: La finestra laterale (sidebar AI) solitamente viene iniettata dal provider (Mendable/Algolia) via JavaScript */
+
+/* Features Home */
+:root {
+  /* sfondo azzurro chiaro per tema chiaro */
+  --vp-c-bg-soft: #f0f7ff; 
+}
+.dark {
+  /* sfondo di tonalità scura per tema scuro */
+  --vp-c-bg-soft: #1e293b; 
+}
+/* stilizzazione avanzata */
+.VPFeature {
+  border: 1px solid transparent !important;
+  transition: all 0.3s ease !important;
+  background-color: var(--vp-c-bg-soft) !important;
+}
+/* effetti al passaggio del mouse */
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15) !important;
+}
+.VPFeature .title {
+  color: var(--vp-c-brand-1) !important;
+}
+.VPFeature .icon {
+  background-color: var(--vp-c-brand-soft) !important;
+  border-radius: 8px;
+}
+
+/* SIDEBAR */
+:root {
+  --vp-sidebar-width: 295px; /* larghezza default = 172px */
+}
+/* Forza il link della sidebar a non andare a capo */
+.VPSidebarItem.level-2 .item .link-text,
+.VPSidebarItem.level-3 .item .link-text,
+.VPSidebarItem.level-4 .item .link-text {
+  white-space: nowrap !important; /* Impedisce l'andata a capo */
+  overflow: hidden;               /* Nasconde il testo in eccesso */
+  text-overflow: ellipsis;        /* Aggiunge i tre puntini ... se tagliato */
+  display: block;
+}
+
+/* footer Home */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 24px 0;
+  margin-top: 40px;
+  text-align: center;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.VPFooter .message {
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  font-weight: 600;
+  color: var(--vp-c-brand-1); 
+}
+
+.VPFooter .copyright {
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  color: var(--vp-c-text-2);
+}
+
+.VPFooter a {
+  font-size: 0.8rem !important;
+  text-decoration: none;
+}
+
+.VPFooter a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* footer MD */
+.custom-footer {
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 1px solid var(--vp-c-divider);
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+}
+
+.custom-footer .footer-links {
+  margin-top: 10px;
+}
+
+.custom-footer a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Riga Contatti: Azzurro Corporate intermedio */
+.custom-footer .footer-contact {
+  margin-top: 15px;
+  color: #2563eb; /* Coerente con var(--vp-c-brand-2) */
+  font-weight: 500;
+}
+
+/* Riga PDF: Azzurro più chiaro e brillante */
+.custom-footer .footer-pdf {
+  margin-top: 12px;
+}
+
+.custom-footer .footer-pdf a {
+  color: #60a5fa !important; /* Coerente con var(--vp-c-brand-1) del tema dark */
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.custom-footer .footer-pdf a:hover {
+  color: #3b82f6 !important;
+  text-decoration: none;
+}
+
+.custom-footer {
+  /* Riduce la dimensione generale del testo nel footer */
+  font-size: 0.8rem !important; 
+  color: var(--vp-c-text-3) !important; /* Colore leggermente più tenue */
+}
+
+.custom-footer .footer-links a,
+.custom-footer .footer-contact,
+.custom-footer .footer-pdf a {
+  /* Assicura che anche i link e i contatti seguano la riduzione */
+  font-size: 0.8rem !important;
+}
+
+.custom-footer .footer-copyright {
+  /* Il copyright può essere ancora più piccolo per non rubare l'occhio */
+  font-size: 0.75rem !important;
+  opacity: 0.8;
+}
+
+/* stampa PDF footer documentazione */
+@media print {
+  .VPNav, .VPSidebar, .VPLocalSearchBox, .ask-ai-btn, .custom-footer, .edit-link, .prev-next {
+    display: none !important;
+  }
+  .vp-doc {
+    width: 100% !important;
+  }
+}
+
+/* Social Links */
+/* 1. Nascondi i social links ovunque di default */
+.VPNavBarSocialLinks {
+  display: none !important;
+}
+/* 2. Mostrali solo se ci si trova nella Home */
+.VPHome ~ .VPNavBar .VPNavBarSocialLinks,
+:has(.VPHome) .VPNavBarSocialLinks {
+  display: flex !important;
+}
+
+/* Personalizzazione pagine MD */
+
+/* Applichiamo la rimozione a tutti i livelli di intestazione per sicurezza */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  border: none !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+  box-shadow: none !important; /* Alcuni temi usano un'ombra sottile invece del bordo */
+  padding-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
+/* Specifico per il Titolo Principale (h1) */
+.vp-doc h1 {
+  color: #3b82f6 !important; 
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px !important; 
+}
+
+/* Specifico per i Sottotitoli (h2, h3) */
+.vp-doc h2, 
+.vp-doc h3 {
+  color: #60a5fa !important;
+  font-weight: 700;
+  margin-top: 48px !important; 
+  margin-bottom: 16px !important;            
+}
+
+/* Coerenza per la Dark Mode */
+.dark .vp-doc h1 {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.dark .vp-doc h2,
+.dark .vp-doc h3 {
+  color: var(--vp-c-brand-2) !important;
+}
+
+/* Rimuove il margine superiore se h2 o h3 è il primo elemento della pagina */
+.vp-doc h2:first-child,
+.vp-doc h3:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* --- OTTIMIZZAZIONE LEGGIBILITÀ E SPAZIATURA --- */
+
+.vp-doc p {
+  margin-bottom: 20px !important; /* Questa è l'unica "separazione" visibile */
+  line-height: 1.7;
+}
+
+.vp-doc li {
+  /* Aumenta lo spazio tra le righe per non affaticare la vista */
+  line-height: 1.7 !important;
+  /* Aumenta lo spazio tra un paragrafo e l'altro */
+  margin-bottom: 20px !important;
+  /* Colore del testo leggermente meno "nero assoluto" per un look premium */
+  color: var(--vp-c-text-1);
+}
+
+/* Spaziatura specifica per le liste (bullet points) */
+.vp-doc ul, 
+.vp-doc ol {
+  margin-bottom: 24px !important;
+}
+
+.vp-doc li {
+  margin-bottom: 8px !important; /* Spazio tra un punto elenco e l'altro */
+}
+
+/* Bilanciamento degli spazi per i blocchi di codice */
+.vp-doc div[class*="language-"] {
+  margin: 24px 0 !important;
+  border-radius: 12px !important; /* Arrotondiamo i blocchi codice come i box della Home */
+}
+
+/* Spazio aggiuntivo prima di un sottotitolo per separare bene i concetti */
+.vp-doc h2 {
+  margin-top: 20px !important;
+  margin-bottom: 16px !important;
+}
+
+.vp-doc h3 {
+  margin-top: 40px !important;
+  margin-bottom: 12px !important;
+}
+
+/* --- UNIFORMITÀ SPAZIATURA NEXT PAGE --- */
+
+/* Regola lo spazio tra la riga superiore e il blocco Next Page */
+.vp-doc .prev-next {
+  border-top: none !important; /* Rimuove la riga interna di VitePress per usare la tua */
+  margin-top: 40px !important; 
+  padding-top: 0 !important;
+}
+
+/* Regola lo spazio tra il blocco Next Page e la riga del copyright */
+.custom-footer {
+  margin-top: 40px !important; /* Uniforma la distanza alla riga superiore */
+  padding-top: 40px !important;
+}
+
+/* Opzionale: Se vuoi che le righe stesse abbiano lo stesso aspetto */
+.vp-doc hr, 
+.custom-footer {
+  border-top: 1px solid var(--vp-c-divider) !important;
+}
+
+/* --- PERSONALIZZAZIONE LINK --- */
+
+/* Colore base dei link nel corpo del testo */
+.vp-doc a {
+  color: #60a5fa !important; /* Un azzurro chiaro e moderno */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s;
+}
+
+/* Colore dei link quando ci si passa sopra con il mouse */
+.vp-doc a:hover {
+  color: #3b82f6 !important; /* Diventa leggermente più scuro al passaggio */
+  text-decoration: underline; /* Sottolineatura opzionale per feedback visivo */
+}
+
+/* Uniformiamo link footer */
+.custom-footer a,
+.VPFooter a {
+  color: #60a5fa !important;
+}
+
+.custom-footer a:hover,
+.VPFooter a:hover {
+  color: #3b82f6 !important;
+}
+
+/* --- PERSONALIZZAZIONE TABELLE MD  */
+
+/* 1. Titoli della tabella (Header) in grassetto e con colore specifico */
+.vp-doc table th {
+  font-weight: 800 !important;
+  color: var(--vp-c-text-1); /* Colore scuro per risaltare */
+  background-color: #f8fafc; /* Grigio chiarissimo per la testata (opzionale) */
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* 2. Sfondo uniforme per tutte le righe (Body) */
+.vp-doc table tr {
+  background-color: #ffffff !important; /* Forza lo sfondo bianco su tutte le righe */
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 3. Rimuove l'alternanza di colore (striping) predefinita di VitePress */
+.vp-doc table tr:nth-child(2n) {
+  background-color: #ffffff !important; 
+}
+
+/* 4. Opzionale: Effetto hover per evidenziare la riga che si sta leggendo */
+.vp-doc table tr:hover {
+  background-color: #f1f5f9 !important; /* Azzurro/grigio molto tenue al passaggio del mouse */
+}
+
+/* 5. Coerenza per la Dark Mode */
+.dark .vp-doc table tr,
+.dark .vp-doc table tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+.dark .vp-doc table th {
+  background-color: var(--vp-c-bg-mute) !important;
+}
+
+/* --- STILE NOTE A PIÈ DI PAGINA (Footnotes) --- */
+
+.footnote-ref a {
+  font-size: 0.75em !important;
+  vertical-align: super !important;
+  color: #60a5fa !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  margin-left: 2px;
+}
+
+/* Modifica specifica per la selezione delle parentesi */
+.footnote-ref {
+  /* Supporto Safari e versioni precedenti di Chrome/iOS */
+  -webkit-user-select: none; 
+  /* Standard (Firefox, Edge, Chrome moderni) */
+  user-select: none;         
+}
+
+.footnote-ref a:hover {
+  color: #3b82f6 !important;
+}
+
+/* Stile della sezione note in fondo */
+.footnotes {
+  margin-top: 50px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid var(--vp-c-divider) !important;
+  font-size: 0.85rem !important;
+  color: var(--vp-c-text-2) !important;
+}
+
+.footnote-backref {
+  color: #60a5fa !important;
+  text-decoration: none !important;
+  margin-left: 5px;
+  -webkit-user-select: none; /* Anche per la freccina di ritorno */
+  user-select: none;
+}
+
+/* Colpisce i link delle note ovunque siano, anche dentro le liste */
+.vp-doc sup.footnote-ref a {
+  font-size: 0.75em !important;
+  vertical-align: super !important;
+  color: #60a5fa !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+/* Rimuove lo stile standard dei link di VitePress per le note */
+.vp-doc a[aria-describedby^="footnote-label"] {
+  color: #60a5fa !important;
+  text-decoration: none !important;
+}
+
+/* Riduzione sezione laterale Dx x sottotitoli */
+:root {
+  /* Larghezza della colonna destra (default è circa 256px-320px) */
+  --vp-aside-width: 200px; 
+}
+
+/* Regola per schermi grandi per evitare che il contenuto centrale "balli" */
+@media (min-width: 1280px) {
+  .VPDoc .aside {
+    width: var(--vp-aside-width) !important;
+  }
+}
+/* Rimpicciolisce il titolo "On this page" e i link dei sottotitoli 
+.VPDocAside .content {
+  font-size: 11px !important; /* Testo più piccolo e discreto 
+  line-height: 1.4 !important;
+}
+
+/* Rimpicciolisce specificamente il titolo della sezione 
+.VPDocAside .outline-title {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* Rende la linea verticale di tracciamento più sottile e meno visibile 
+.VPDocAside .outline-marker {
+  width: 1px !important;
+  background-color: var(--vp-c-brand-1) !important;
+}
+
+
+/* Responsive */
+@media (max-width: 960px) {
+  .pf-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
