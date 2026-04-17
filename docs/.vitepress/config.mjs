@@ -9,6 +9,7 @@ export default defineConfig({
   markdown: {
     languages: ['cobol'] // Assicura che il supporto COBOL sia attivo
   },
+  base: '/Documentazione-Veryant/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // menù superiore
@@ -300,10 +301,40 @@ export default defineConfig({
               { text: 'Troubleshooting', link: '/pages/is-cobol-IDE/troubleshooting' }
             ]},
 
-          { text: 'isCOBOL Extension for VSCode', link: '/pages/is-cobol-extension-for-VScode/iscobol-vscode',
+          { text: 'isCOBOL Extension for VSCode', link: '/pages/is-cobol-extension-for-VScode/key-topics',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-extension-for-VScode/iscobol-vscode' }
+              { text: 'Key Topics', link: '/pages/is-cobol-extension-for-VScode/key-topics' },
+              { text: 'Overview', link: '/pages/is-cobol-extension-for-VScode/overview' },
+              { text: 'Getting Started', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/getting-started', 
+                collapsed: true,
+                items: [
+                  { text: 'Download and install the Java Development Kit (JDK)', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/download-JDK' },
+                  { text: 'Download and install the isCOBOL Evolve SDK', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/download-isCOBOL-Evolve' },
+                  { text: 'Download and install Visual Studio Code', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/download-VSCode' },
+                  { text: 'Download and install the Veryant isCOBOL extension', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/download-Veryant-isCOBOL-extension' },
+                  { text: 'Activate the License', link: '/pages/is-cobol-extension-for-VScode/Getting-Started/activate-license' },
+                ]},
+              { text: 'Project Management', link: '/pages/is-cobol-extension-for-VScode/Project-management/project-management',
+                collapsed: true,
+                items: [
+                  { text: 'Creating a new project', link: '/pages/is-cobol-extension-for-VScode/Project-management/creating-new-project' },
+                  { text: 'Adding existing project to the current workspace', link: '/pages/is-cobol-extension-for-VScode/Project-management/adding-existing-project' }
+                ]},
+              { text: 'Configuration', link: '/pages/is-cobol-extension-for-VScode/configuration' },
+              { text: 'Code Editing', link: '/pages/is-cobol-extension-for-VScode/Code-Editing/code-editing',
+                collapsed: true,
+                items: [
+                  { text: 'Editor tool-bar', link: '/pages/is-cobol-extension-for-VScode/Code-Editing/editor-tool-bar' },
+                ]},
+              { text: 'Compiling', link: '/pages/is-cobol-extension-for-VScode/compiling' },
+              { text: 'Running', link: '/pages/is-cobol-extension-for-VScode/running' },
+              { text: 'Debugging', link: '/pages/is-cobol-extension-for-VScode/Debugging/debugging',
+                collapsed: true,
+                items: [
+                  { text: 'Debug configurations and Remote debugging', link: '/pages/is-cobol-extension-for-VScode/Debugging/debug-configurations-and-remote-debugging' },
+                ]},
+              { text: 'Commands', link: '/pages/is-cobol-extension-for-VScode/commands' }
             ]
            },
           { text: 'isCOBOL Application Server', link: '/pages/is-cobol-AS/iscobol-AS',
@@ -336,34 +367,342 @@ export default defineConfig({
               { text: 'Key Topics', link: '/pages/is-cobol-EIS/iscobol-EIS' }
             ]
           },
-          { text: 'isCOBOL UDBC', link: '/pages/is-cobol-UDBC/iscobol-UDBC',
+          { text: 'isCOBOL UDBC', link: '/pages/is-cobol-UDBC/key-topics',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-UDBC/iscobol-UDBC' }
-            ]
-           },
-          { text: 'Interoperating with isCOBOL', link: '/pages/interoperating-with-is-cobol/interoperating',
+              { text: 'Key Topics', link: '/pages/is-cobol-UDBC/key-topics' },
+              { text: 'Overview', link: '/pages/is-cobol-UDBC/overview' },
+              { text: 'ODBC Driver for isCOBOL File Server', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/ODBC-Driver-for-isCOBOL-File-Server', 
+                collapsed: true,
+                items: [
+                  { text: 'Overview', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/ODBC-Driver-for-isCOBOL-File-Server' },
+                  { text: 'Getting Started', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/Getting-Started/getting-started',
+                    collapsed: true,
+                    items: [
+                      { text: 'Download and install the Java Runtime Environment (JRE)', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/Getting-Started/download-JRE' },
+                      { text: 'Download and install isCOBOL UDBC', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/Getting-Started/download-UDBC' },
+                      { text: 'Activate the License', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/Getting-Started/activate-license' },
+                ]},
+                  { text: 'File Server startup', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/file-server-startup' },
+                  { text: 'How to create a DSN', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/create-DSN' },
+                  { text: 'How to configure the DSN (Main Setup)', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/configure-DSN_1' },
+                  { text: 'How to configure the DSN (Advanced Setup)', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/configure-DSN_2' },
+                  { text: 'How to configure the DSN (Multi Companies)', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/configure-DSN_3' },
+                  { text: 'How to configure the DSN (File Options)', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/configure-DSN_4' },
+                  { text: 'Troubleshooting', link: '/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/troubleshooting' },
+                ]},
+              { text: 'isCOBOL UDBC', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/iscobol-udbc',
+                collapsed: true,
+                items: [
+                  { text: 'Overview', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/iscobol-udbc' },
+                  { text: 'Getting Started', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/getting-started',
+                    collapsed: true,
+                    items: [
+                      { text: 'Download and install the Java Runtime Environment (JRE)', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/download-JRE' },
+                      { text: 'Download and install isCOBOL UDBC', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/download-UDBC' },
+                      { text: 'Activate the License', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/activate-license' },
+                      { text: 'Testing the product using sample data', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/testing-product' },
+                ]},
+                  { text: 'UDBC SQL Server Engine', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/UDBC-SQL' },
+                  { text: 'Database Configuration', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/db-configuration' },
+                  { text: 'VISQL', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/VISQL' },
+                  { text: 'ODBC Driver for UDBC SQL Server', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/ODBC-driver' },
+                  { text: 'JDBC Driver for UDBC SQL Server', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/JDBC-driver' },
+                  { text: 'Troubleshooting', link: '/pages/is-cobol-UDBC/isCOBOL-UDBC/troubleshooting' },
+                ]}
+            ]},
+          { text: 'Interoperating with isCOBOL', link: '/pages/interoperating-with-is-cobol/key-topics',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/interoperating-with-is-cobol/interoperating' }
+              { text: 'Key Topics', link: '/pages/interoperating-with-is-cobol/key-topics' },
+              { text: 'isCOBOL and C', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/introduction',
+                collapsed: true,
+                items: [
+                  { text: 'Calling C Language Functions and Other External Routines', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/introduction',
+                      collapsed: true,  
+                      items: [
+                        { text: 'Introduction', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/introduction' },
+                        { text: 'COBOL and C Data Types', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/COBOL-C-Data-Types' },
+                        { text: 'Calling C Language Functions from isCOBOL', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/Calling-C-Language-Functions-from-isCOBOL/calling',
+                          collapsed: true,  
+                          items: [
+                            { text: 'Dynamic Method', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/Calling-C-Language-Functions-from-isCOBOL/dynamic-method' },
+                            { text: 'Static Method', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/Calling-C-Language-Functions-from-isCOBOL/static-method' },
+                          ]},
+                        { text: 'Framework Properties', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/framework-properties' },
+                        { text: 'Program Examples', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-C/program-examples'},
+                     ]},
+                  { text: 'Calling isCOBOL from C', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/introduction',
+                    collapsed: true,
+                    items: [
+                      { text: 'Introduction', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/introduction' },
+                      { text: 'The iscobolc Library', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/iscobolc-library' },
+                      { text: 'Functions Reference', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/functions',
+                        collapsed: true,
+                        items: [
+                          { text: 'isCobolInit', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolInit' },
+                          { text: 'isCobolInitEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolInitEx' },
+                          { text: 'isCobolThreadInit', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolThreadInit' },
+                          { text: 'isCobolCall', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCall' },
+                          { text: 'isCobolCallNoStop', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCallNoStop' },
+                          { text: 'isCobolCallEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCallEx' },
+                          { text: 'isCobolCallNoStopEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCallNoStopEx' },
+                          { text: 'isCobolCancel', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCancel' },
+                          { text: 'isCobolCancelEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCancelEx' },
+                          { text: 'isCobolFunc', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolFunc' },
+                          { text: 'isCobolFuncEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolFuncEx' },
+                          { text: 'isCobolTidy', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolTidy' },
+                          { text: 'isCobolThreadTidy', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolThreadTidy' },
+                          { text: 'isCobolExit', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolExit' },
+                          { text: 'isCobolError', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolError' },
+                          { text: 'isCobolErrorEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolErrorEx' },
+                          { text: 'isCobolGetJNIEnv', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolGetJNIEnv' },
+                          { text: 'isCobolGetJNIEnvEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolGetJNIEnvEx' },
+                          { text: 'isCobolGoback', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolGoback' },
+                          { text: 'isCobolGobackEx', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolGobackEx' }
+                         ]},
+                      { text: 'C++ Sample', link: '/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/C++-sample' },
+                    ]},
+              ]},
+              { text: 'isCOBOL and Java', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/calling-java',
+                collapsed: true,
+                items: [
+                        { text: 'Calling Java programs or methods', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/calling-java' },
+                        { text: 'Calling isCOBOL from Java', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/introduction',
+                    collapsed: true,
+                    items: [
+                      { text: 'Introduction', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/introduction' },
+                      { text: 'The EasyLinkage feature', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/EasyLinkage-feature/usage1',
+                        collapsed: true,
+                        items: [ 
+                          { text: 'Usage 1 (Bridge to COBOL program)', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/EasyLinkage-feature/usage1' },
+                          { text: 'Usage 2 (Java replacement for called functions)', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/EasyLinkage-feature/usage2' },
+                          { text: 'Combined usage', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/EasyLinkage-feature/combined-usage' },
+                          { text: 'Examples', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/EasyLinkage-feature/examples' },
+                         ]},
+                      { text: 'The com.iscobol.java.IsCobol Class', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Calling-isCOBOL-from-JAVA/com.iscobol.java.IsCobol-class' },
+                    ]},
+                  { text: 'Mixing Java dialogs and COBOL windows in the same application', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/mixing-java' },
+                  { text: 'Converting Java Source Code to Object-oriented COBOL', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/introduction',
+                    collapsed: true,
+                    items: [
+                      { text: 'Introduction', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/introduction' },
+                      { text: 'Classes', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/classes' },
+                      { text: 'Java OOP statements', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Java-OOP-statements/java-oop-statements',
+                        collapsed: true,
+                        items: [
+                          { text: 'Object Creation', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Java-OOP-statements/object-creation' },
+                          { text: 'Method Invocation', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Java-OOP-statements/method-invocation' },
+                        ]},
+                      { text: 'Displaying on the console', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/displaying' },
+                      { text: 'Error Handling', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/error' },
+                      { text: 'Java Program Converted to isCOBOL', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/converted' },
+                      { text: 'Other translations not treated before', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Other-translations/translations',
+                        collapsed: true,
+                        items: [
+                          { text: 'Object Arrays', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Other-translations/object-arrays' },
+                          { text: 'Generics', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Other-translations/generics' },
+                        ]},
+                      { text: 'Known cases of Java syntax that is not directly translatable to COBOL', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Known-cases/known-cases',
+                        collapsed: true,
+                        items: [
+                          { text: 'The .class Syntax', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Known-cases/.class-syntax' },
+                          { text: 'Array of arrays', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Known-cases/array-of-arrays' }, 
+                          { text: 'The instanceof operator', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Known-cases/instanceof-operator' },
+                          { text: 'The ternary operator', link: '/pages/interoperating-with-is-cobol/isCOBOL-JAVA/Converting-JAVA-to-COBOL/Known-cases/ternary-operator' }, 
+                        ]},
+                    ]},
+                ]}, 
+              { text: 'isCOBOL and Tuxedo', link: '/pages/interoperating-with-is-cobol/isCOBOL-Tuxedo/working-with-Oracle-Tuxedo',
+                collapsed: true,
+                items: [
+                  { text: 'Working With Oracle Tuxedo', link: '/pages/interoperating-with-is-cobol/isCOBOL-Tuxedo/working-with-Oracle-Tuxedo' },
+              ]},
+              { text: 'isCOBOL and JasperReports', link: '/pages/interoperating-with-is-cobol/isCOBOL-JasperReports/interoperability-with-JasperReports',
+                collapsed: true,
+                items: [
+                  { text: 'Interoperability with JasperReports', link: '/pages/interoperating-with-is-cobol/isCOBOL-JasperReports/interoperability-with-JasperReports' },
+              ]},
             ]
            },
-          { text: 'Transitioning to isCOBOL', link: '/pages/transitioning-to-is-cobol/transitioning',
+          { text: 'Transitioning to isCOBOL', link: '/pages/transitioning-to-is-cobol/key-topics',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/transitioning-to-is-cobol/transitioning' }
-            ]
-           },
-          
-        ]
-      }
-    ],
+              { text: 'Key Topics', link: '/pages/transitioning-to-is-cobol/key-topics' },
+              { text: 'Transitioning from ACUCOBOL-GT', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/compiler-options' },
+                  { text: 'Copybooks', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/copybooks' },
+                  { text: 'Configuration variables', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/config-variables' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/data-access' },
+                  { text: 'Syntax and Behavior', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/syntax-behavior' },
+                  { text: 'User interface', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/user-interface' },
+                  { text: 'Library routines', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/library-routines' },
+                  { text: 'Integrated Development Environments', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/integrated-development-environments' },
+                  { text: 'Web', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ACUCOBOL-GT/web' },
+                ]},
+              { text: 'Transitioning from COBOL-IT', link: '/pages/transitioning-to-is-cobol/Transitioning-from-COBOL-IT/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-COBOL-IT/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-COBOL-IT/data-access' },
+                ]},
+              { text: 'Transitioning from IBM COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-IBM-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-IBM-COBOL/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-IBM-COBOL/data-access' },
+                  { text: 'Syntax and Behavior', link: '/pages/transitioning-to-is-cobol/Transitioning-from-IBM-COBOL/syntax-behavior' },
+                  { text: 'IBM WebSphere MQ', link: '/pages/transitioning-to-is-cobol/Transitioning-from-IBM-COBOL/IBM-WebSphere-MQ' },
+                ]},
+              { text: 'Transitioning from ICOBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ICOBOL/transitioning', 
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ICOBOL/compiler-options' },
+                  { text: 'Run time and configuration', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ICOBOL/runtime-config' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ICOBOL/data-access' },
+                  { text: 'Library routines', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ICOBOL/library-routines' },
+                ]},
+              { text: 'Transitioning from MBP COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MBP-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MBP-COBOL/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MBP-COBOL/data-access' },
+                ]},
+              { text: 'Transitioning from MicroFocus', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/data-access' },
+                  { text: 'Syntax and Behavior', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/syntax-behavior' },
+                  { text: 'Configuration', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/config' },
+                  { text: 'Library routines', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/library-routines' },
+                  { text: 'Intrinsic Functions', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/intrinsic-functions' },
+                  { text: 'CGI', link: '/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/CGI' },
+                ]},
+              { text: 'Transitioning from Microsoft COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Microsoft-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Microsoft-COBOL/compiler-options' },
+                  { text: 'Run time and configuration', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Microsoft-COBOL/runtime-config' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Microsoft-COBOL/data-access' },
+                ]},
+              { text: 'Transitioning from NCR COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-NCR-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-NCR-COBOL/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-NCR-COBOL/data-access' },
+                ]},
+              { text: 'Transitioning from Realia COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Realia-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Realia-COBOL/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-Realia-COBOL/data-access' },
+                ]},
+              { text: 'Transitioning from RM/COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/compiler-options' },
+                  { text: 'Run time and configuration', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/runtime-config' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/data-access' },
+                  { text: 'Syntax and Behavior', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/syntax-behavior' },
+                  { text: 'Library routines', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/library-routines' },
+                  { text: 'Cobol-WOW', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/cobol-WOW',
+                    collapsed: true,
+                    items: [
+                      { text: 'Before you start – Initial IDE configuration and creation of a new project', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/before-you-start' },
+                      { text: 'Importing projects from Cobol-WOW in isCOBOL IDE', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/importing-projects' },
+                      { text: 'Adding existing WOW Programs to the current Project', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/adding-existing' },
+                      { text: 'Editing, compiling and running Cobol-WOW programs', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/editing-compiling-running' },
+                      { text: 'Known differences and things to know', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/known-differences' },
+                      { text: 'Supported API functions', link: '/pages/transitioning-to-is-cobol/Transitioning-from-RM-COBOL/Cobol-WOW/supported-API' },
+                    ]}
+                  ]},
+              { text: 'Transitioning from VAX COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-VAX-COBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Compiler options', link: '/pages/transitioning-to-is-cobol/Transitioning-from-VAX-COBOL/compiler-options' },
+                  { text: 'Data access', link: '/pages/transitioning-to-is-cobol/Transitioning-from-VAX-COBOL/data-access' },
+                ]},
+              { text: 'Transitioning from other COBOLs', link: '/pages/transitioning-to-is-cobol/transitioning-from-other-COBOLs' },
+              { text: 'Transitioning from Pro*COBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ProCOBOL/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Why replace Pro*COBOL?', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ProCOBOL/why-replace' },
+                  { text: 'Issues you should be aware of', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ProCOBOL/issues' },
+                  { text: 'Using Pro*COBOL from isCOBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-ProCOBOL/using' },
+                ]},
+              { text: 'Transitioning from the IBM DB2 Preprocessor', link: '/pages/transitioning-to-is-cobol/Transitioning-from-the-IBM-DB2-Preprocessor/transitioning',
+                collapsed: true,
+                items: [  
+                  { text: 'Why replace the IBM DB2 preprocessor?', link: '/pages/transitioning-to-is-cobol/Transitioning-from-the-IBM-DB2-Preprocessor/why-replace' },
+                  { text: 'Issues you should be aware of', link: '/pages/transitioning-to-is-cobol/Transitioning-from-the-IBM-DB2-Preprocessor/issues' },
+                  { text: 'Using programs generated by the IBM DB2 preprocessor with isCOBOL', link: '/pages/transitioning-to-is-cobol/Transitioning-from-the-IBM-DB2-Preprocessor/using' },
+                ]},
+         ]}
+    ]}],
     siteTitle: false, // nasconde il titolo di fianco al logo
     logo: {
         alt: 'Logo aziendale',
         src: '/veryant_logo.png',   // Percorso relativo a /static/
         style: {height: '32px'},
       },
+
+    /* ricerca tramite Orama 
+    search: {
+      provider: 'orama',
+      options: {
+        appId: 'a54e4c04-847e-4736-a2dc-5f4c607988e1', // Lo trovi nella dashboard di Orama
+        apiKey: 'c1_uNfpfN1h8MWztr8EDsj0m3gOu0wrPCjuUEskfKy0r0kuYvdLhsaC1SFsGyt', // Chiave pubblica (non quella admin!)
+        indexId: 'a54e4c04-847e-4736-a2dc-5f4c607988e1',
+        
+        // Se vuoi mantenere lo stile italiano che avevi prima:
+        translations: {
+          button: {
+            buttonText: 'Enter search term or phrase',
+            buttonAriaLabel: 'Search',
+          },
+          modal: {
+            displayDetails: 'Show search details', // bottone per mostrare dettagli ricerca
+            resetButtonTitle: 'Reset search',
+            noResultsText: 'No results',
+            footer: {
+              selectText: 'to select',
+              navigateText: 'to navigate',
+              closeText: 'to close'
+            }
+          }
+        }
+      }
+    }, */
+
+    /* ricerca tramite Algolia
+    search: {
+      provider: 'algolia',
+      options: {
+      appId: '4SDZGIXH4J', // Lo trovi nella dashboard di Algolia
+      apiKey: 'a9602aed088d8301441cde797f14ad2a', // Chiave pubblica (non quella admin!)
+      indexName: '20ab97ebc0b64c2e7b6f631f10cb3c65', // Il nome dell'indice che hai creato in Algolia
+      // Personalizzazione testi ricerca  
+      translations: {
+        button: {
+        buttonText: 'Enter search term or phrase',  
+        buttonAriaLabel: 'Search',  
+      },
+      modal: {
+        displayDetails: 'Show search details', // bottone per mostrare dettagli ricerca
+        resetButtonTitle: 'Reset search',
+        noResultsText: 'No results',
+        footer: {
+          selectText: 'to select',
+          navigateText: 'to navigate',
+          closeText: 'to close'
+          }
+        }
+      } 
+    }
+  }, */
 
     // ricerca Locale
     search: {
@@ -416,12 +755,12 @@ export default defineConfig({
             }
           }
         }
-    },
-    extends: {
+    }, 
+    /* extends: {
     vite: {
       plugins: [OramaPlugin()],
     },
-  },
+  }, */
     // documentazione MD
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/company/veryant-llc' },
@@ -430,15 +769,19 @@ export default defineConfig({
     ],
 
     outline: {
-      level: [2, 3, 4],     // Indica di mostrare i livelli da 2 a 3 (h2 e h3)
+      level: [2, 3, 4, 5],     // Indica di mostrare i livelli dei sottotitoli
       label: 'On this page' // Il testo visualizzato sopra l'indice
   },
 
     markdown: {
     config: (md) => {
       md.use(footnote) // <--- Abilita le note a piè di pagina
-    }
-  },
+    }},
+
+    docFooter: {
+      prev: 'Previous',
+      next: 'Next'
+    },
 
     footer: {
       message: '<div style="display: flex; justify-content: space-between; gap: 20px; text-align: left; font-size: 0.9em;"><div><p><strong><a href="https://www.veryant.com/it/legal.html">Terms of Use</a></strong> / <strong><a href="https://www.veryant.com/it/privacy.html">Privacy Policy</a></strong> / <strong><a href="mailto:webmaster@veryant.com">Site Feedback</a></strong> / <strong><a href="https://www.veryant.com/it/contact-request.html">Contact Us</a></strong></p></div><div><p>Email: <a href="mailto:info@veryant.com">info@veryant.com</a> | Tel: +1 619 453 0914</p></div></div>',
