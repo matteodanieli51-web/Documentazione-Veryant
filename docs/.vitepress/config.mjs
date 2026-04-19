@@ -677,13 +677,36 @@ export default defineConfig({
       }
     }, */
 
-    /* ricerca tramite Algolia
+    // ricerca tramite Algolia
     search: {
       provider: 'algolia',
       options: {
       appId: '4SDZGIXH4J', // Lo trovi nella dashboard di Algolia
-      apiKey: '20ab97ebc0b64c2e7b6f631f10cb3c65', // Chiave pubblica (non quella admin!)
+      apiKey: 'a9602aed088d8301441cde797f14ad2a', // Chiave pubblica (non quella admin!)
       indexName: 'documentazione_VERYANT', // Il nome dell'indice che hai creato in Algolia
+      
+      // blocco IA
+      searchParameters: {
+      analytics: true,
+      attributesToSnippet: ['content:30'], // Indica all'IA di analizzare più testo per rispondere
+      snippetEllipsisText: '...',
+      clickAnalytics: true, // interpreta i click degli utenti per migliorare le risposte IA nel tempo
+      },
+
+      // configurazione Pannello AI (AskAI)
+      askAi: {
+        assistantId: '5558b00b-2068-4e28-9350-ae1750410e2b', //
+        sidePanel: {
+          panel: {
+            variant: 'floating',
+            side: 'right',
+            width: '360px',
+            expandedWidth: '580px',
+            suggestedQuestions: true
+          }
+        }
+      },
+
       // Personalizzazione testi ricerca  
       translations: {
         button: {
@@ -702,7 +725,7 @@ export default defineConfig({
         }
       } 
     }
-  }, */
+  }, 
   /* oppure
   algolia: {
       appId: '4SDZGIXH4J',
@@ -722,7 +745,7 @@ export default defineConfig({
       }
     } */
 
-    // ricerca Locale
+    /* ricerca Locale
     search: {
       provider: 'local',
       options: {
@@ -761,18 +784,6 @@ export default defineConfig({
           }
         }
       },
-      askAi: {
-          assistantId: 'XXXYYY',
-          sidePanel: {
-            panel: {
-              variant: 'floating', // or 'inline'
-              side: 'right',
-              width: '360px',
-              expandedWidth: '580px',
-              suggestedQuestions: true
-            }
-          }
-        }
     }, 
     /* extends: {
     vite: {
