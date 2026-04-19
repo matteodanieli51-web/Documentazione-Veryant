@@ -20,6 +20,7 @@
   "dependencies": {
     "@orama/plugin-vitepress": "^3.1.18",
     "algoliasearch": "^5.50.2",
+    "dotenv": "^17.4.2",
     "globby": "^16.1.1",
     "html-to-text": "^9.0.5",
     "markdown-it-footnote": "^4.0.0"

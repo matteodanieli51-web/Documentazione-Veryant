@@ -682,8 +682,8 @@ export default defineConfig({
       provider: 'algolia',
       options: {
       appId: '4SDZGIXH4J', // Lo trovi nella dashboard di Algolia
-      apiKey: 'a9602aed088d8301441cde797f14ad2a', // Chiave pubblica (non quella admin!)
-      indexName: '20ab97ebc0b64c2e7b6f631f10cb3c65', // Il nome dell'indice che hai creato in Algolia
+      apiKey: '20ab97ebc0b64c2e7b6f631f10cb3c65', // Chiave pubblica (non quella admin!)
+      indexName: 'documentazione_VERYANT', // Il nome dell'indice che hai creato in Algolia
       // Personalizzazione testi ricerca  
       translations: {
         button: {
@@ -703,6 +703,24 @@ export default defineConfig({
       } 
     }
   }, */
+  /* oppure
+  algolia: {
+      appId: '4SDZGIXH4J',
+      apiKey: '20ab97ebc0b64c2e7b6f631f10cb3c65',
+      indexName: 'documentazione_VERYANT',
+      
+      // Attivazione funzioni IA (Algolia NeuralSearch/Answers)
+      initialQuery: '', 
+      searchParameters: {
+        attributesToSnippet: ['content:10'],
+        snippetEllipsisText: '...',
+      },
+      // Opzioni per l'interfaccia
+      placeholder: 'Cerca nella documentazione o chiedi all\'IA...',
+      translations: {
+        button: { buttonText: 'Cerca' }
+      }
+    } */
 
     // ricerca Locale
     search: {

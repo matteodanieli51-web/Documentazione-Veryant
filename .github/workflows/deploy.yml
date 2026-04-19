@@ -1,25 +1,21 @@
 name: Deploy VitePress site to Pages
-
 on:
   push:
-    branches: [main] # Cambia in 'master' se la tua branch principale si chiama così
-
+    branches: [main] # o master, controlla il nome del tuo ramo
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
       - name: Install dependencies
         run: npm install
       - name: Build with VitePress
@@ -27,7 +23,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: .vitepress/dist # o docs/.vitepress/dist se i tuoi file sono lì
+  deploy:
+    environment:
+      name: github-pages
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
