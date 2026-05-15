@@ -20,7 +20,7 @@ entry=value
 entry=value
 ```
 
-Note - for your convenience the graphical [UDBC Configuration Tool]() is provided.
+Note - for your convenience the graphical [UDBC Configuration Tool](\) is provided.
 
 The following table describes all the available entries:
 
@@ -46,7 +46,7 @@ The following table describes all the available entries:
 
 isCOBOL UDBC is provided with a graphical utility that allows you to manage databases.
 
-![](/pages/is-cobol-UDBC/images/UDBCCFG.png)
+![](images/UDBCCFG.png)
 
 - Click on the *New Database* button in order to create a new database. Input a name of your choice and then compile the fields on the right providing File Server coordinates and the EFDs dictionaries location
 - Click on the *Rename Database* button or double click on database name in the tree in order to rename the selected database.

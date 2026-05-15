@@ -1,9 +1,9 @@
 # Key Topics
 
-- [Introduction to isCOBOL Evolve](/pages/is-cobol-evolve/Introduction/Introduction-isCOBOL-Evolve/introduction-to-iscobol-evolve)
+- [Introduction to isCOBOL Evolve](./Introduction-isCOBOL-Evolve/introduction-to-iscobol-evolve)
 
-- [The Basics](/pages/is-cobol-evolve/Introduction/Basics/basics)
+- [The Basics](./Basics/basics)
 
-- [Wrappers](/pages/is-cobol-evolve/Introduction/Wrappers/wrappers)
+- [Wrappers](./Wrappers/wrappers)
 
-- [Special Features](/pages/is-cobol-evolve/Introduction/Special-Features/special-features)
+- [Special Features](./Special-Features/special-features)

@@ -22,7 +22,7 @@ In particular you can set:
 
 - where to generate column settings (e.g. DISPLAY-COLUMNS and DATA-COLUMNS) for Grid and ListBox. You can choose between having them in the SCREEN SECTION as control properties or in the PROCEDURE DIVISION as MODIFY statements.
 
-- which statement will be generated for the program exit. Choose between "GOBACK" and "STOP RUN". You also choose a variable to be returned as program exit status (Stop Run/Goback variable); this variable will be added to the [Working Storage Designer](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.052.html#ww1022914 "Working Storage Designer") with a picture S9(10).
+- which statement will be generated for the program exit. Choose between "GOBACK" and "STOP RUN". You also choose a variable to be returned as program exit status (Stop Run/Goback variable); this variable will be added to the [Working Storage Designer](\) with a picture S9(10).
 
 - the value to be moved to the Accept-Control special registry at the end of the Accept.
 
@@ -36,7 +36,7 @@ Code generation rules:
 
 - When Program file is selected, and Regenerate tagged area only is not selected, isCOBOL IDE generates code for the program source file, replacing the existing cbl file.
 
-- When both Program file and Regenerate tagged area only are selected, isCOBOL IDE generates code in the tagged portions of the program source file only. This preserves any code that you may have added outside of the tags. See [Code Editing](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.083.html#ww1023198 "Code Editing") for more details.
+- When both Program file and Regenerate tagged area only are selected, isCOBOL IDE generates code in the tagged portions of the program source file only. This preserves any code that you may have added outside of the tags. See [Code Editing](\) for more details.
 
 - When Working storage is selected, isCOBOL IDE generates the Working-Storage copy file.
 

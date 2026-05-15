@@ -16,8 +16,8 @@ If you’re going to maintain a COBOL application that was written with another 
 
 In the next pages of the wizard you can configure the default options for the projects. This task can also be done later by clicking on *Window* in the menu bar of the IDE and choosing *Preferences*.
 
-The [Compile and Runtime options]() may be overridden for each project and for each source file by right-clicking on the project/file in the ‘File’ view and selecting the Properties item in the pop-up menu.
+The [Compile and Runtime options](\) may be overridden for each project and for each source file by right-clicking on the project/file in the ‘File’ view and selecting the Properties item in the pop-up menu.
 
-The [Code Generation settings]() may be overridden for each screen program by right-clicking on the screen program in the ‘Structural’ view and selecting Properties in the pop-up menu.
+The [Code Generation settings](\) may be overridden for each screen program by right-clicking on the screen program in the ‘Structural’ view and selecting Properties in the pop-up menu.
 
-See [Customization]() for details about the available configuration options.
+See [Customization](\) for details about the available configuration options.

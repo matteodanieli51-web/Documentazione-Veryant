@@ -1,9 +1,9 @@
 ## Run time and configuration
 
-- [iscobol.file.index.check_all_keys (boolean)]() should be set to true in the configuration in order to activate the check on keys structure.
-- [iscobol.gui.screen_col_zero (boolean)]() should be set to true in the configuration for compatibility on the DISPLAY at COLUMN 0.
-- [iscobol.memory.alpha_edited (boolean)]() should be set to true in the configuration for compatibility on alphabetic-edited and alphanumeric-edited items setting.
-- [iscobol.terminal.autowrap (boolean)]() should be set to true since RM/COBOL automatically wraps text in the terminal.
+- [iscobol.file.index.check_all_keys (boolean)](\) should be set to true in the configuration in order to activate the check on keys structure.
+- [iscobol.gui.screen_col_zero (boolean)](\) should be set to true in the configuration for compatibility on the DISPLAY at COLUMN 0.
+- [iscobol.memory.alpha_edited (boolean)](\) should be set to true in the configuration for compatibility on alphabetic-edited and alphanumeric-edited items setting.
+- [iscobol.terminal.autowrap (boolean)](\) should be set to true since RM/COBOL automatically wraps text in the terminal.
 - By default, isCOBOL uses 2002 ANSI standard file status codes. These codes differ from those usually used by RM/COBOL. If RM/COBOL programs were written to the 1974 RM/COBOL standard, you should add the following line to the configuration:
 
 ```cobol

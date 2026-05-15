@@ -32,36 +32,36 @@ The following table lists all the standard wrappers, which are available for all
 
 | Wrapper | Class |
 | :--- | :--- |
-| cobfileio | `com.iscobol.lib.COBFILEIO` |
-| cpgen | `com.iscobol.compiler.CopyGen` |
-| cpk | `com.iscobol.lib.CPK` |
-| edbiis | `com.iscobol.easydb.EdbiIs` |
-| gife | `com.iscobol.lib.GIFE` |
-| iscc | `com.iscobol.compiler.Pcc` |
-| iscclient | `com.iscobol.gui.client.Client` |
-| isconfig | `com.iscobol.lib.ISCONFIG` |
-| iscbalancer | `com.iscobol.balancer.LoadBalancer` |
-| isremotecc | `com.iscobol.compiler.remote.server.Server` |
-| iscrun | `com.iscobol.invoke.Isrun` |
-| iscserver | `com.iscobol.as.AppServerImpl` |
-| iscupdater | `com.iscobol.updater.SoftwareUpdater` |
-| isl | `com.iscobol.lib.ISL` |
-| ismigrate | `com.iscobol.lib.ISMIGRATE` |
-| iscmigrate | `com.iscobol.lib.ISMIGRATE` |
-| issort | `com.iscobol.issort.IsSort` |
-| jdbc2fd | `com.iscobol.lib.JDBC2FD` |
-| jutil | `com.iscobol.utility.Jutil` |
-| stream2wrk | `com.iscobol.utility.Stream2Wrk` |
-| vudbccfg | `com.iscobol.utility.VUDBCCHG` |
+| cobfileio | com.iscobol.lib.COBFILEIO |
+| cpgen | com.iscobol.compiler.CopyGen |
+| cpk | com.iscobol.lib.CPK |
+| edbiis | com.iscobol.easydb.EdbiIs |
+| gife | com.iscobol.lib.GIFE |
+| iscc | com.iscobol.compiler.Pcc |
+| iscclient | com.iscobol.gui.client.Client |
+| isconfig | com.iscobol.lib.ISCONFIG |
+| iscbalancer | com.iscobol.balancer.LoadBalancer |
+| isremotecc | com.iscobol.compiler.remote.server.Server |
+| iscrun | com.iscobol.invoke.Isrun |
+| iscserver | com.iscobol.as.AppServerImpl |
+| iscupdater | com.iscobol.updater.SoftwareUpdater |
+| isl | com.iscobol.lib.ISL |
+| ismigrate | com.iscobol.lib.ISMIGRATE |
+| iscmigrate | com.iscobol.lib.ISMIGRATE |
+| issort | com.iscobol.issort.IsSort |
+| jdbc2fd | com.iscobol.lib.JDBC2FD |
+| jutil | com.iscobol.utility.Jutil |
+| stream2wrk | com.iscobol.utility.Stream2Wrk |
+| vudbccfg | com.iscobol.utility.VUDBCCHG |
 
 All the above wrappers load the class from the iscobol.jar library.
 
 Based on the above table, you see that, for example, using the command:
 
-
 ```cobol
 iscc
 ```
+
 is the same as using:
 
 ```cobol
@@ -88,11 +88,11 @@ Wrappers for WebClient commands run the Main class included in the corresponding
 
 | Wrapper | Class | Library |
 | :--- | :--- | :--- |
-| webcclient | `main.Main -j jetty.properties` | `webclient/webclient-server.war` |
-| webcclient-admin | `main.Main -j jetty.properties` | `webclient/admin/webclient-admin-server.war` |
-| webcclient-and-admin | `main.Main -j jetty.properties -serveradmin -pfa admin/webswing-admin.properties -adminctx /admin -aw admin/webswing-admin-server.war` | `webclient/webclient-server.war` |
-| webcclient-cluster | `main.Main -j jetty.properties` | `webclient/cluster/cluster-server/webclient.war` |
-| webcclient-session | `main.Main -j jetty.properties` | `webclient/cluster/session-pool/webclient.war` |
+| webcclient | main.Main -j jetty.properties | webclient/webclient-server.war |
+| webcclient-admin | main.Main -j jetty.properties` | webclient/admin/webclient-admin-server.war |
+| webcclient-and-admin | main.Main -j jetty.properties -serveradmin -pfa admin/webswing-admin.properties -adminctx /admin -aw admin/webswing-admin-server.war | webclient/webclient-server.war |
+| webcclient-cluster | main.Main -j jetty.properties | webclient/cluster/cluster-server/webclient.war |
+| webcclient-session | main.Main -j jetty.properties | webclient/cluster/session-pool/webclient.war |
 
 ## Windows wrappers
 
@@ -100,11 +100,11 @@ On Windows platform five additional wrappers are available:
 
 | Wrapper | Class |
 | :--- | :--- |
-| iscclientd | `com.iscobol.clientlstnr.ClientListener` |
-| isclient | `com.iscobol.gui.client.Client` |
-| iscclientd | `com.iscobol.clientlstnr.ClientListener` |
-| isrun | `com.iscobol.invoke.Isrun` |
-| isupdater | `com.iscobol.updater.SoftwareUpdater` |
+| iscclientd | com.iscobol.clientlstnr.ClientListener |
+| isclient | com.iscobol.gui.client.Client |
+| iscclientd | com.iscobol.clientlstnr.ClientListener |
+| isrun | com.iscobol.invoke.Isrun |
+| isupdater | com.iscobol.updater.SoftwareUpdater |
 
 **Note** - isrun and isclient are the same as iscrun and iscclient except that they launch the isCOBOL class with javaw.exe instead of java.exe. In this way the java process does not keep the console busy.
 
@@ -128,10 +128,10 @@ On Windows platform the *bin* directory includes a subdirectory named *no_dpi_aw
 
 | Wrapper | Class |
 | :--- | :--- |
-| iscclient | `com.iscobol.gui.client.Client` |
-| isclient | `com.iscobol.gui.client.Client` |
-| iscrun | `com.iscobol.invoke.Isrun` |
-| isrun | `com.iscobol.invoke.Isrun` |
+| iscclient | com.iscobol.gui.client.Client |
+| isclient | com.iscobol.gui.client.Client |
+| iscrun | com.iscobol.invoke.Isrun |
+| isrun | com.iscobol.invoke.Isrun |
 
 These executable files include a manifest without the entry <dpiAware>true</dpiAware>. The Windows system is informed that the executable is not DPI-aware and takes care of increasing the pixels size when running on a higher DPI. This approach ensures that the aspect ratio of the windows is perfectly maintained even when the font is a little blurred as a result.
 
@@ -165,7 +165,7 @@ The -J option allows you to pass options to the JVM instantiated by the wrapper.
 iscc -J-Discobol.compiler.const.const1=1 prog1.cbl
 ```
 
-becomes 
+becomes
 
 ```cobol
 java -Discobol.compiler.const.const1=1 com.iscobol.compiler.Pcc prog1.cbl
@@ -177,25 +177,25 @@ java -Discobol.compiler.const.const1=1 com.iscobol.compiler.Pcc prog1.cbl
 gife -J-Discobol.gife.efd_directory=/dev/myapp/efd
 ```
 
-becomes 
+becomes
 
 ```cobol
 java -Discobol.gife.efd_directory=/dev/myapp/efd GIFE
 ```
 
-### Example for Runtime:
+### Example for Runtime
 
 ```cobol
 iscrun -J-Xmx512m -c /myapp/conf PROG1
 ```
 
-becomes 
+becomes
 
 ```cobol
 java -Xmx512m com.iscobol.invoke.Isrun -c /myapp/conf PROG1
 ```
 
-### Example for Debugger:
+### Example for Debugger
 
 When you run the Debugger you must pay attention in using the -J option because there are two different virtual machines involved:
 
@@ -218,13 +218,13 @@ java -Xmx512m com.iscobol.invoke.Isrun -d -Xmx3g PROG1
 
 The internal class com.iscobol.invoke.Isrun, if the -d option is used, behaves as follows: settings specified before the -d option are passed to the Debugger JVM and to the program JVM, instead settings specified after the -d option are passed only to the program JVM.
 
-### Example for Client:
+### Example for Client
 
 ```cobol
 iscclient -J-Xmx256m -hostname 192.168.0.133 -c /myapp/remoteconf PROG1
 ```
 
-becomes 
+becomes
 
 ```cobol
 java -Xmx256m com.iscobol.gui.client.Client -hostname 192.168.0.133 -c /myapp/remoteconf PROG1
@@ -244,4 +244,4 @@ Vmoptions files are particularly useful to pass Java options to Windows services
 
 Vmoptions files are text files that include a list of options. Every option is specified on a separate line. The # character comments the line. The options should be specified with the same syntax that you would use on the command line. The *-classpath* option can be followed by either "/p" or "/a", in this way the option value is prepended or appended to the default Class Path built by the wrapper, that includes the libraries stored in the isCOBOL’s "lib" and "jars" folders. The * character at the end of a path to assume “all jar files in that path” is not supported here; you have to specify the pathname of each single jar file.
 
-For more information see for example [Service configuration](pages/is-cobol-AS/iscobol-AS) in [isCOBOL Evolve: Application Server](pages/is-cobol-AS/iscobol-AS).
+For more information see for example [Service configuration](./pag_creazione) in [isCOBOL Evolve: Application Server](./pag_creazione).

@@ -1,6 +1,6 @@
 ## Download and install the Veryant isCOBOL extension
 
-1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](/pages/is-cobol-extension-for-VScode/Getting-Started/download-JDK).
+1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](./download-JDK).
 2. Go to ["https://support.veryant.com"](https://support.veryant.com).
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.

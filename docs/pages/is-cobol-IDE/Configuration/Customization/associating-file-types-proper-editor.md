@@ -6,9 +6,9 @@ Preferences: General -> Editors -> File Associations
 
 isCOBOL IDE includes different editors in addition to the COBOL editor. Different file types are associated with different editors. You can check and update these associations from the *File Associations* panel.
 
-![](img/ide-file_assoc.PNG)
+![](img/ide-file_assoc.png)
 
-The editor is invoked each time you open a file from the [isCOBOL Explorer](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.043.html#ww1022875 "isCOBOL Explorer").
+The editor is invoked each time you open a file from the [isCOBOL Explorer](\).
 
 There can be one or more editors associated with each file type. Click on the *Add* and *Remove* buttons to create new associations or to remove an existing one.
 

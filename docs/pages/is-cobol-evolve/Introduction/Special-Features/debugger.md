@@ -28,8 +28,8 @@
 
 ![Figura 6.](figura6.png)
 
-- The ability to continue execution until the next called program (see [prog]()).
-- The ability to jump to a given line skipping the statements in the middle (see [jump]()).
+- The ability to continue execution until the next called program (see [prog](./pagina_in_creazione)).
+- The ability to jump to a given line skipping the statements in the middle (see [jump](./pagina_in_creazione)).
 - The ability to expand and collapse copy files:
 
 ![Figura 7.](figura7.png)
@@ -43,4 +43,4 @@
 ![Figura 9.](figura9.png)
 
 - The isCOBOL Debugger can debug programs on the local pc as well as programs on remote machines.
-For detailed information about the above features, consult the [Debugger]() section in User’s Guide.
+For detailed information about the above features, consult the [Debugger](./pagina_in_creazione) section in User’s Guide.

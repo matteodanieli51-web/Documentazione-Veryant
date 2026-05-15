@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && node upload-algolia.mjs",
-    "docs:preview": "vitepress preview docs",
+    "clean": "rimraf .vitepress/cache dist",
+    "build": "npm run clean && vitepress build && node upload-algolia.mjs",
+    "preview": "vitepress preview",
     "dev": "vitepress dev docs"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@types/markdown-it-footnote": "^3.0.4",
+    "rimraf": "^6.1.3",
     "vitepress": "latest"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 ## Data access
 
-- RM/COBOL indexed files can be easily converted to JIsam, c-tree or other supported file systems using the [ISMIGRATE (Index File Migration)]() utility. Choose "com.iscobol.io.ScanRMKF" as input file handler to let ISMIGRATE read RM/COBOL files without the need of external components.
+- RM/COBOL indexed files can be easily converted to JIsam, c-tree or other supported file systems using the [ISMIGRATE (Index File Migration)](\) utility. Choose "com.iscobol.io.ScanRMKF" as input file handler to let ISMIGRATE read RM/COBOL files without the need of external components.
 - Fixed-length sequential and relative files created by 1974 RM/COBOL programs are directly usable by isCOBOL programs. To convert RM/COBOL-85 relative files with fixed-length records, write an RM/COBOL program that reads the file and writes the records to a fixed-length binary sequential file. The resulting relative file is usable by isCOBOL.
 - Set the following configuration property for a RM/COBOL compatible line separator handling:
   

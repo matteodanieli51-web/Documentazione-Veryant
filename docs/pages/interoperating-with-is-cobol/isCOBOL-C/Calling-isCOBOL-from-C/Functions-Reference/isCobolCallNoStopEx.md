@@ -1,6 +1,6 @@
 #### isCobolCallNoStopEx
 
-The isCobolCallNoStopEx function is an extended version of the [isCobolCallNoStop](/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCallNoStop) function that allows you to pass a further argument specifying the isCOBOL environment when a call is performed in a multi-threaded environment..
+The isCobolCallNoStopEx function is an extended version of the [isCobolCallNoStop](./isCobolCallNoStop) function that allows you to pass a further argument specifying the isCOBOL environment when a call is performed in a multi-threaded environment..
 
 ```cobol
 int isCobolCallNoStopEx (char *name, int argc, char *argv[], int argl[], long *crc, void *pice);

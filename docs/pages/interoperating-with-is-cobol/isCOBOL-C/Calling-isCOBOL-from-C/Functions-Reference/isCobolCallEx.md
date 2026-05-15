@@ -1,6 +1,6 @@
 #### isCobolCallEx
 
-The isCobolCallEx function is an extended version of the [isCobolCall](/pages/interoperating-with-is-cobol/isCOBOL-C/Calling-isCOBOL-from-C/Functions-Reference/isCobolCall) function that allows you to pass a further argument specifying the isCOBOL environment when a call is performed in a multi-threaded environment..
+The isCobolCallEx function is an extended version of the [isCobolCall](./isCobolCall) function that allows you to pass a further argument specifying the isCOBOL environment when a call is performed in a multi-threaded environment..
 
 ```cobol
 int isCobolCallEx (char *name, int argc, char *argv[], int argl[], long *crc, void *pice);

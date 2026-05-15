@@ -1,27 +1,32 @@
 import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
-import { OramaPlugin } from "@orama/plugin-vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Documentazione",
+  title: "Veryant Documentation",
   description: "Questo sito contiene tutta la documentazione relativa all'azienda Veryant",
+  // opzioni di configurazione di primo livello
+  base: '/Documentazione-Veryant/',
+  ignoreDeadLinks: true, // ignora i link "vuoti"
+  
   markdown: {
     languages: ['cobol'] // Assicura che il supporto COBOL sia attivo
   },
-  base: '/Documentazione-Veryant/',
+  vite: {
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg']
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // menù superiore
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentazione', link: '/pages/release-notes/release-notes-2026-R1' },
+      { text: 'Documentation', link: '/pages/release-notes/release-notes-2026-R1' },
       // { text: 'Veryant', link: 'https://www.veryant.com/it/' },
-      { text: 'Prodotti', link: 'https://www.veryant.com/it/products/' },
-      { text: 'Soluzioni', link: 'https://www.veryant.com/it/solutions/' },
-      { text: 'Supporto', link: 'https://www.veryant.com/it/support.html' },
-      { text: 'Edizioni', link: 'https://www.veryant.com/it/editions.html' },
-      { text: 'Azienda', link: 'https://www.veryant.com/it/about.html' }
+      { text: 'Products', link: 'https://www.veryant.com/it/products/' },
+      { text: 'Solutions', link: 'https://www.veryant.com/it/solutions/' },
+      { text: 'Support', link: 'https://www.veryant.com/it/support.html' },
+      { text: 'Editions', link: 'https://www.veryant.com/it/editions.html' },
+      { text: 'About', link: 'https://www.veryant.com/it/about.html' }
     ],
     // menù laterale multi-livello
     sidebar: [
@@ -340,33 +345,699 @@ export default defineConfig({
           { text: 'isCOBOL Application Server', link: '/pages/is-cobol-AS/iscobol-AS',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-AS/iscobol-AS' }
-            ]
-           },
+              { text: 'Key Topics', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Overview', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Getting Started', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Download and install Java (JDK or JRE)', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Download and install isCOBOL Evolve SDK', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Activate the License', link: '/pages/is-cobol-AS/iscobol-AS'}
+                ]},
+              { text: 'Usage of isCOBOL Server', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Users count', link: '/pages/is-cobol-AS/iscobol-AS',
+                    text: 'Connections count', link: '/pages/is-cobol-AS/iscobol-AS',
+                    text: 'Client and Server info', link: '/pages/is-cobol-AS/iscobol-AS'
+                }]},
+              { text: 'Usage of isCOBOL Client', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Login', link: '/pages/is-cobol-AS/iscobol-AS',
+                }]},
+              { text: 'Good practice for the use of programs compiled in debug mode', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Automatic Client update', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Working with Aliases', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Tracing the Thin Client Activity', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Tracing Application Server Activity', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Tracing Clients Activity', link: '/pages/is-cobol-AS/iscobol-AS'},
+                ]},
+              { text: 'Client deployment', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Deployment through automatic client update and istc files', link: '/pages/is-cobol-AS/iscobol-AS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Configuring the istc and isws extensions in Apache HTTP Server', link: '/pages/is-cobol-AS/iscobol-AS'}]},
+                   { text: 'Deployment through setup programs', link: '/pages/is-cobol-AS/iscobol-AS'},
+                   { text: 'Deployment through isCOBOL WebClient', link: '/pages/is-cobol-AS/iscobol-AS'},
+                   { text: 'Deployment through Java Web Start (JavaWS)', link: '/pages/is-cobol-AS/iscobol-AS'},
+                ]},
+              { text: 'Remote objects', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Hook program', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Internal lock management', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Windows service and Unix daemon', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Windows service', link: '/pages/is-cobol-AS/iscobol-AS',
+                    collapsed: true,
+                    items: [
+                      { text: 'isserver.exe usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                      { text: 'Output redirection', link: '/pages/is-cobol-AS/iscobol-AS'},
+                      { text: 'Service configuration', link: '/pages/is-cobol-AS/iscobol-AS'}
+                  ]},
+                  { text: 'Unix daemon', link: '/pages/is-cobol-AS/iscobol-AS',
+                    collapsed: true,
+                    items: [
+                      { text: 'isserver usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                      { text: 'Daemon configuration', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  ]},
+                ]},
+              { text: 'Tuning and monitoring isCOBOL Server with VisualVM', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'isCOBOL File Server', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'isCOBOL File Server usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Client-side Configuration', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'User Authentication', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Stored Procedures', link: '/pages/is-cobol-AS/iscobol-AS'},
+                ]},
+              { text: 'isCOBOL GraphicalTerminal', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'isCOBOL ClientListener', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Configuring the server', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'isCOBOL ClientListener usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Configuring Putty to use isCOBOL ClientListener', link: '/pages/is-cobol-AS/iscobol-AS'},
+                ]},
+              { text: 'isCOBOL LoadBalancer', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Licensing', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'isCOBOL LoadBalancer usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Setting up the isCOBOL LoadBalancer', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Windows Service and Unix daemon', link: '/pages/is-cobol-AS/iscobol-AS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Windows Service', link: '/pages/is-cobol-AS/iscobol-AS',
+                        collapsed: true, 
+                        items: [
+                          { text: 'isbalancer.exe Usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                          { text: 'LoadBalancer configuration', link: '/pages/is-cobol-AS/iscobol-AS'},
+                          { text: 'Output redirection', link: '/pages/is-cobol-AS/iscobol-AS'},
+                          { text: 'Service configuration', link: '/pages/is-cobol-AS/iscobol-AS'}
+                      ]},
+                      { text: 'Unix daemon', link: '/pages/is-cobol-AS/iscobol-AS',
+                        collapsed: true,
+                        items: [
+                          { text: 'isbalancer usage', link: '/pages/is-cobol-AS/iscobol-AS'},
+                          { text: 'Daemon configuration', link: '/pages/is-cobol-AS/iscobol-AS'},
+                      ]},
+                   ]},
+                ]},
+              { text: 'TLS/SSL support', link: '/pages/is-cobol-AS/iscobol-AS'},
+              { text: 'Batch processing through isCOBOL Server (TurboRun)', link: '/pages/is-cobol-AS/iscobol-AS',
+                collapsed: true,
+                items: [
+                  { text: 'Enabling the TurboRun feature', link: '/pages/is-cobol-AS/iscobol-AS'},
+                  { text: 'Starting the batch', link: '/pages/is-cobol-AS/iscobol-AS'},
+                ]},
+            ]},
           { text: 'isCOBOL WebClient', link: '/pages/is-cobol-web-client/iscobol-webclient',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-web-client/iscobol-webclient' }
-            ]
-           },
-          { text: 'isCOBOL DatabaseBridge', link: '/pages/is-cobol-DB-Bridge/iscobol-DB-Bridge',
+              { text: 'Key Topics', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+              { text: 'Introduction', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+              { text: 'Getting Started', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'Download and install the Java Runtime Environment (JRE)', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Download and install isCOBOL WebClient 64-bit', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Activate the License', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Set the Secret Key', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Testing the product using the isCOBOL Demo program (Iscontrolset)', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                ]},
+              { text: 'WebClient commands', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'webcclient-admin', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webcclient-and-admin', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webcclient-cluster', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webcclient-session', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webcclient-testtool', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webcclient', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient-admin', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient-and-admin', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient-cluster', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient-session', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient-testtool', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'webclient', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'Command-line startup options', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'Startup configuration properties', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                  { text: 'Windows services and Unix daemons', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                    collapsed: true,
+                    items: [
+                      { text: 'Windows service', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                      { text: 'Unix daemon', link: '/pages/is-cobol-web-client/iscobol-webclient'}, 
+                    ]},
+                ]},
+              { text: 'Applications Monitoring and Configuration', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'Overview', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Server Config', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Applications', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                    collapsed: true,
+                    items: [
+                      { text: 'Create a new application', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                      { text: 'Enable or Disable applications', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                      { text: 'Change the application configuration', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                        collapsed: true,
+                        items: [
+                          { text: 'File viewers', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                        ]},
+                      { text: 'Remove an application', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                    ]},  
+                  { text: 'Sessions', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Logs', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+                ]},
+              { text: 'Configuring Users', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'Embedded users configuration', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Reading users from a property file', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Reading Users from a JDBC data source', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'SAML2 authentication', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Custom authentication', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                ]},
+              { text: 'Logging', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+              { text: 'Passing command line arguments and end user info to the COBOL program', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+              { text: 'Managing multiple WebClient servers from the same WebClient Admin Console', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Changing the language in WebClient’s user interface', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+              { text: 'Embedding the COBOL application in an HTML page', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'Bootstrapping WebClient JavaScript', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Communicating between the browser and the COBOL application', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                ]},
+              { text: 'Cluster Deployment', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'JETTY and JMS Configuration', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'How to enable HTTPS', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Reverse Proxy', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Deploying in Tomcat', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Known limitations and differences between WebClient and Thin Client', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Using the application from mobile devices', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+              { text: 'Test Tool', link: '/pages/is-cobol-web-client/iscobol-webclient',
+                collapsed: true,
+                items: [
+                  { text: 'Manual Testing', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Automating test cases', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                  { text: 'Known Limitations', link: '/pages/is-cobol-web-client/iscobol-webclient' },
+                ]},
+              { text: 'Troubleshooting', link: '/pages/is-cobol-web-client/iscobol-webclient'},
+            ]},
+          { text: 'isCOBOL DatabaseBridge', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-DB-Bridge/iscobol-DB-Bridge' }
-            ]
-           },
+              { text: 'Key Topics', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Overview', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Getting Started', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                collapsed: true,
+                items: [
+                  { text: 'Download and install the Java Development Kit (JDK)', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'Download and install isCOBOL Evolve SDK', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'Activate the License', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                ]},
+              { text: 'Working with DatabaseBridge', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                collapsed: true,
+                items: [
+                  { text: 'Generating EDBI users routines', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                    collapsed: true,
+                    items: [
+                      { text: 'EDBI Generation at compile time (one step)', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                      { text: 'EDBI Generation with EDBIIS (two steps)', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                    ]},
+                  { text: 'Compiling EDBI users routines', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'Setting the isCOBOL environment', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'Configuring CLASSPATH and code_prefix', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                ]},
+              { text: 'EFD Directives', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                collapsed: true,
+                items: [
+                  { text: 'Mapping rules', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'Default Rules', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                ]},
+              { text: 'Using EFD directives', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge'},
+              { text: 'Invalid Data', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Runtime Options and Configuration', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                collapsed: true,
+                items: [
+                  { text: 'Configuration properties', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'The EDBI-WHERE-CONSTRAINT external variable', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'iscobol.easydb.limit_dropdown', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                ]},
+              { text: 'DatabaseBridge generator (edbiis)', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge'},
+              { text: 'EDBI Routines', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge',
+                collapsed: true,
+                items: [
+                  { text: 'EDBI Standard Routines', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for Generic RDBMS', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for DB2 RDBMS', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for DB2/400', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for DBMaker', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for ORACLE RDBMS', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for MySQL (InnoDB engine) and MariaDB', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for Microsoft SQL Server', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for PostgreSQL', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                  { text: 'EDBI Routines for Informix', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+                ]},
+              { text: 'Extending EDBI routines through entry points', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge'},
+              { text: 'Working with multiple connections', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Managing multi-record files', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Managing relative and sequential files on the database', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge'},
+              { text: 'Differences between DatabaseBridge and ISAM', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Transactions', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Transactions', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+              { text: 'Mixing DatabaseBridge and ESQL', link: '/pages/is-cobol-DB-bridge/iscobol-DB-Bridge' },
+            ]},
           { text: 'c-treeRTG for isCOBOL', link: '/pages/c-treeRTG-for-iscobol/ctree',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/c-treeRTG-for-iscobol/ctree' }
-            ]
-           },
+              { text: 'Key Topics', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+              { text: 'Installing c-tree', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Installing on Windows', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Installing on Unix', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'SQL Engine and Replication LicensingL', link: '/pages/c-treeRTG-for-iscobol/ctree'},
+              { text: 'Configuring the c-tree Server', link: '/pages/c-treeRTG-for-iscobol/ctree'},
+              { text: 'Server Startup', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Startup on Windows', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Startup on Unix', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'The faircom executable command-line', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'Configuring the client', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Configuring the client through Framework properties', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Configuring the client through CTREE_CONF', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: '<config>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<instance>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<file>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<automkdir>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<batchaddition>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<bulkaddition>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<ctfixed>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<datacompress>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<datafilesuffix>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<detectlock>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<encrypt>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<filepool>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<fileversion>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<forcedelete>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<hugefile>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<ignorelock>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<indexfilesuffix>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<keycheck>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<keycompress>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<log>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<locktype>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<maxlencheck>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<map>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<memoryfile>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<optimisticadd>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<prefetch>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<retrylock>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<rowid>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<rpc>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<runitlockdetect>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<skiplock>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<smartcopy>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<sqlize>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<transaction>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<trxholdslocks>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: '<writethru>', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                    ]},
+                  { text: 'Configuring multiple instances', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: 'Configuring multiple instances with Framework properties', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'Configuring multiple instances through CTREE_CONF', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                    ]},
+                ]},
+              { text: 'Accessing from isCOBOL', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'The URL syntax', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'SQL Features', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: 'Registering existing c-tree files in c-tree SQL Server', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'Creating c-tree files into c-tree SQL Server from the COBOL Program', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'EFD directives and mapping rules', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'Accessing c-tree files through SQL from the COBOL Program', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                    ]},
+                  { text: 'Multithread programs', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Good practice for transactions management', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'c-tree Utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Command-line utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: 'ctadmn', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                        collapsed: true,
+                        items: [
+                          { text: 'Server administration', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                        ]},
+                      { text: 'ctcmdset', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctcmpcif', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctdump', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctfdmp', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctfileid', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctldmp', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctpass', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctquiet', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctrbldif', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctrdmp', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctsqlcdb', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctsqlutl', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctstat', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctstop', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'cttctx', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'cttrnmod', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctunf1', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ctutil', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                        collapsed: true,
+                        items: [
+                          { text: '-addimg', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-check', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-checkimg', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-clone', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-compact', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-compress', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-conv', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-copy', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-cryptconf', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-filecopy', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-fileid', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-getimg', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-info', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-load', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-loadtext', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-make', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-makeimg', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-profile', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-rblimg', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-rebuild', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-remove', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-rename', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-segment', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-setpath', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sign', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlcheck', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlinfo', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqllink', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlunlink', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlize', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlcheck', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-sqlrefresh', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-test', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-tron', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-upgrade', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-uncompress', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-unload', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-unloadtext', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-ddf2xdd', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: '-run', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                        ]},
+                      { text: 'dbdump', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'dbload', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'dbschema', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'isql', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'sa_admin', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                    ]},
+                  { text: 'Graphical utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: '.NET utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                        collapsed: true,
+                        items: [
+                          { text: 'c-treeACEMonitor', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeConfigManager', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeGauges', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeISAMExplorer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeLoadTest', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeLogAnalyzer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treePerfMon', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeQueryBuilder', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeSecurityAdmin', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeSqlExplorer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeTPCATest', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'DrCtree', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'ErrorViewer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                        ]},
+                      { text: 'Java utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                        collapsed: true,
+                        items: [
+                          { text: 'c-treeACEExplorer.jar', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'c-treeACEMonitor.jar', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'DrCtree.jar', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'ErrorViewer.jar', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                          { text: 'RTGConfig.jar', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                        ]},
+                     ]},
+                  { text: 'Web utilities', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: 'Replication Manager', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'SQL Explorer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'Monitor', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                      { text: 'ISAM Explorer', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                     ]},
+                ]},
+              { text: 'Backup options', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Offline backup', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Online backup', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'Bound Server mode', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+              { text: 'Troubleshooting', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Problems starting the c-tree Server', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Problems working with the c-tree Server Windows Service', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Problems connecting from a COBOL program', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Error Codes', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Core Dumps', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'Drivers', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'ODBC Driver', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                    collapsed: true,
+                    items: [
+                      { text: 'ODBC on Linux/Unix', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                     ]},
+                  { text: 'JDBC Driver', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Other Drivers', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'Data Replication', link: '/pages/c-treeRTG-for-iscobol/ctree',
+                collapsed: true,
+                items: [
+                  { text: 'Overview', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Installation and licensing', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Usage and configuration', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Usage and configuration - Legacy method', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'Troubleshooting', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                  { text: 'More information', link: '/pages/c-treeRTG-for-iscobol/ctree' },
+                ]},
+              { text: 'External References', link: '/pages/c-treeRTG-for-iscobol/ctree'},
+            ]},
           { text: 'isCOBOL EIS', link: '/pages/is-cobol-EIS/iscobol-EIS',
             collapsed: true,
             items: [
-              { text: 'Key Topics', link: '/pages/is-cobol-EIS/iscobol-EIS' }
-            ]
-          },
+              { text: 'Key Topics', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+              { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Overview', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Getting Started', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Download and install the Java Development Kit (JDK)', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'Download and install isCOBOL Evolve SDK', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'Activate the License', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                 ]},
+                ]},
+              { text: 'Web Service option', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                    items: [
+                      { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'The Service Bridge facility', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                        collapsed: true,
+                        items: [
+                          { text: 'Web Service generation at command-line', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                          { text: 'Web Service generation with isCOBOL IDE', link: '/pages/is-cobol-EIS/iscobol-EIS'},
+                          { text: 'Generating bridge programs for programs with entry points', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                          { text: 'Customizing bridge programs through tagged areas', link: '/pages/is-cobol-EIS/iscobol-EIS'},
+                          { text: 'SOAP runtime configuration', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                          { text: 'REST runtime configuration', link: '/pages/is-cobol-EIS/iscobol-EIS'},
+                          { text: 'Web Service Beans', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                        ]},
+                      { text: 'COBOL approach using REST', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                        collapsed: true,
+                        items: [
+                          { text: 'COBOL REST producer', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                          { text: 'COBOL REST consumer', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                        ]},
+                      { text: 'COBOL approach using SOAP', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                        collapsed: true,
+                        items: [
+                          { text: 'COBOL SOAP consumer', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                        ]},
+                ]},
+              { text: 'Authentication and Authorization method', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Servlet Container Configuration', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Facebook Authentication', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Google Authentication', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Twitter Authentication', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                ]},
+              { text: 'HTML5/CSS3 JS and JSON', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+              { text: 'COBOL Servlet option (OOP)', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'COBOL Servlet Programming', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'COBOL Servlet Programming with AJAX and XML', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'COBOL Servlet Programming with AJAX and JSON', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'COBOL Servlet Programming to replace CGI COBOL programming', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                ]},
+              { text: 'WebDirect option', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Getting Started', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Download and install isCOBOL EIS', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'Download and install isCOBOL WebDirect', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                    ]},
+                  { text: 'Running the sample application', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Guidelines for writing a web application', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Known limitations and differences between Swing and WebDirect', link: '/pages/is-cobol-EIS/iscobol-EIS'},
+                    ]},
+                  { text: 'Developing a hello world application from scratch', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Using Native Libraries in isCOBOL EIS WebDirect', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'How to receive parameters in WebDirect', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'How to Handle Program Exit', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'How to Handle Event Lists', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Customize the WebDirect Layout using CSS', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                ]},
+              { text: 'Debug and Troubleshooting', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Debugging programs in EIS environment', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Common issues in EIS environment', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                ]},
+              { text: 'Tomcat Installation', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'Introduction', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Download and install Tomcat', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Configure Tomcat to use the isCOBOL EIS framework', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                ]},
+              { text: 'Appendices', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                collapsed: true,
+                items: [
+                  { text: 'HTTPHandler class (com.iscobol.rts.HTTPHandler)', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Constructor', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'accept', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'acceptAllParameters', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'acceptEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'acceptFromJSON', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'acceptFromXML', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'addOutHeader', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayBinaryFile', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayError', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayHTML', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayText', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayTextFile', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayXML', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'displayJSON', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getContentType', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getHeader', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getIntHeader', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getMethod', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getRequest', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponse', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getSession', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'invalidateSession', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'isRedirect', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'isSessionInvalidated', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'processHtmlFile', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'processHtmlString', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'redirect', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setMethod', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                   ]},
+                  { text: 'HTTPClient class (com.iscobol.rts.HTTPClient)', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Constructor', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doDelete', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doDeleteEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doGet', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doHead', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPatch', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPatchEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPost', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPostEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPostMultipart', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPut', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'doPutEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getConnectTimeout', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getHeaderProperty', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getMethod', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getReadTimeout', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getRequestPlain', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseAttachmentIDs', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseAttachmentAttr', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseAttachmentAttrNames', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseAttachmentBody', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseCode', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseEx', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseJSON', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseMessage', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponsePlain', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'getResponseXML', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'saveResponseRaw', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setAuth', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setConnectTimeout', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setHeaderProperty', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setParameter', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setProxy', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'setReadTimeout', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                   ]},
+                  { text: 'HTTPData.Params class (com.iscobol.rts.HTTPData.Params)', link: '/pages/is-cobol-EIS/iscobol-EIS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Constructor', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'add', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                      { text: 'addFile', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                   ]},
+                  { text: 'Connecting to a SSL-enabled web service', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Implementing a custom filter for URL match', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                  { text: 'Useful definitions', link: '/pages/is-cobol-EIS/iscobol-EIS' },
+                 ]},
+            ]},
           { text: 'isCOBOL UDBC', link: '/pages/is-cobol-UDBC/key-topics',
             collapsed: true,
             items: [
@@ -642,40 +1313,6 @@ export default defineConfig({
                 ]},
          ]}
     ]}],
-    siteTitle: false, // nasconde il titolo di fianco al logo
-    logo: {
-        alt: 'Logo aziendale',
-        src: '/veryant_logo.png',   // Percorso relativo a /static/
-        style: {height: '32px'},
-      },
-
-    /* ricerca tramite Orama 
-    search: {
-      provider: 'orama',
-      options: {
-        appId: 'a54e4c04-847e-4736-a2dc-5f4c607988e1', // Lo trovi nella dashboard di Orama
-        apiKey: 'c1_uNfpfN1h8MWztr8EDsj0m3gOu0wrPCjuUEskfKy0r0kuYvdLhsaC1SFsGyt', // Chiave pubblica (non quella admin!)
-        indexId: 'a54e4c04-847e-4736-a2dc-5f4c607988e1',
-        
-        // Se vuoi mantenere lo stile italiano che avevi prima:
-        translations: {
-          button: {
-            buttonText: 'Enter search term or phrase',
-            buttonAriaLabel: 'Search',
-          },
-          modal: {
-            displayDetails: 'Show search details', // bottone per mostrare dettagli ricerca
-            resetButtonTitle: 'Reset search',
-            noResultsText: 'No results',
-            footer: {
-              selectText: 'to select',
-              navigateText: 'to navigate',
-              closeText: 'to close'
-            }
-          }
-        }
-      }
-    }, */
 
     // ricerca tramite Algolia
     search: {
@@ -684,29 +1321,14 @@ export default defineConfig({
       appId: '4SDZGIXH4J', // Lo trovi nella dashboard di Algolia
       apiKey: 'a9602aed088d8301441cde797f14ad2a', // Chiave pubblica (non quella admin!)
       indexName: 'documentazione_VERYANT', // Il nome dell'indice che hai creato in Algolia
-      
-      // blocco IA
       searchParameters: {
       analytics: true,
-      attributesToSnippet: ['content:30'], // Indica all'IA di analizzare più testo per rispondere
-      snippetEllipsisText: '...',
-      clickAnalytics: true, // interpreta i click degli utenti per migliorare le risposte IA nel tempo
+      facetFilters: [], // filtra per lingua
+      // attributesToRetrieve: ['title', 'content', 'url'], // I tuoi campi personalizzati
+      // attributesToSnippet: ['content:30'], // indica all'IA di analizzare più testo per rispondere
+      // snippetEllipsisText: '...',
+      //clickAnalytics: true, // interpreta i click degli utenti per migliorare le risposte IA nel tempo */
       },
-
-      // configurazione Pannello AI (AskAI)
-      askAi: {
-        assistantId: '5558b00b-2068-4e28-9350-ae1750410e2b', //
-        sidePanel: {
-          panel: {
-            variant: 'floating',
-            side: 'right',
-            width: '360px',
-            expandedWidth: '580px',
-            suggestedQuestions: true
-          }
-        }
-      },
-
       // Personalizzazione testi ricerca  
       translations: {
         button: {
@@ -722,28 +1344,22 @@ export default defineConfig({
           navigateText: 'to navigate',
           closeText: 'to close'
           }
-        }
+        }, 
+      askAi: {
+        assistantId: '5558b00b-2068-4e28-9350-ae1750410e2b', 
+        sidePanel: {
+          panel: {
+            variant: 'floating',
+            side: 'right',
+            width: '360px',
+            expandedWidth: '580px',
+            suggestedQuestions: true
+          }
+        } 
+      },
       } 
     }
-  }, 
-  /* oppure
-  algolia: {
-      appId: '4SDZGIXH4J',
-      apiKey: '20ab97ebc0b64c2e7b6f631f10cb3c65',
-      indexName: 'documentazione_VERYANT',
-      
-      // Attivazione funzioni IA (Algolia NeuralSearch/Answers)
-      initialQuery: '', 
-      searchParameters: {
-        attributesToSnippet: ['content:10'],
-        snippetEllipsisText: '...',
-      },
-      // Opzioni per l'interfaccia
-      placeholder: 'Cerca nella documentazione o chiedi all\'IA...',
-      translations: {
-        button: { buttonText: 'Cerca' }
-      }
-    } */
+  },
 
     /* ricerca Locale
     search: {
@@ -751,7 +1367,7 @@ export default defineConfig({
       options: {
         // chiave per mostrare porzione di testo
         detailedView: true, 
-        // 2. Ottimizzazione MiniSearch per velocità e precisione
+        // ottimizzazione miniSearch 
         miniSearch: {
           searchOptions: {
             fuzzy: 0.2, // tollera piccoli errori di battitura
@@ -784,12 +1400,20 @@ export default defineConfig({
           }
         }
       },
-    }, 
+    }, */
     /* extends: {
     vite: {
       plugins: [OramaPlugin()],
     },
   }, */
+    
+  siteTitle: false, // nasconde il titolo di fianco al logo
+    logo: {
+        alt: 'Logo aziendale',
+        src: '/veryant_logo.png',   // percorso relativo a /static/
+        style: {height: '32px'},
+      },
+
     // documentazione MD
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/company/veryant-llc' },

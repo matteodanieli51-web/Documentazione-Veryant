@@ -1,10 +1,10 @@
 ## How to configure the DSN (Advanced Setup)
 
-![](/pages/is-cobol-UDBC/images/veryantOdbcAdvanced.png)
+![](images/veryantOdbcAdvanced.png)
 
 - **File Prefix** is the list of the directories where physical files are stored on the server. Use space to separate multiple paths. Use quotes to delimit paths with spaces.
 
-- **File Suffix** refers to the custom extension added by the COBOL program that created the files. Do not include the default extension added by the file handler (e.g., ".dat" from c-tree or JIsam), or a custom extension added by setting [iscobol.file.index.data\_suffix \*]().
+- **File Suffix** refers to the custom extension added by the COBOL program that created the files. Do not include the default extension added by the file handler (e.g., ".dat" from c-tree or JIsam), or a custom extension added by setting [iscobol.file.index.data_suffix \*](\).
 
 - **Julian Base Date** allows the julian base date to be used in defining julian date formats to be specified. The information in this field must have the following format:
 

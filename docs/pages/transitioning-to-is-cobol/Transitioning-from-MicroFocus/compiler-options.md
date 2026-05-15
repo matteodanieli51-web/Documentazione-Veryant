@@ -45,7 +45,7 @@
 | CONVERTRET | Use -d5 compiler option |
 | COPYEXT | Use -ce= compiler option |
 | COPYLIST | Use -lf compiler option |
-| CURRENT-DATE | Take advantage of the [CurrentDate Class (com.iscobol.rts.CurrentDate)]() feature |
+| CURRENT-DATE | Take advantage of the [CurrentDate Class (com.iscobol.rts.CurrentDate)](\) feature |
 | DATAMAP | Use -ld compiler option |
 | DEFAULTBYTE | Use -dv= compiler options |
 | DOS/VS | Use -cv compiler option |

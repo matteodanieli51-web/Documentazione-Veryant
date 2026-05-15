@@ -10,7 +10,7 @@ The general Colors and Fonts panel allows you to configure fonts and colors for 
 Preferences: isCOBOL -> Editor
 ```
 
-The Editor panel allows you to configure tab spacing, syntax coloring and templates for the code completion feature. It also allows you to activate the [Horizontal Ruler](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.046.html#ww1082158 "Code Editor").
+The Editor panel allows you to configure tab spacing, syntax coloring and templates for the code completion feature. It also allows you to activate the [Horizontal Ruler](\).
 
 ![](img/Pref-Ed1.PNG)
 
@@ -24,7 +24,7 @@ The Editor panel allows you to configure tab spacing, syntax coloring and templa
 Preferences: isCOBOL -> Expanded Copy Editor
 ```
 
-In this panel you can configure the background color used to distinguish copy files from the rest of the source code in the [Copy View Editor](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.047.html#ww1255623 "Copy View Editor").
+In this panel you can configure the background color used to distinguish copy files from the rest of the source code in the [Copy View Editor](\).
 
 ![](img/copyviewcfg.png)
 

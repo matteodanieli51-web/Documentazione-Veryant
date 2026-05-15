@@ -11,4 +11,4 @@ Class.forName ("com.veryant.jdbc.VerySQLDriver");
 Connection conn = DriverManager.getConnection ("jdbc:veryant:127.0.0.1:6789:VERYSAMPLE", "admin", "admin");
 ```
 
-The [VISQL](/pages/is-cobol-UDBC/isCOBOL-UDBC/VISQL) utility accesses isCOBOL UDBC via JDBC.
+The [VISQL](./VISQL) utility accesses isCOBOL UDBC via JDBC.

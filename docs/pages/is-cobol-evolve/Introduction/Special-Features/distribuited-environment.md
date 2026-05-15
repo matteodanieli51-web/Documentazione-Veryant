@@ -12,7 +12,7 @@ While working in an Application Server environment, the program can take advanta
 CALL CLIENT "MYPROG" USING param-1, param-2.
 ```
 
-- The ability to run programs on remote machines (see [Remote objects]() for details).
+- The ability to run programs on remote machines (see [Remote objects](\) for details).
 
 - The ability to read and write binary files on the client machines; files must be defined as follows:
 
@@ -23,4 +23,4 @@ SELECT client-file ASSIGN TO filename
   .
 ```
 
-- The ability to copy each kind of file (sequential, binary and indexed) from client to server and viceversa (see [C$COPY]() for details)
+- The ability to copy each kind of file (sequential, binary and indexed) from client to server and viceversa (see [C$COPY](\) for details)

@@ -1,12 +1,12 @@
 ## Debug configurations and Remote debugging
 
-![](/pages/is-cobol-extension-for-VScode/images/vs-debug-configurations.png)
+![](images/vs-debug-configurations.png)
 
 The secondary side bar that appears when you start debugging allows you to choose between two preset debug configurations:
 
 | | |
 | --- | --- |
-| COBOL debug | This configuration allows you to debug a program in the current project or workspace, like the program that is currently loaded in the editor or the program that you specified in [Veryant > Main: Program.]() |
+| COBOL debug | This configuration allows you to debug a program in the current project or workspace, like the program that is currently loaded in the editor or the program that you specified in [Veryant > Main: Program.](\) |
 | COBOL attach debugger | This configuration allows you to attach a remote runtime for remote debugging. By default it connects to localhost on port 9999, but you can change these parameters as explained below. |
 | | |
 
@@ -54,4 +54,4 @@ Remote debugging has two requisites:
 
 • the program source code must be available in the current project,
 
-• the remote runtime must have been launched with [iscobol.rundebug.redirect\_streams (boolean) \*]() set to false in his configuration.
+• the remote runtime must have been launched with [iscobol.rundebug.redirect_streams (boolean) \*](\) set to false in his configuration.

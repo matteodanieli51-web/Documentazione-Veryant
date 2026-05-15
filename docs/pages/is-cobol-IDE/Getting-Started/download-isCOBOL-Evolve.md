@@ -2,7 +2,7 @@
 
 ### Windows
 
-1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](/pages/is-cobol-IDE/Getting-Started/download-JDK).
+1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](./download-JDK).
 2. Go to [https://support.veryant.com](https://support.veryant.com).
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.
@@ -12,7 +12,7 @@
 ![Figure 1](figura1.png)
 8. Choose if you wish to install only the IDE or also the isCOBOL SDK. Installing the isCOBOL SDK will allow you to compile, run and debug from a command prompt, outside of the IDE.
 ![Figure 2](figura2.png)
-9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](/pages/is-cobol-IDE/Getting-Started/activate).
+9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./activate).
 
 #### Quiet mode
 
@@ -24,11 +24,11 @@ A response file is generated automatically after an installation is finished. Th
 
 When an installer is executed, it checks whether a file with the same name and the *.varfile* extension can be found in the same directory and loads that file as the response file. For example, if an installer is named *foo_setup.msi* on Windows, the response file next to it has to be named *foo_setup.varfile*.
 
-For more information about msi setups and their command line options, see [Microsoft Standard Installer Command-Line Options]().
+For more information about msi setups and their command line options, see [Microsoft Standard Installer Command-Line Options](\).
 
 ### Linux
 
-1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](/pages/is-cobol-IDE/Getting-Started/download-JDK).
+1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](./download-JDK).
 2. Go to [https://support.veryant.com](https://support.veryant.com).
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.
@@ -47,7 +47,7 @@ sh isCOBOL_Evolve2025_2_*_Linux_64.sh
 
 ### MacOSX
 
-1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](/pages/is-cobol-IDE/Getting-Started/download-JDK).
+1. If you haven't already done so, [Download and install the Java Development Kit (JDK)](./download-JDK).
 2. Go to [https://support.veryant.com](https://support.veryant.com).
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.
@@ -57,7 +57,7 @@ sh isCOBOL_Evolve2025_2_*_Linux_64.sh
 ![Figure 5](figura5.png)
 8. Choose if you wish to install only the IDE or also the isCOBOL SDK. Installing the isCOBOL SDK will allow you to compile, run and debug from a command prompt, outside of the IDE.
 ![Figure 6](figura6.png)
-9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("/Applications" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](/pages/is-cobol-IDE/Getting-Started/activate).
+9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("/Applications" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./activate).
 
 ### Other
 

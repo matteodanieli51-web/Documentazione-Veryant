@@ -72,21 +72,21 @@ INQUIRE ef-1 SELECTION-TEXT w-text.
 ```
 
 - The ability to filter the GRID content according to an automatic search field that appears when you press CTRL-F.
-- The ability to have [Filterable-Columns]() in the GRID.
-- The ability to reorder and sort GRID columns (see [Reordering-Columns]() and [Sortable-Columns]() for details)
-- The ability to copy the GRID content to clipboard and export it to xls/xlsx spreadsheets. See [Heading-Menu-Popup]().
-- The ability to select multiple rows and columns in a GRID. See [Selection-Mode]().
-- The ability to display more lines of text in a single GRID cell. [Alignment]() of the column with multiline text must be “H”.
-- The ability to merge cells in the GRID header. See [Cell-Columns-Span]() and [Cell-Rows-Span]().
+- The ability to have [Filterable-Columns](./pagina_in_creazione) in the GRID.
+- The ability to reorder and sort GRID columns (see [Reordering-Columns](./pagina_in_creazione) and [Sortable-Columns](./pagina_in_creazione) for details)
+- The ability to copy the GRID content to clipboard and export it to xls/xlsx spreadsheets. See [Heading-Menu-Popup](./pagina_in_creazione).
+- The ability to select multiple rows and columns in a GRID. See [Selection-Mode](./pagina_in_creazione).
+- The ability to display more lines of text in a single GRID cell. [Alignment](./pagina_in_creazione) of the column with multiline text must be “H”.
+- The ability to merge cells in the GRID header. See [Cell-Columns-Span](./pagina_in_creazione) and [Cell-Rows-Span](./pagina_in_creazione).
 - The ability to mix different DATA-TYPES in the same column, for example:
 
 ```cobol
 DATA-TYPES ("U(1)L(0)", "9(3)X(2)")
 ```
 
-- The ability to display controls inside GRID cells as explained at [GRID]().
-- The ability to protect GRID cells both with read-only and skip approaches (see [Row-Protection](), [Column-Protection]() and [Cell-Protection]() for details)
-- The ability to show and hide GRID rows and columns dynamically (see [Row-Hiding]() and [Column-Hiding]() for details)
+- The ability to display controls inside GRID cells as explained at [GRID](./pagina_in_creazione).
+- The ability to protect GRID cells both with read-only and skip approaches (see [Row-Protection](./pagina_in_creazione), [Column-Protection](./pagina_in_creazione) and [Cell-Protection](./pagina_in_creazione) for details)
+- The ability to show and hide GRID rows and columns dynamically (see [Row-Hiding](./pagina_in_creazione) and [Column-Hiding](./pagina_in_creazione) for details)
 - TREE-VIEW items can be edited by the user.
 - The ability to add icons to COMBO-BOX items.
 
@@ -100,16 +100,16 @@ MODIFY ComboBoxHandle, ITEM = 1, BITMAP-NUMBER = 20
 MODIFY TabControlHandle, TAB-INDEX = 1 BITMAP-NUMBER = 1
 ```
 
-- The ability to dynamically add and remove pages on TAB-CONTROL ( see [Insertion-Index]() and [Tab-To-Delete]() for details)
-- The ability to change the text of TAB-CONTROL page labels without recreating the page ( see [Tab-Text]() for details)
-- The ability to disable a TAB-CONTROL page to prevent users from selecting it ( see [Tab-Enabled]() for details )
-- A new style for TAB-CONTROL, [Allow-Container](), that allows to bind screen entries to TAB-CONTROL pages and have the page switch managed automatically by the runtime.
-- A brand new graphical control: the [SLIDER]().
-- The ability to intercept mouse events on BITMAP control (see [MSG-MOUSE-CLICKED](), [MSG-MOUSE-ENTER]() and [MSG-MOUSE-EXIT]() for details).
-- The ability to interface [JAVA-BEAN]() controls.
-- The ability to show a custom icon on graphical windows ( see [Icon]() for details ).
-- The ability to add an icon to STATUS-BAR panels and to color them with different colors( see [Panel-Bitmap](), [Panel-Bitmap-Number](), [Panel-Bitmap-Width](), [Panel-Bitmap-Alignment]() and [Panel-Color]()). It’s also possible to align the panel text inside the panel (see [Panel-Alignment]()).
-- The ability to show both text and icon on a PUSH-BUTTON (see [Title-Position]() for details).
+- The ability to dynamically add and remove pages on TAB-CONTROL ( see [Insertion-Index](./pagina_in_creazione) and [Tab-To-Delete](./pagina_in_creazione) for details)
+- The ability to change the text of TAB-CONTROL page labels without recreating the page ( see [Tab-Text](./pagina_in_creazione) for details)
+- The ability to disable a TAB-CONTROL page to prevent users from selecting it ( see [Tab-Enabled](./pagina_in_creazione) for details )
+- A new style for TAB-CONTROL, [Allow-Container](./pagina_in_creazione), that allows to bind screen entries to TAB-CONTROL pages and have the page switch managed automatically by the runtime.
+- A brand new graphical control: the [SLIDER](./pagina_in_creazione).
+- The ability to intercept mouse events on BITMAP control (see [MSG-MOUSE-CLICKED](./pagina_in_creazione), [MSG-MOUSE-ENTER](./pagina_in_creazione) and [MSG-MOUSE-EXIT](./pagina_in_creazione) for details).
+- The ability to interface [JAVA-BEAN](./pagina_in_creazione) controls.
+- The ability to show a custom icon on graphical windows ( see [Icon](./pagina_in_creazione) for details ).
+- The ability to add an icon to STATUS-BAR panels and to color them with different colors( see [Panel-Bitmap](./pagina_in_creazione), [Panel-Bitmap-Number](./pagina_in_creazione), [Panel-Bitmap-Width](./pagina_in_creazione), [Panel-Bitmap-Alignment](./pagina_in_creazione) and [Panel-Color](./pagina_in_creazione)). It’s also possible to align the panel text inside the panel (see [Panel-Alignment](./pagina_in_creazione)).
+- The ability to show both text and icon on a PUSH-BUTTON (see [Title-Position](./pagina_in_creazione) for details).
 - The ability to unplug the TOOL-BAR from the window with the MOVEABLE style.
 
 ```cobol
@@ -146,17 +146,17 @@ display notification window
         handle h-notification.
 ```
 
-- The ability to pop up a list of possible values while the user is editing an ENTRY-FIELD (see [Proposal]()).
+- The ability to pop up a list of possible values while the user is editing an ENTRY-FIELD (see [Proposal](./pagina_in_creazione)).
 - The ability to display bitmaps inside an ENTRY-FIELD and to have events upon mouse over and mouse click on these bitmaps.
 - The ability to show a placeholder text within ENTRY-FIELD and ComboBox.
 - The ability to copy text from character based screens and to paste text to character based Accept.
 The user can select text from the screen by dragging the mouse with left button hold. The text is automatically copied in the clipboard as soon as the user releases the mouse button. The user can also paste some text from the clipboard by pressing the middle mouse button (usually identified by the scroll wheel); the pasted text is put in the keyboard buffer and the active ACCEPT gets it.
-- The ability to have more row headings in the Grid with the property [Num-Row-Headings]().
-- The ability to intercept new events [MSG-ICONIFIED]() and [MSG-DEICONIFIED]() for the Window when user reduces the window to task bar or restores it.
-- The ability to automatically scale a picture in the Bitmap control with the property [Bitmap-Scale]().
-- An easier management of Tab-Control pages through the style [Allow-Container]().
-- The ability to show a Tab-Control as an [Accordion]() container.
-- The ability to create modern tool-bars, also known as [RIBBON]().
+- The ability to have more row headings in the Grid with the property [Num-Row-Headings](./pagina_in_creazione).
+- The ability to intercept new events [MSG-ICONIFIED](./pagina_in_creazione) and [MSG-DEICONIFIED](./pagina_in_creazione) for the Window when user reduces the window to task bar or restores it.
+- The ability to automatically scale a picture in the Bitmap control with the property [Bitmap-Scale](./pagina_in_creazione).
+- An easier management of Tab-Control pages through the style [Allow-Container](./pagina_in_creazione).
+- The ability to show a Tab-Control as an [Accordion](./pagina_in_creazione) container.
+- The ability to create modern tool-bars, also known as [RIBBON](./pagina_in_creazione).
 - The ability to color the background of a windows with a gradient effect, for example:
 
 ```cobol
@@ -180,9 +180,9 @@ The user can select text from the screen by dragging the mouse with left button 
 
 - The ability to dynamically add or remove controls on the screen via DISPLAY UPON and DESTROY statements. The new controls are included in the accept of the screen like if they were declared at the bottom of the Screen Section.
 - The ability to specify the width in pixels and the color of the border of boxed controls through the properties *Border-Width* and *Border-Color*.
-- The ability to attach a layout manager to the windows, to have an automatic layout adaptation when the user resizes the window. See [Layout managers]() for more information.
-- The ability to obtain a tree [table view]() by adding the style Table-View to the Tree-View control.
-- The ability to gather a set of graphical controls either into a [SCROLL-PANE]() or a [SPLIT-PANE]().
-- The ability to load new records in a Grid while the user scrolls down. See the [Lod-Threshold]() property and the [MSG-LOAD-ON-DEMAND]() event.
-- The ability to drag and drop content from and to graphical controls on the screen. See the [Drag-Mode]() property.
+- The ability to attach a layout manager to the windows, to have an automatic layout adaptation when the user resizes the window. See [Layout managers](./pagina_in_creazione) for more information.
+- The ability to obtain a tree [table view](./pagina_in_creazione) by adding the style Table-View to the Tree-View control.
+- The ability to gather a set of graphical controls either into a [SCROLL-PANE](./pagina_in_creazione) or a [SPLIT-PANE](./pagina_in_creazione).
+- The ability to load new records in a Grid while the user scrolls down. See the [Lod-Threshold](./pagina_in_creazione) property and the [MSG-LOAD-ON-DEMAND](./pagina_in_creazione) event.
+- The ability to drag and drop content from and to graphical controls on the screen. See the [Drag-Mode](./pagina_in_creazione) property.
 For a quick demonstration of most GUI features, launch the isCOBOL Demo program.

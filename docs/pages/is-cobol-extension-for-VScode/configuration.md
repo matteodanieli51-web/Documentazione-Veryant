@@ -25,7 +25,7 @@ The following settings are available:
 | Setting | Description |
 | Veryant > Classpath | Additional classpath entries to compile, run and debug |
 | Veryant > Compiler: Options | List of compiler options to be used.Multiple options are separated by space. |
-| Veryant > Debug > Compiler: Options | Compiler flags for debug mode that will be appended to common compiler options.See [Debug and Release modes]() for more information. |
+| Veryant > Debug > Compiler: Options | Compiler flags for debug mode that will be appended to common compiler options.See [Debug and Release modes](\) for more information. |
 | Veryant > Debugger: Array Start[A] | First index of occurs elements to display. |
 | Veryant > Debugger: External Debug Configs[A] | Path to external configuration file, which provides specific command names and regular expressions to parse and interact with external debug process. |
 | Veryant > Debugger: Max Array Length[A] | Maximum number of occurs elements to display. |
@@ -42,7 +42,7 @@ The following settings are available:
 | Veryant > Main: Program-path | Startup folder for program |
 | Veryant > Max Cache Time For Expanded Source[A] | Maximum time to keep expanded source cache in milliseconds. |
 | Veryant > Program: Arguments | Arguments to pass to the isCOBOL program. |
-| Veryant > Release > Compiler: Options | Compiler flags for Release mode that will be appended to common compiler options.See [Debug and Release modes]() for more information. |
+| Veryant > Release > Compiler: Options | Compiler flags for Release mode that will be appended to common compiler options.See [Debug and Release modes](\) for more information. |
 | Veryant > Returns Last Cache From Expanded Source[A] | Indicates whether to return the last cache when reaching the maximum cache time. |
 | Veryant > Runtime: Options | Options passed to the iscrun command when running the isCOBOL program. |
 | Veryant > Sdk: Folder | Root folder of the isCOBOL Evolve SDK. |

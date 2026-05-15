@@ -10,4 +10,4 @@ Assuming that you have correctly installed isCOBOL and its thin client, you can 
 iscserver -as -fs
 ```
 
-For more information about the iscserver command, see [isCOBOL File Server usage]().
+For more information about the iscserver command, see [isCOBOL File Server usage](\).

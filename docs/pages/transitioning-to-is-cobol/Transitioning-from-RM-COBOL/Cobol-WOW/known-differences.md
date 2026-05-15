@@ -33,7 +33,7 @@ There are some differences between Veryant’s IDE screen painter and Cobol-WOW�
 
 The main difference is in the list of attributes of controls. When you select a graphical control on the screen, the list of attributes is populated in the Properties view. Cobol-WOW shows several attributes while Veryant’s IDE tries to group them where applicable. For example, for most of the controls you can set the font. The screenshot below shows a comparison between the multiple font properties shown by Cobol-WOW (on the left) and the single font property shown by Veryant’s IDE (on the right).
 
-![](/pages/transitioning-to-is-cobol/images/WOW-IDE-comparison.png)
+![](images/WOW-IDE-comparison.png)
 
 List-Box and Status-Bar have properties to define the multiple items in WOW designer. In Veryant’s IDE instead there is an item designer that shows a pop-up dialog in which the user can configure the items contained in the control.
 
@@ -61,7 +61,7 @@ isCOBOL IDE’s import wizard reads the ActiveX resources used in a WOW project 
 
 The screenshot below shows how the IExplorer ActiveX used in a Cobol-WOW form (on the left) was reimplemented using the Java component DJBrowser (on the right):
 
-![](/pages/transitioning-to-is-cobol/images/WOW-active-x.png)
+![](images/WOW-active-x.png)
 
 Veryant will provide some source code examples of ActiveX controls from DBI-Technologies rewritten in Java.
 

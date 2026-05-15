@@ -10,7 +10,7 @@ For the best compatibility with the Oracle Pro\*COBOL rules and behaviors, you s
 -csora
 ```
 
-When this option is used, the Compiler enables the SQLADR, SQLNUL and SQLPRC functions for the JDBC environment. Since pointers are stored in PIC S9(9) COMP data item, if you’re using the [\-cp]() compiler option, you must use also the [\-dz]() compiler option.
+When this option is used, the Compiler enables the SQLADR, SQLNUL and SQLPRC functions for the JDBC environment. Since pointers are stored in PIC S9(9) COMP data item, if you’re using the [\-cp](\) compiler option, you must use also the [\-dz](\) compiler option.
 
 ### Required items and configuration
 
@@ -76,7 +76,7 @@ iscobol.esql.value_too_many_rows=-2212
 
 ### Error for NULL value fetched
 
-Unless you used UNSAFE_NULL=YES in your Pro\*COBOL options, when a NULL value is fetched and no indicator variable was used, Pro\*COBOL returns an error (SQLCODE=-1405, SQLERRMC="ORA-01405: fetched column value is NULL"). By default isCOBOL doesn’t return errors in this case, it just sets the host variable to zero or spaces depending on the picture. In order to have the error number 1405 also with isCOBOL, compile the program with the [\-csqn]() option.
+Unless you used UNSAFE_NULL=YES in your Pro\*COBOL options, when a NULL value is fetched and no indicator variable was used, Pro\*COBOL returns an error (SQLCODE=-1405, SQLERRMC="ORA-01405: fetched column value is NULL"). By default isCOBOL doesn’t return errors in this case, it just sets the host variable to zero or spaces depending on the picture. In order to have the error number 1405 also with isCOBOL, compile the program with the [\-csqn](\) option.
 
 ### Error for no data during DELETE, INSERT and UPDATE
 
@@ -84,7 +84,7 @@ Pro\*COBOL returns a NOT_FOUND condition (e.g. it sets SQLCODE either to 100 or 
 
 isCOBOL doesn’t do the same, by default.
 
-In order to have the same behavior of Pro\*COBOL with isCOBOL, set [iscobol.esql.value_sqlcode_on_no_data]() in the configuration.
+In order to have the same behavior of Pro\*COBOL with isCOBOL, set [iscobol.esql.value_sqlcode_on_no_data](\) in the configuration.
 
 ### Mapping the PICX option
 
@@ -114,4 +114,4 @@ When a data truncation occurs while setting an host variable to the output param
 iscobol.esql.indicator_trunc_on_call=false
 ```
 
-Due to limitations in the JDBC API, isCOBOL is not able to understand the stored procedure signature, so it sets parameters in a generic way. It works fine in most of the cases, but in some cases Oracle may reject the parameters because they’re not of the expected type. If you experience errors related to a wrong parameter type, consider to describe the stored procedure signature. It can be done in the Compiler configuration by setting [iscobol.compiler.esql.procedure.ProcedureName]() or in the COBOL program by using the [HOSTVAR Directive]().
+Due to limitations in the JDBC API, isCOBOL is not able to understand the stored procedure signature, so it sets parameters in a generic way. It works fine in most of the cases, but in some cases Oracle may reject the parameters because they’re not of the expected type. If you experience errors related to a wrong parameter type, consider to describe the stored procedure signature. It can be done in the Compiler configuration by setting [iscobol.compiler.esql.procedure.ProcedureName](\) or in the COBOL program by using the [HOSTVAR Directive](\).

@@ -1,12 +1,12 @@
 #### Static Method
 
-The runtime framework searches for static C functions in a library named stacall (e.g. stacall.dll on Windows, libstacall.so on Linux) for COBOL programs compiled without the [\-cp]() option and a library named stacall\_n (e.g. stacall\_n.dll on Windows, libstacall\_n.so on Linux) for COBOL programs compiled with the [\-cp]() option.
+The runtime framework searches for static C functions in a library named stacall (e.g. stacall.dll on Windows, libstacall.so on Linux) for COBOL programs compiled without the [\-cp](\) option and a library named stacall_n (e.g. stacall_n.dll on Windows, libstacall_n.so on Linux) for COBOL programs compiled with the [\-cp](\) option.
 
 The folder native/src in the isCOBOL installation directory includes the necessary items to build this library.
 
 Add the code of your static functions to the file “usercall.c”, then build the library following the instructions below.
 
-Make sure that the directory containing the stacall library is available in the operating system library search path, e.g. LD\_LIBRARY\_PATH on Linux, current directory or PATH on Windows)
+Make sure that the directory containing the stacall library is available in the operating system library search path, e.g. LD_LIBRARY_PATH on Linux, current directory or PATH on Windows
 
 ##### Building Stacall on Unix/Linux
 

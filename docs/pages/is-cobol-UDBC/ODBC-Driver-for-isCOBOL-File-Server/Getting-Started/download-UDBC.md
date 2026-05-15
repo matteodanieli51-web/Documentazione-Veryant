@@ -2,7 +2,7 @@
 
 #### Windows
 
-1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/Getting-Started/download-JRE).
+1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./download-JRE).
 2. Go to "[https://support.veryant.com](https://support.veryant.com)".
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.
@@ -10,10 +10,12 @@
 6. Run the downloaded installer to install the files.
 **Note** - If your Windows has the option "Run as Administrator", you should run the setup with that option, otherwise the setting of environment variables might silently fail.
 7. Select the desired items from the list of products when prompted.
-![](/pages/is-cobol-UDBC/images/winsetup_odbc.png)
-8. Select your JDK/JRE when prompted
-![](/pages/is-cobol-UDBC/images/winsetup-jdk.png)
-9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/activate-license).
+![](images/winsetup_odbc.png)
+
+1. Select your JDK/JRE when prompted
+![](images/winsetup_jdk.png)
+
+1. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./activate-license).
 
 #### Quiet mode
 

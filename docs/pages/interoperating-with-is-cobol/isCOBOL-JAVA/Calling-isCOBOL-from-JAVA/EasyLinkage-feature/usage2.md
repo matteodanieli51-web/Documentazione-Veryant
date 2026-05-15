@@ -12,11 +12,11 @@ In order to make the Compiler generate stub classes, the EasyLinkage feature mus
 iscobol.compiler.easylinkage=2
 ```
 
-See [Properties for the EasyLinkage feature]() for all the configuration settings that affect the EasyLinkage feature.
+See [Properties for the EasyLinkage feature](\) for all the configuration settings that affect the EasyLinkage feature.
 
-EasyLinkage and its settings can also be set directly in the source code through the [SET Directive]().
+EasyLinkage and its settings can also be set directly in the source code through the [SET Directive](\).
 
-The \-od compiler option is ignored; the bridge class is always generated in the "easylinkage" subfolder in the directory pointed by [iscobol.compiler.generate.root\_dir]() whose default is the same directory as the COBOL source file.
+The \-od compiler option is ignored; the bridge class is always generated in the "easylinkage" subfolder in the directory pointed by [iscobol.compiler.generate.root_dir](\) whose default is the same directory as the COBOL source file.
 
 Let’s analyze a small practical example.
 

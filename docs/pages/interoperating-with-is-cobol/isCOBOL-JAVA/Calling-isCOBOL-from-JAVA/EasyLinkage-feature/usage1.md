@@ -12,11 +12,11 @@ In order to make the Compiler generate bridge classes, the EasyLinkage feature m
 iscobol.compiler.easylinkage=1
 ```
 
-See [Properties for the EasyLinkage feature](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.31.html#ww1058142 "Configuration Properties") for all the configuration settings that affect the EasyLinkage feature.
+See [Properties for the EasyLinkage feature](\) for all the configuration settings that affect the EasyLinkage feature.
 
-EasyLinkage and its settings can also be set directly in the source code through the [SET Directive](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.20.html#ww1028051 "SET Directive").
+EasyLinkage and its settings can also be set directly in the source code through the [SET Directive](\).
 
-The generated bridge class is produced according to the current compiler options. For example, if the \-jj option is used on the command line, then the Java source of the bridge program is left on disc. The only option ignored is \-od; the bridge class is always generated in the "easylinkage" subfolder in the directory indicated by the setting of [iscobol.compiler.generate.root\_dir](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.31.html#ww1108473 "Configuration Properties") whose default is the same directory as the COBOL source file.
+The generated bridge class is produced according to the current compiler options. For example, if the \-jj option is used on the command line, then the Java source of the bridge program is left on disc. The only option ignored is \-od; the bridge class is always generated in the "easylinkage" subfolder in the directory indicated by the setting of [iscobol.compiler.generate.root_dir](\) whose default is the same directory as the COBOL source file.
 
 The generated bridge class provides the following constructors:
 

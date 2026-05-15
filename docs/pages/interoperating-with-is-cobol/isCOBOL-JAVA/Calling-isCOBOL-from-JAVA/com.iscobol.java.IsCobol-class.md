@@ -36,7 +36,7 @@ public class test {
 }
 ```
 
-Consult the javadoc installed with isCOBOL in the folder $ISCOBOL\_HOME/javadoc for the full reference of the IsCobol and CobolVarHelper classes.
+Consult the javadoc installed with isCOBOL in the folder $ISCOBOL_HOME/javadoc for the full reference of the IsCobol and CobolVarHelper classes.
 
 #### The com.iscobol.rts.IscobolRuntimeException and com.iscobol.java.StopRunAsException Classes
 

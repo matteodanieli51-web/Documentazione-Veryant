@@ -107,12 +107,12 @@ This is a typical case where -s78c is necessary:
 | -Rw | The same option is available in isCOBOL, but the usage is slightly different.In isCOBOL the option can’t be repeated, so all the reserved words must be specified at once separated by comma. E.g. the following Acu options:-rw *word1* -rw *word2* are translated to isCOBOL as follows:-rw=*word1,word2* |
 | -S# (where # is the number of columns for each tab) | Use -stl=# compiler option |
 | -Sa | The same option is available in isCOBOL.Use -sa compiler option and avoid using -smat |
-| -Si | Add [IF Directive*() to the source |
+| -Si | Add [IF Directive*](\) to the source |
 | -Sl | The same option is available in isCOBOL.Use -sl compiler option. |
 | -Sp | The same option is available in isCOBOL.Use -sp=*folders* compiler option. **Note** - The isCOBOL compiler looks for copybooks and resources with relative pathname in the current directory first. The paths specified by the -sp option are considered only if the item is not found in the current directory. |
 | -Sr | Use -stl=8,4 |
 | -St | The same option is available in isCOBOL.Use -st compiler option and avoid using -smat |
-| -Sx | Add [IF Directive]() to the source |
+| -Sx | Add [IF Directive](\) to the source |
 | -v | The same option is available in isCOBOL.Use -v compiler option |
 | -Va | Not available in isCOBOL.isCOBOL has an option named -va, but it’s for other purposes |
 | -Vc | Default behavior using isCOBOL |
@@ -131,4 +131,4 @@ This is a typical case where -s78c is necessary:
 | -Zy | The same option is available in isCOBOL.Use -zy compiler option |
 | -Zz | Default behavior using isCOBOL |
 
-The latest ACUCOBOL-GT compilers support conditional compilation through the use of special constructs in the COBOL source file and by accepting command-line arguments that turn on compiler directives and set constants to values. This feature is implemented in compatibility with Micro Focus. Refer to [Compiler options](/pages/transitioning-to-is-cobol/Transitioning-from-MicroFocus/compiler-options) in the *Transitioning from Micro Focus* guide for details about how to obtain the same result with isCOBOL.
+The latest ACUCOBOL-GT compilers support conditional compilation through the use of special constructs in the COBOL source file and by accepting command-line arguments that turn on compiler directives and set constants to values. This feature is implemented in compatibility with Micro Focus. Refer to [Compiler options](\) in the *Transitioning from Micro Focus* guide for details about how to obtain the same result with isCOBOL.

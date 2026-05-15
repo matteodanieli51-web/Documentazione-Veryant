@@ -13,9 +13,9 @@ After the installation, you can create a DSN by following these steps:
 
 The following panel will appear
 
-![](/pages/is-cobol-UDBC/images/UDBCodbc.png)
+![](images/UDBCodbc.png)
 
-5. Compile the fields as follows:
+1. Compile the fields as follows:
 
 | | |
 | --- | --- |

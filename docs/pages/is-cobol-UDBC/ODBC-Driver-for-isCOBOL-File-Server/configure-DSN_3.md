@@ -1,6 +1,6 @@
 ## How to configure the DSN (Multi Companies)
 
-![](/pages/is-cobol-UDBC/images/veryantOdbcMulti.png)
+![](images/veryantOdbcMulti.png)
 
 Using multi-company support option, you can manage customer data files from several companies with a single DSN. The data files from each customer (company) are structured the same and even named the same, but stored in a different directory.
 

@@ -8,6 +8,6 @@ Windows-based applications like Microsoft Office and Crystal Reports, applicatio
 
 The isCOBOL UDBC solution provides two products:
 
-- The [ODBC Driver for isCOBOL File Server](/pages/is-cobol-UDBC/ODBC-Driver-for-isCOBOL-File-Server/ODBC-Driver-for-isCOBOL-File-Server), a ODBC driver that can be installed on every Windows machine and allows applications like Microsoft Office and Crystal Reports to access your COBOL files. This solution is preferable in most of the cases as it’s the simplest to set up.
+- The [ODBC Driver for isCOBOL File Server](./ODBC-Driver-for-isCOBOL-File-Server/ODBC-Driver-for-isCOBOL-File-Server), a ODBC driver that can be installed on every Windows machine and allows applications like Microsoft Office and Crystal Reports to access your COBOL files. This solution is preferable in most of the cases as it’s the simplest to set up.
 
-- The [isCOBOL UDBC](/pages/is-cobol-UDBC/isCOBOL-UDBC/iscobol-udbc) software kit, that is composed of a SQL Server engine, a command line SQL client, a ODBC driver and a JDBC driver. This solution is usually suggested when the clients are not Windows or, more generally speaking, when a JDBC access is required.
+- The [isCOBOL UDBC](./isCOBOL-UDBC/iscobol-udbc) software kit, that is composed of a SQL Server engine, a command line SQL client, a ODBC driver and a JDBC driver. This solution is usually suggested when the clients are not Windows or, more generally speaking, when a JDBC access is required.

@@ -6,4 +6,4 @@ The isCOBOL Driver for File Server is a communications interface designed to giv
 
 isCOBOL Driver for File Server connects directly to the isCOBOL File Server without communicating with the UDBC SQL Engine. This characteristic makes it lighter solution than the ODBC Driver for UDBC SQL Server to interface File Server data from ODBC.
 
-![](/pages/is-cobol-UDBC//images/ODBC.png)
+![](images/ODBC.png)

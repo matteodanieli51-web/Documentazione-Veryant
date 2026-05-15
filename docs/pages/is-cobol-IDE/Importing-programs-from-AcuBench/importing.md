@@ -21,11 +21,11 @@ The best practice for importing AcuBench programs and their items consists of th
 2. import file layouts
 3. import programs
 
-To import an AcuBench file layout, refer to [Importing a Data Layout from AcuBench](), discussed below.
+To import an AcuBench file layout, refer to [Importing a Data Layout from AcuBench](\), discussed below.
 
 To import an AcuBench program:
 
-1. Right click on the project name in the [isCOBOL Explorer]() area.
+1. Right click on the project name in the [isCOBOL Explorer](\) area.
 2. Choose *Import* from the pop-up menu.
 3. Choose *isCOBOL / AcuBench(c)/Totem(c) Program* from the tree.
 ![Figura 1.](figura1.png)

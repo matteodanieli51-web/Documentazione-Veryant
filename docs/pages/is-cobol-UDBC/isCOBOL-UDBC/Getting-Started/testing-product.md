@@ -29,7 +29,7 @@ Create a new database in the following way:
 3. Press Enter to confirm
 
 Complete the mandatory fields as follows:
-![](/pages/is-cobol-UDBC/images/udbc-verysample.png)
+![](images/udbc-verysample.png)
 Click on the *Save* button.
 
 ##### Linux/Unix

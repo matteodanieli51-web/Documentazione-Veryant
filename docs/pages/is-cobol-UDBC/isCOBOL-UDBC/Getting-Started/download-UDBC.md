@@ -2,7 +2,7 @@
 
 #### Windows
 
-1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/download-JRE).
+1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./download-JRE).
 2. Go to "[https://support.veryant.com](https://support.veryant.com)".
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.
@@ -10,10 +10,10 @@
 6. Run the downloaded installer to install the files.
 **Note** - If your Windows has the option "Run as Administrator", you should run the setup with that option, otherwise the setting of environment variables might silently fail.
 7. Select the desired items from the list of products when prompted.
-![](/pages/is-cobol-UDBC/images/winsetup_udbc.png)
-8. Select your JDK/JRE when prompted
-![](/pages/is-cobol-UDBC/images/winsetup-jdk.PNG)
-9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/activate-license).
+![](images/winsetup_udbc.png)
+1. Select your JDK/JRE when prompted
+![](images/winsetup_jdk.PNG)
+1. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./activate-license).
 
 ##### Quiet mode
 
@@ -25,11 +25,11 @@ A response file is generated automatically after an installation is finished. Th
 
 When an installer is executed, it checks whether a file with the same name and the .varfile extension can be found in the same directory and loads that file as the response file. For example, if an installer is named *foo_setup.msi* on Windows, the response file next to it has to be named *foo_setup.varfile*.
 
-For more information about msi setups and their command line options, see [Microsoft Standard Installer Command-Line Options]().
+For more information about msi setups and their command line options, see [Microsoft Standard Installer Command-Line Options](\).
 
 #### Linux, FreeBSD, Mac OSX and SunOS
 
-1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](/pages/is-cobol-UDBC/isCOBOL-UDBC/Getting-Started/download-JRE).
+1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./download-JRE).
 2. Go to "[https://support.veryant.com](https://support.veryant.com)".
 3. Sign in with your User ID and Password.
 4. Click on the "Download Software" link.

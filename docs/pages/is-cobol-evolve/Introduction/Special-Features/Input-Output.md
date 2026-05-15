@@ -16,7 +16,7 @@ END-EXEC.
 77 MY-VAR PIC N(10).
 ```
 
-- The ability to interact with databases while maintaining standard COBOL statements (see [isCOBOL Evolve: DatabaseBridge](pages/is-cobol-DB-bridge/iscobol-DB-Bridge) for details).
+- The ability to interact with databases while maintaining standard COBOL statements (see [isCOBOL Evolve: DatabaseBridge](./pagina_in_creazione) for details).
 
 - The ability to associate sequential files with the standard input, output and error.
 

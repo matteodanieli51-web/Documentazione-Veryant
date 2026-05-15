@@ -7,7 +7,7 @@ Before importing your Cobol-WOW projects in Veryant’s IDE you should review th
 
 #### Code Generator
 
-![](/pages/transitioning-to-is-cobol/images/WOW-pref-codegen.png)
+![](images/WOW-pref-codegen.png)
 
 Here you can customize the way isCOBOL IDE generates the source code of your Cobol-WOW programs:
 
@@ -25,7 +25,7 @@ Here you can customize the way isCOBOL IDE generates the source code of your Cob
 
 Screen Designer
 
-![](/pages/transitioning-to-is-cobol/images/WOW-pref-screen.png)
+![](images/WOW-pref-screen.png)
 
 Here you can configure the Screen Designer:
 

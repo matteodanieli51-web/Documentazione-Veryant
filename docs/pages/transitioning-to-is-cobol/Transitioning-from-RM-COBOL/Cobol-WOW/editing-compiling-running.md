@@ -6,7 +6,7 @@ The code editor in isCOBOL’s IDE is slightly different from Cobol-WOW’s Desi
 
 Cobol-WOW allows you to choose the section from a combo box, while isCOBOL IDE shows all the sections in a tree view on the left:
 
-![](/pages/transitioning-to-is-cobol/images/WOW-designer.png)
+![](images/WOW-designer.png)
 
 In order to generate the source code of your programs:
 
@@ -56,6 +56,6 @@ Or
 
 [1] Note that Cobol-WOW programs can’t run in webDirect environment. If you select *isCOBOL EIS webDirect* from the *Debug As* menu, the effects are unpredictable.
 
-The isCOBOL Debugger is different than the one in Cobol-WOW. Refer to [Debugger]() for details about the usage of the isCOBOL Debugger.
+The isCOBOL Debugger is different than the one in Cobol-WOW. Refer to [Debugger](\) for details about the usage of the isCOBOL Debugger.
 
 Note that pressing the *Pause* button on the keyboard while debugging a WOW program doesn’t enter the debugger like it does with standard GUI COBOL programs. In order to enter the debugger, you need to click on the *Pause* button in the Debugger tool-bar.

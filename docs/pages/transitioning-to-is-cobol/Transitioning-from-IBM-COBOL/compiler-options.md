@@ -10,6 +10,6 @@
 
 | | |
 | --- | --- |
-| -dci | Use IBM sign encoding and IBM COMP sizes. COMP sizes are 1, 2, 4, 8, 12 or 16 depending on the item picture.See [USAGE clause]() for details about how numeric data items are affected by this option. |
-| -dcii | Use IBM sign encoding and IBM COMP sizes. COMP sizes are 2, 4, 8 or 16 depending on the item picture.See [USAGE clause]() for details about how numeric data items are affected by this option. |
+| -dci | Use IBM sign encoding and IBM COMP sizes. COMP sizes are 1, 2, 4, 8, 12 or 16 depending on the item picture.See [USAGE clause](\) for details about how numeric data items are affected by this option. |
+| -dcii | Use IBM sign encoding and IBM COMP sizes. COMP sizes are 2, 4, 8 or 16 depending on the item picture.See [USAGE clause](\) for details about how numeric data items are affected by this option. |
 | | |

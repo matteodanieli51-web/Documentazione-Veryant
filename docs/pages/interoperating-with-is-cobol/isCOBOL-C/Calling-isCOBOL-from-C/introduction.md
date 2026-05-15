@@ -1,6 +1,6 @@
 ## Calling isCOBOL from C
 
-### INTRODUCTION
+### Introduction
 
 This chapter describes how a C program can call a COBOL program using isCOBOL.
 

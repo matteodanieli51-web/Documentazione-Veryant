@@ -1,4 +1,4 @@
-import algoliasearch from 'algoliasearch';
+import { algoliasearch } from 'algoliasearch';
 import { globby } from 'globby';
 import fs from 'fs/promises';
 import { convert } from 'html-to-text';
@@ -6,23 +6,20 @@ import path from 'path';
 import 'dotenv/config'; 
 
 // --- CONFIGURAZIONE ---
-// Questi leggono i valori dal tuo file .env
 const appId = process.env.ALGOLIA_APP_ID;
 const adminKey = process.env.ALGOLIA_ADMIN_KEY;
 const indexName = process.env.ALGOLIA_INDEX_NAME;
-// Legge il sito dal file .env, se non c'è usa un default
 const SITE_URL = process.env.SITE_URL || 'https://docs.veryant.com';
 
-// Inizializzazione corretta
+// inizializzazione per Algolia v5
+// N.B. client.initIndex non esiste più in questa versione
 const client = algoliasearch(appId, adminKey);
-const index = client.initIndex(indexName);
 
 async function uploadToAlgolia() {
   try {
     console.log('--- Inizio indicizzazione locale per Algolia AI ---');
 
-    // Assicurati che questo percorso corrisponda a dove VitePress genera l'output
-    const files = await globby('docs/.vitepress/dist/**/*.html', {
+    const files = await globby('.vitepress/dist/**/*.html', {
       ignore: ['**/404.html', '**/dist/assets/**']
     });
 
@@ -45,20 +42,49 @@ async function uploadToAlgolia() {
       });
 
       let relativePath = file
-        .replace('docs/.vitepress/dist', '')
-        .replace(/index\.html$/, '');
+        .replace('.vitepress/dist', '')
+        .replace(/index\.html$/, '')
+        .replace(/\.html$/, '');
 
-      return {
+      // Assicurati che inizi sempre con /
+      if (!relativePath.startsWith('/')) {
+        relativePath = '/' + relativePath;
+      } 
+
+    /*  let relativePath = file
+        .replace('.vitepress/dist', '')
+        .replace(/index\.html$/, '')
+        .replace(/\.html$/, ''); 
+
+    return {
         objectID: relativePath || '/',
         title: path.basename(file, '.html'),
         content: text.substring(0, 8000),
-        url: `${SITE_URL}${relativePath}`,
+        url: `${SITE_URL}${relativePath.startsWith('/') ? relativePath.slice(1) : relativePath}`,
+        lang: 'it-IT',
         lastUpdated: new Date().toISOString()
       };
-    }));
+    })); */ 
+    return {
+        objectID: relativePath,
+        // Struttura che piace a DocSearch
+        hierarchy: {
+            lvl0: 'Documentazione',
+            lvl1: path.basename(file, '.html'),
+            lvl2: null
+    },
+      content: text.substring(0, 8000),
+      url: `${SITE_URL.replace(/\/$/, '')}${relativePath}`,
+      type: 'content'
+    }})); 
 
-    console.log(`Inviando ${records.length} pagine ad Algolia...`);
-    await index.saveObjects(records);
+      console.log(`Inviando ${records.length} pagine ad Algolia...`);
+    
+    // In Algolia v5, si passa indexName direttamente nel metodo saveObjects
+    await client.saveObjects({
+      indexName: indexName,
+      objects: records
+    });
     
     console.log(`✅ Successo! Dati caricati correttamente nell'indice: ${indexName}`);
 

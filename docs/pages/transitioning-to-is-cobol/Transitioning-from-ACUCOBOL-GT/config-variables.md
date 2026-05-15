@@ -1,9 +1,9 @@
 ## Configuration variables
 
-- Most of the ACUCOBOL-GT configuration variables have an equivalent configuration property in isCOBOL. The easiest way to convert the ACUCOBOL-GT configuration file to the equivalent isCOBOL property file is by using the [ISCONFIG]() utility.
-- ACUCUBOL-GT allowed users to specify the configuration file through the A\_CONFIG system environment variable; isCOBOL doesn’t have an equivalent system environment variable, so your options are:
-  - name the configuration file "iscobol.properties" and place it in a directory where it will be automatically loaded (see [Configuration files]() for details), or
-  - pass the configuration file on the command line through the [-c]() option.
+- Most of the ACUCOBOL-GT configuration variables have an equivalent configuration property in isCOBOL. The easiest way to convert the ACUCOBOL-GT configuration file to the equivalent isCOBOL property file is by using the [ISCONFIG](\) utility.
+- ACUCUBOL-GT allowed users to specify the configuration file through the A_CONFIG system environment variable; isCOBOL doesn’t have an equivalent system environment variable, so your options are:
+  - name the configuration file "iscobol.properties" and place it in a directory where it will be automatically loaded (see [Configuration files](\) for details), or
+  - pass the configuration file on the command line through the [-c](\) option.
 - In order to have Acucobol-GT behaviors that are not default in isCOBOL, the following boolean properties should be set in the isCOBOL configuration:
 
 ```cobol
@@ -63,7 +63,7 @@ To have the same message box layout as ACUCOBOL-GT, set:
 iscobol.gui.messagebox.font=Segoe Ui-8
 ```
 
-The [ISCONFIG]() utility takes care of the above settings.
+The [ISCONFIG](\) utility takes care of the above settings.
 
 - If you ACCEPT FROM ENVIRONMENT a variable that was not set, ACUCOBOL-GT returns the variable default value, isCOBOL returns spaces or zero (depending on the destination item picture) instead.
 - DLL_CONVENTION is available in isCOBOL but does not support alphabetic values like "WINAPI". Use numeric values.
@@ -92,11 +92,11 @@ Must be changed as follows:
 ACCEPT Screen1 MOUSE FLAGS 2.
 ```
 
-- The same feature as DECIMAL-POINT configuration variable is provided through the compiler option [-sddp]().
-- COLOR\_MAP HIGH, LOW and DEFAULT can be remapped using [iscobol.colormap.high *](), [iscobol.colormap.low *]() and [iscobol.colormap.default *]() configuration properties. Other COLOR\_MAP settings are not supported.
+- The same feature as DECIMAL-POINT configuration variable is provided through the compiler option [-sddp](\).
+- COLOR\_MAP HIGH, LOW and DEFAULT can be remapped using [iscobol.colormap.high *](\), [iscobol.colormap.low *](\) and [iscobol.colormap.default *](\) configuration properties. Other COLOR_MAP settings are not supported.
 - When a file is created by OPEN I-O having IO-CREATES set to 1, ACUCOBOL-GT sets the file status to "00", isCOBOL sets the file status to "05", instead.
 - When a file is created by OPEN EXTEND having EXTEND-CREATES set to 1, ACUCOBOL-GT sets the file status to "00", isCOBOL sets the file status to "05", instead.
-- The CODE_CASE feature can be obtained at compile time by using the [-ssnl]() and [-ssnu]() options.
+- The CODE_CASE feature can be obtained at compile time by using the [-ssnl](\) and [-ssnu](\) options.
 - The hotkey configuration is slightly different in isCOBOL. An entry like the following one:
 
 ```cobol
@@ -109,10 +109,10 @@ need to be translated to:
 iscobol.hot_key.MYPROG=201
 ```
 
-- The WAIT_FOR_LOCKS configuration variable could be set to 1 meaning "wait for the locked record if no Declarative is available for the file, otherwise return error". The same behavior can be obtained in isCOBOL by compiling programs with the [-crlk]() option.
-- The isCOBOL equivalent of A_CHECKDIV is the property [iscobol.checkdiv *]().
-- The isCOBOL equivalent of WINDOW_TITLE is the property [iscobol.gui.window_title]().
-- The isCOBOL equivalent of ICON is the property [iscobol.gui.icon_file]().
+- The WAIT_FOR_LOCKS configuration variable could be set to 1 meaning "wait for the locked record if no Declarative is available for the file, otherwise return error". The same behavior can be obtained in isCOBOL by compiling programs with the [-crlk](\) option.
+- The isCOBOL equivalent of A_CHECKDIV is the property [iscobol.checkdiv *](\).
+- The isCOBOL equivalent of WINDOW_TITLE is the property [iscobol.gui.window_title](\).
+- The isCOBOL equivalent of ICON is the property [iscobol.gui.icon_file](\).
 - The WIN3_GRID setting supports less values in isCOBOL. You can specify only high intensity colors using values from 1 to 7.
 - In isCOBOL, setting a keystroke to a different function doesn’t reset the current setting, but appends information to it. For example, having the following setting in the environment:
 
@@ -152,7 +152,7 @@ with
 iscobol.remote_conf=/path/to/remote_configuration_file
 ```
 
-• Command line switches are passed through the [iscobol.switches *]() configuration property in isCOBOL. For example, the following two commands:
+• Command line switches are passed through the [iscobol.switches *](\) configuration property in isCOBOL. For example, the following two commands:
 
 ```cobol
 wrun32 -1 prog1

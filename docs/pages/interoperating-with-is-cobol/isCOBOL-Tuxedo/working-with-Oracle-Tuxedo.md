@@ -11,7 +11,9 @@ isCOBOL and Tuxedo can work together in a distributed processing (client/server)
 - Legacy COBOL approach based on calling C routines provided from Tuxedo
 - Java approach based on OOP java methods to be used to create clients and services.
 
-In a distributed processing environment, the interaction occurs as depicted in the following diagram:![](/pages/interoperating-with-is-cobol/images/tuxedo.png)
+In a distributed processing environment, the interaction occurs as depicted in the following diagram:
+
+![](images/Tuxedo.png)
 
 In this environment, isCOBOL interoperates with Tuxedo using the same routines used to call C programs (COBOL-calling-C routines on the client and C-calling-COBOL routines on the server) or using a pure Java approach based on [Oracle Tuxedo Java Programming guide](https://docs.oracle.com/cd/E72452_01/tuxedo/docs1222/pgj/pgint.html) that can take advantage of a traditional Tuxedo multithread model.
 
