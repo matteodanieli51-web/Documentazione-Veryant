@@ -8,7 +8,7 @@ The Veryant isCOBOL extension offers the following features:
 
 COBOL keywords, strings and identifiers are colored with different colors so you can easily notice typo errors like misspelled keywords or unclosed strings. The syntax coloring also makes the source code easier to view.
 
-![](images/vs-syntax-coloring.png)
+![](../images/vs-syntax-coloring.png)
 
 ## Vertical bars
 
@@ -42,31 +42,31 @@ You can switch the vertical bars anytime with the following commands from the co
 
 • *isCOBOL: set the rulers for variable format*
 
-![](images/vs-rulers.png)
+![](../images/vs-rulers.png)
 
 ## Variable suggestion
 
 Variables are suggested on several COBOL commands, such as MOVE, IF, SUBTRACT, ADD and others. Constants are also considered, each one appearing with a different icon on IntelliSense.
 
-![](images/vs-variable-suggestion.png)
+![](../images/vs-variable-suggestion.png)
 
 ## Paragraph suggestion and documentation
 
 This extension suggests paragraphs based on what is typed on perform clause.
 
-![](images/vs-paragraph-suggestion.png)
+![](../images/vs-paragraph-suggestion.png)
 
 ## Code highlight
 
 When you click over some COBOL keywords, the related keywords are highlighted for better understanding.
 
-![](images/vs-code-highlight.png)
+![](../images/vs-code-highlight.png)
 
 ## Peek definition
 
 You can also peek at COBOL variable and paragraph definitions.
 
-![](images/vs-peek-def.png)
+![](../images/vs-peek-def.png)
 
 ## Formatter and loop completion
 

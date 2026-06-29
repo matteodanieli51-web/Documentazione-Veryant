@@ -1,15 +1,8 @@
-# Key Topics
+﻿---
+title: isCOBOL Application Server
+description: Documentazione relativa a isCOBOL Application Server
+---
 
-- Usage of isCOBOL Server
-  
-- Usage of isCOBOL Client
-  
-- Client deployment
+# isCOBOL Application Server
 
-- Remote objects
-
-- isCOBOL File Server
-
-- isCOBOL LoadBalancer
-
-- Batch processing through isCOBOL Server (TurboRun)
+Contenuto segnaposto per la pagina di documentazione di isCOBOL Application Server.

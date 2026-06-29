@@ -2,13 +2,13 @@
 
 After a successful installation, the following item appears in the “extensions” sidebar:
 
-![](images/veryant-vsix.png)
+![](./images/veryant-vsix.png)
 
 Click on the gear icon (or right click) and choose “extension Settings” to configure the Veryant isCOBOL extension.
 
 Settings can be made at User level, Workspace level and Folder level:
 
-![](images/vs-settings-level.PNG)
+![](./images/vs-settings-level.PNG)
 
 Settings made at User level are used for every Workspace.
 

@@ -1,9 +1,9 @@
-## The JDK and JRE
+### The JDK and JRE
 
 isCOBOL Evolve requires a Java Development Kit (JDK) for development and a Java Runtime Environment (JRE) for deployment.
 
-| Required to compile a COBOL program | Required to run a COBOL program | 
-| :--- | :--- | 
+| **Required to compile a COBOL program** | **Required to run a COBOL program** |
+| :--- | :--- |
 | isCOBOL Compiler | isCOBOL Runtime Framework |
 | Java Development Kit (JDK) | Java Runtime Environment (JRE) |
 

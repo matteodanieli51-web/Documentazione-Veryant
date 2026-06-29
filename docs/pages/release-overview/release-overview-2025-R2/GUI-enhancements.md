@@ -1,8 +1,8 @@
-# GUI enhancements
+﻿## GUI enhancements
 
 IsCOBOL Evolve 2025 R2 integrates a new LAF (visual appearance and user interaction style of applications) named FlatLaf that supports different themes. Several improvements have been implemented in graphical controls: list-box and tree-view controls now support rollover properties, tab-control adds support for multiple hints and close buttons icons, now you can customize the load on demand feature of the grid control, and a new style has been added in the date-entry control.
 
-## FlatLaf
+### FlatLaf
 
 The new command line option --flatlaf ```<theme>``` for the isrun and isclient commands has been implemented to easily integrate the execution of COBOL applications with the FlatLaf Look & Feel. FlatLaf is a modern open-source cross-platform Look and Feel for Java applications. It looks almost flat, clean, simple, and elegant. FlatLaf comes with Light, Dark, IntelliJ and Darcula themes, that can be activated from the command line, for example:
 
@@ -35,21 +35,21 @@ For best results, especially for dark themes, the program should minimally manag
         ...
 ```
 
-In figures 1 through 3 you can see the same program running with different LAF options to show varying results. In Figure 1, Windows look, the program is executed without any option, which defaults to --system being used. Figure 2, FlatLightLaf shows the program running using the --flatlaf FlatLightLaf option and in Figure 3, FlatDarkLaf the program is executed with the --flatlaf FlatDarkLaf option.
+In figures 1 through 3 you can see the same program running with different LAF options to show varying results. In Figure 1, *Windows look*, the program is executed without any option, which defaults to --system being used. Figure 2, *FlatLightLaf* shows the program running using the --flatlaf FlatLightLaf option and in Figure 3, *FlatDarkLaf* the program is executed with the --flatlaf FlatDarkLaf option.
 
 **Figure 1.** Windows look.
 
-![Figure 1. Windows look.](figura1.png)
+![](../images/flat-windows.png)
 
 **Figure 2.**  FlatLightLaf look.
 
-![Figure 2.  FlatLightLaf look.](figura2.png)
+![](../images/flat-light.png)
 
 **Figure 3.** FlatDarkLaf look.
 
-![Figure 3. FlatDarkLaf look.](figura3.png)
+![](../images/flat-dark.png)
 
-## Rollover effect
+### Rollover effect
 
 Rollover properties are already available in the grid control to set the rollover row color -- the color that is applied to an item when the mouse hovers over it. In this release the tree-view and list-box controls have been improved and now support the rollover item color. Setting the item-rollover-color property -- or alternatively, the item-rollover-foreground-color and item-rollover-background-color properties -- in the tree-view and list-box controls will result in the item being painted with the specified colors when the mouse hovers over them.
 
@@ -79,21 +79,21 @@ The following code shows how to apply the new color properties in the tree-view 
                  ...
 ```
 
-The running program is shown in Figure 4, Tree-view colors and Figure 5, List-box colors. On both controls, the item highlighted by the mouse pointer is now more noticeable.
+The running program is shown in Figure 4, *Tree-view colors* and Figure 5, *List-box colors*. On both controls, the item highlighted by the mouse pointer is now more noticeable.
 
 **Figure 4.** Tree-view colors.
 
-![Figure 4. Tree-view colors.](figura4_1.png)
+![](../images/tv-roll.png)
 
-![Figure 4. Tree-view colors.](figura4_2.png)
+![](../images/tv-table-roll.png)
 
 **Figure 5.** List-box colors.
 
-![Figure 5. List-box colors.](figura5_1.png)
+![](../images/list-roll.png)
 
-![Figure 5. List-box colors.](figura5_2.png)
+![](../images/list-check-roll.png)
 
-## Tab-Control
+### Tab-Control
 
 The tab-control has been improved by adding the option to set a specific hint for every page. When setting the new property tab-hint in conjunction with the tab-index, the specified hint is shown when the mouse hovers over the tab title area of every style of tab-control: standard, allow-container and accordion.
 
@@ -126,13 +126,13 @@ For example, the code snippet:
 ```
 
 creates two tab-controls that have the new close-buttons style, and specific page hints are applied to the first tab-control. The tb2-evt procedure is linked to the second tab-control and it performs a check to cancel the closing of a tab page if a specific condition is not met.
-The result of the program running is shown in Figure 6, Tab-control enhancements.
+The result of the program running is shown in Figure 6, *Tab-control enhancements*.
 
 **Figure 6.** Tab-control enhancements.
 
-![Figure 6. Tab-control enhancements.](figura6.png)
+![](../images/tab-control.png)
 
-## Grid
+### Grid
 
 The grid-control has a property, LOD-THRESHOLD, that can be used to dynamically load the contents as the user scrolls in the grid, allowing a large number of records to be efficiently shown in the grid. Starting from this release, the MSG-LOAD-ON-DEMAND event has been improved by setting the EVENT-DATA-1 data item to represent the user action that triggered the loading event. The application can use this information to process the event accordingly. Additionally, setting EVENT-ACTION data item to EVENT-ACTION-COMPLETE will prevent the cursor from moving automatically if the action was already performed by code.
 
@@ -164,7 +164,7 @@ For example, the following code snippet:
 
 performs different actions based on the key that the user pressed. In this example, scrolling using the arrow keys or using the mouse will load a set number of records, while pressing Ctrl+End will load all the records.
 
-## Date-entry
+### Date-entry
 
 In the date-entry control, a new style named TODAY-BUTTON-VISIBLE has been implemented to show the “Today” button in the calendar opened to choose the date.
 
@@ -176,8 +176,8 @@ For example, the following code snippet:
               ...
 ```
 
-uses the new style, and running the program is shown in Figure 7, Date-entry Today button. When the “Today” button is pressed, the calendar closes, setting the value to the current date.
+uses the new style, and running the program is shown in Figure 7, *Date-entry Today button*. When the “Today” button is pressed, the calendar closes, setting the value to the current date.
 
 **Figure 7.** Date-entry Today button.
 
-![Figure 7. Date-entry Today button.](figura7.png)
+![](../images/date-entry-today.png)

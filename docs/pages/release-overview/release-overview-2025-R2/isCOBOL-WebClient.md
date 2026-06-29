@@ -1,8 +1,8 @@
-# IsCOBOL WebClient
+﻿## IsCOBOL WebClient
 
 IsCOBOL WebClient 2025 R2 features upgraded components, such as Jetty embedded server, and supports Java 21. This version also supports idle instances to reduce the startup time and includes an embedded Session Pool in the Cluster Server.
 
-## Upgraded components
+### Upgraded components
 
 Jetty 12 is the integrated servlet container used to serve contents, and it supports the execution of WebClient with Java 21. This completes support of the latest Java LTS version for all Veryant products.
 
@@ -10,23 +10,23 @@ Jetty 12 requires at least Java 17 to run, and WebClient will now automatically 
 
 WebClient will handle the switch automatically and transparently.
 
-## Idle instances
+### Idle instances
 
-This feature lets you define a number of instances of a program that will be automatically started before any user actually makes a request. The purpose of idle instances is to reduce the startup time users must wait by eliminating the JVM startup delay. You can configure how many idle instances should always be available in the “App config” section of the Admin Console. In Figure 8, App configuration with 4 idle instances, shows a configuration that sets 4 idle instances for the selected application.
+This feature lets you define a number of instances of a program that will be automatically started before any user actually makes a request. The purpose of idle instances is to reduce the startup time users must wait by eliminating the JVM startup delay. You can configure how many idle instances should always be available in the “App config” section of the Admin Console. In Figure 8, *App configuration with 4 idle instances*, shows a configuration that sets 4 idle instances for the selected application.
 
 **Figure 8.** App configuration with 4 idle instances.
 
-![Figure 8. App configuration with 4 idle instances.](figura8.png)
+![](../images/wc-idle.png)
 
 Using the above configuration, you will always find 4 additional Java processes in your system. These processes are created as soon as you save the modification to the configuration, and every time you restart the WebClient service.
 
 Whenever a user requests the execution of the webapp, one of these idle Java processes will be used. Since it has already started, the user doesn’t have to wait for the JVM initialization and will experience a faster application startup time. After a sleeping Java process has been used, the WebClient service will immediately start a new one so that the configured number of idle instances is always guaranteed.
 
-You can see the count and the list of currently running idle instances in the Sessions view in the Admin Console, as depicted in Figure 9, IDLE instances in the Sessions view.
+You can see the count and the list of currently running idle instances in the Sessions view in the Admin Console, as depicted in Figure 9, *IDLE instances in the Sessions view*.
 
 **Figure 9.** IDLE instances in the Sessions view.
 
-![Figure 9. IDLE instances in the Sessions view.](figura9.png)
+![](../images/wc-sessions.png)
 
 When you change your app configuration, idle instances are automatically recreated.
 
@@ -35,13 +35,13 @@ The Pre-launch configuration entry lets you choose if the application main class
 - NONE: The launch of idle instance stops right before calling the main class defined in the app launch configuration. The main class of your app will be called after the user requests a new instance. This is the default.
 - MAIN_CLASS: This option launches the idle instance fully, including calling the main class defined in app launch configuration. When a user requests a new connection, the program will be instantly ready for use. This choice produces a faster startup but has some limitations: because the idle instance is launched before the user requests the program, user-defined variables in configuration parameters – such as userDir, vmArgs, etc. -- won’t be recognized.
 
-The next picture, Figure 10, Pre-launch setting, shows the Pre-launch option set to MAIN_CLASS.
+The next picture, Figure 10, *Pre-launch setting*, shows the Pre-launch option set to MAIN_CLASS.
 
 **Figure 10.** Pre-launch setting.
 
-![Figure 10. Pre-launch setting.](figura10.png)
+![](../images/wc-prelaunch.png)
 
-## Embedded Session Pool in Cluster Server
+### Embedded Session Pool in Cluster Server
 
 The Cluster Server can now be started with a Session Pool included in the same java process. The embedded Session Pool is exactly the same as a standalone Session Pool. To start a Cluster Server with embedded Session Pool, use the -clustersessionpool command line option.
 
@@ -77,6 +77,6 @@ webclient.propertiesFile.sessionPool=/path/to/webclient-sessionpool.properties
 webclient.configFile.sessionPool=/path/to/webclient-app.config
 ```
 
-## Pinch gesture support
+### Pinch gesture support
 
 When running on mobile devices like smartphones and tablets, or more generally speaking when the UI is displayed on a touch screen, the user can pinch to zoom in and zoom out. This gesture was not supported in the previous WebClient versions, and pinching had no effect.

@@ -5,14 +5,13 @@ import { convert } from 'html-to-text';
 import path from 'path';
 import 'dotenv/config'; 
 
-// --- CONFIGURAZIONE ---
+// configurazione
 const appId = process.env.ALGOLIA_APP_ID;
 const adminKey = process.env.ALGOLIA_ADMIN_KEY;
 const indexName = process.env.ALGOLIA_INDEX_NAME;
 const SITE_URL = process.env.SITE_URL || 'https://docs.veryant.com';
 
 // inizializzazione per Algolia v5
-// N.B. client.initIndex non esiste più in questa versione
 const client = algoliasearch(appId, adminKey);
 
 async function uploadToAlgolia() {
@@ -41,17 +40,17 @@ async function uploadToAlgolia() {
         ]
       });
 
-      let relativePath = file
+      /* let relativePath = file
         .replace('.vitepress/dist', '')
         .replace(/index\.html$/, '')
         .replace(/\.html$/, '');
 
-      // Assicurati che inizi sempre con /
+      // assicurati che inizi sempre con /
       if (!relativePath.startsWith('/')) {
         relativePath = '/' + relativePath;
-      } 
+      } */
 
-    /*  let relativePath = file
+    let relativePath = file
         .replace('.vitepress/dist', '')
         .replace(/index\.html$/, '')
         .replace(/\.html$/, ''); 
@@ -61,11 +60,11 @@ async function uploadToAlgolia() {
         title: path.basename(file, '.html'),
         content: text.substring(0, 8000),
         url: `${SITE_URL}${relativePath.startsWith('/') ? relativePath.slice(1) : relativePath}`,
-        lang: 'it-IT',
         lastUpdated: new Date().toISOString()
       };
-    })); */ 
-    return {
+    })); 
+
+    /* return {
         objectID: relativePath,
         // Struttura che piace a DocSearch
         hierarchy: {
@@ -76,7 +75,7 @@ async function uploadToAlgolia() {
       content: text.substring(0, 8000),
       url: `${SITE_URL.replace(/\/$/, '')}${relativePath}`,
       type: 'content'
-    }})); 
+    }})); */
 
       console.log(`Inviando ${records.length} pagine ad Algolia...`);
     

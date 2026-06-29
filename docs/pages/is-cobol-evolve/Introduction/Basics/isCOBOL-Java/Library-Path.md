@@ -1,9 +1,10 @@
-## The Library Path
+### The Library Path
+
 In order for the JVM to find shared libraries and shared objects, they must be located in a directory contained in the library path.
 
 The JVM looks for the library path by inquiring a system dependent environment variable. The below table shows the most common ones:
 
-| Operating System | Library file extension | Environment Variable |
+| **Operating System** | **Library file extension** | **Environment Variable** |
 | --- | --- | --- |
 | AIX | *.so | LIBPATH |
 | HP-UX Itanium | *.so | LD_LIBRARY_PATH |

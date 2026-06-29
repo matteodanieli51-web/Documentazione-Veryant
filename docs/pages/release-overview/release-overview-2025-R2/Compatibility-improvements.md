@@ -1,8 +1,8 @@
-# Compatibility improvements
+﻿## Compatibility improvements
 
 isCOBOL 2025 R2 has been enhanced to improve compatibility with other COBOL dialects, such as MicroFocus COBOL and IBM COBOL. The compiler has been improved with added functions, custom functions can now be declared using the FUNCTION-ID syntax, and the CURRENCY symbols have been improved.
 
-## Functions
+### Functions
 
 A typical COBOL program source code includes calling intrinsic functions that are part of the isCOBOL library. In this new release, four new functions have been implemented to provide better compatibility with other COBOL dialects.
 
@@ -68,7 +68,7 @@ And the code below shows how to declare and use the function from another COBOL 
 
 The returning item of the user-defined function, in this example, is a string that is created by appending the string argument received as parameter and the suffix “-END”. In the second source file, the function is invoked in the move statement, and the resulting string is used in the display statement.
 
-## CURRENCY symbols
+### CURRENCY symbols
 
 In COBOL, the CURRENCY SIGN in the SPECIAL-NAMES is used in the PICTURE clause to represent a monetary value. The new isCOBOL release supports the declaration of multiple currency signs and adds support for the WITH PICTURE SYMBOL clause that is used in the item definition to provide the correct currency.
 

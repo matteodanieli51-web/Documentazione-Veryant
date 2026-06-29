@@ -1,23 +1,23 @@
-# Runtime enhancements
+﻿## Runtime enhancements
 
 The isCOBOL runtime has been enhanced with the ability to redirect CALL statements to a different program, along with new configuration options.
 
-## Redirect CALL
+### Redirect CALL
 
-The existing configuration iscobol.call_cancel.hook=classname can now be used to redirect a CALL to another program and modify the parameters.
+The existing configuration *iscobol.call_cancel.hook=classname* can now be used to redirect a CALL to another program and modify the parameters.
 
 The com.iscobol.rts.CallHandler interface has been improved with the ability to redirect the call to another program by raising the dedicated exception com.iscobol.rts.MapCallException. For example, consider a program that calls another program named PROGA, passing a string and a number as parameters, e.g.
 
-```cobol 
+```cobol
     77 parx   pic x(5) value 'abc'.
     77 par9   pic 9(3) value 0.
     ...
         call "PROGA" using parx, par9.
 ```
 
-Using the configuration iscobol.call_cancel.hook=MYCALLHANDLER, the MYCALLHANDLER class-id program is invoked just before executing PROGA. The logic in the BeforeCall method of MYCALLHANDLER modifies the parameter values by turning the string uppercase and the number incremented by 1, then it redirects the call to a program named PROGB by raising a MapCallException, as demonstrated in the following code snippet:
+Using the configuration *iscobol.call_cancel.hook=MYCALLHANDLER*, the MYCALLHANDLER class-id program is invoked just before executing PROGA. The logic in the BeforeCall method of MYCALLHANDLER modifies the parameter values by turning the string uppercase and the number incremented by 1, then it redirects the call to a program named PROGB by raising a MapCallException, as demonstrated in the following code snippet:
 
-```cobol 
+```cobol
     class-id. MYCALLHANDLER as "MYCALLHANDLER" implements jCallhandler.
     configuration section.
     repository.
@@ -50,7 +50,7 @@ Using the configuration iscobol.call_cancel.hook=MYCALLHANDLER, the MYCALLHANDLE
 
 When the program is run, PROGB is called instead of PROGA, and it receives the modified parameter values. This feature may be useful in testing environments to simulate alternative scenarios without changing the COBOL programs code.
 
-## New configurations
+### New configurations
 
 The following is a list of new properties introduced in this release, in both the Runtime and the utilities.
 

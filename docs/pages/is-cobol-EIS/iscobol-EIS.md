@@ -1,13 +1,8 @@
-# Key Topics
+﻿---
+title: isCOBOL EIS
+description: Documentazione per la sezione isCOBOL EIS
+---
 
-- The Service Bridge facility
+# isCOBOL EIS
 
-- isCOBOL and AngularJS
-
-- COBOL Servlet option (OOP)
-
-- WebDirect option
-
-- HTTPHandler class (com.iscobol.rts.HTTPHandler)
-
-- HTTPClient class (com.iscobol.rts.HTTPClient)
+Contenuto segnaposto per la pagina di documentazione di isCOBOL EIS.

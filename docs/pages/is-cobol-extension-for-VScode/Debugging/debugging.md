@@ -23,11 +23,11 @@ The following debug actions are available:
 
 It’s possible to set breakpoints by clicking in the area before the line number or by pressing F9 when you’re positioned on the desired line. A breakpoint is represented with a red circle at the beginning of the line:
 
-![](images/vs-breakpoint.png)
+![](../images/vs-breakpoint.png)
 
 If you hover the mouse over a data-item name, the data-item content is shown in a tool-tip:
 
-![](images/vs-debug-tooltip.png)
+![](../images/vs-debug-tooltip.png)
 
 It’s possible to monitor the changes of the value of a data item by adding it to the Watched variariables list. To do so:
 
@@ -40,7 +40,7 @@ The runtime configuration properties should be stored in one of the following fi
 ## Windows
 
 1. \etc\iscobol.properties in the drive where the working directory is
-2. C:\\Users\\iscobol.properties (the setup wizard saves licenses here, if you don’t skip activation)
+2. C:\Users\iscobol.properties (the setup wizard saves licenses here, if you don’t skip activation)
 3. iscobol.properties found in the Java Classpath (the output directory of the project is included in the Classpath)
 4. a custom configuration file passed with the *-c <configuration_file>*  option in [Veryant > Runtime: Options](\)
 5. %ISCOBOL%\iscobol.properties

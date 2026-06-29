@@ -1,6 +1,6 @@
-# Installation, Upgrade and License Activation
+## Installation, Upgrade and License Activation
 
-## Software
+### Software
 
 isCOBOL is distributed through graphical wizard setups on the Windows platform and tar.gz archives on other platforms. The tar.gz archive includes a interactive command line setup.
 
@@ -8,9 +8,9 @@ In order to install a new version of isCOBOL, just run the setup. The new versio
 
 In order to upgrade the current version (e.g. moving from Beta to GA, or upgrading to the latest update build) it’s suggested to uninstall the product first, then run the setup.
 
-## License
+### License
 
-Most of the Veryant’s products require a license. The license is provided in the form of a configuration property that must be added to the configuration. Refer to Licenses Configuration for the list of license properties.
+Most of the Veryant’s products require a license. The license is provided in the form of a configuration property that must be added to the configuration. Refer to [Licenses Configuration](\) for the list of license properties.
 
 In order to activate a new version of isCOBOL, just add the the iscobol.license entries to the configuration. The new version license can exist along with previous licenses because it has a different name (e.g. iscobol.license.2025 is different than iscobol.license.2024).
 
@@ -22,6 +22,6 @@ iscrun -license
 
 Note - this command is available only for the runtime. This is another reason for keeping licenses all together in the same configuration file.
 
-## Where to go next
+### Where to go next
 
 Refer to the Getting Started guides for more details about product installation and license activation.

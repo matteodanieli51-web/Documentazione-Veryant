@@ -1,8 +1,8 @@
-# Visual Studio Code extension enhancements
+﻿## Visual Studio Code extension enhancements
 
 The Veryant extension for Visual Studio Code has been enhanced and now has workspace support, debug/release compilation mode, and the ability to debug remote processes.
 
-## Workspace support
+### Workspace support
 
 Visual Studio Code supports grouping folders and projects in “workspaces”. Starting from this release, Veryant Extension for Visual Studio Code supports workspaces, and each project folder can have its own settings for both compiler and runtime options.
 
@@ -10,7 +10,7 @@ Supporting workspaces allows developers to open multiple projects, compile and r
 
 When working with workspaces, settings can be saved at the project (folder) level, at workspace level, or at user level. Settings are stored in the relative folder and are applied with the correct priority: project setting, workspace settings, user settings.
 
-## Debug/release compilation
+### Debug/release compilation
 
 A new compilation switch has been added to globally set the compile mode to either Debug or Release. When compiling sources, the compiler options are set by combining the content of the veryant.compiler.options variable with the compile-mode specific options. The mode-specific compiler options are stored in the settings "veryant.debug.compiler.option” and "veryant.release.compiler.options".
 
@@ -22,9 +22,9 @@ In Figure 14, *VS Code settings*, shows settings for compiler options flags set 
 
 **Figure 14.** VS Code settings.
 
-![Figure 14. VS Code settings.](figura14.png)
+![](../images/vscode-settings.png)
 
-## Remote debugging
+### Remote debugging
 
 The new release of the Visual Studio Code extension can now be used to attach a debugging session to a remote program by specifying the IP/hostname and port number in the launch configuration settings.
 
@@ -36,4 +36,4 @@ In Figure 15, *VS Code attach debugger*, we see the new “attach” request typ
 
 **Figure 15.** Visual Studio Code attach debugger.
 
-![Figure 15. Visual Studio Code attach debugger.](figura15.png)
+![](../images/vscode-attach-debug.png)

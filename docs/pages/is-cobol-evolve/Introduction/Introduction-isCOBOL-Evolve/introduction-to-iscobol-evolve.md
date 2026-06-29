@@ -6,7 +6,7 @@ Congratulations on your selection of isCOBOL Evolve. This document will show you
 
 isCOBOL Evolve is a complete environment for COBOL application development and deployment that offers the following components:
 
--  isCOBOL Compiler – a Java-based 100% portable COBOL compiler supporting the latest ANSI standards and common legacy dialects. The isCOBOL Compiler also includes support for ESQL, Object Oriented COBOL, Unicode, and JavaBean graphical controls. The isCOBOL Compiler comes with the following utilities:
+- isCOBOL Compiler – a Java-based 100% portable COBOL compiler supporting the latest ANSI standards and common legacy dialects. The isCOBOL Compiler also includes support for ESQL, Object Oriented COBOL, Unicode, and JavaBean graphical controls. The isCOBOL Compiler comes with the following utilities:
   - COBFILEIO - generates classes for accessing COBOL files and records from Java programs;
   - CPK - lets you pick a color and generates the COBOL code to reference that color in your programs;
   - GIFE - a graphical indexed file editor;

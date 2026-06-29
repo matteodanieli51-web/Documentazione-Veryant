@@ -1,4 +1,4 @@
-## Class loading
+### Class loading
 
 In order for the JVM to find Java class files, they must be located in a directory contained in the class path, or stored in a JAR file that is listed in the class path. The Java compiler also uses the class path to locate classes referenced by the source file it is compiling.
 
@@ -33,24 +33,24 @@ is equivalent to
 java -cp C:\myclasses;C:\myjars\*;C:\otherjars\app.jar MAIN_PROG
 ```
 
-## COBOL programs classes
+#### COBOL programs classes
 
-Unlike standard Java classes, COBOL programs’ classes can be loaded either from the class path or from the code prefix, depending on the configuration property iscobol.code_prefix.
+Unlike standard Java classes, COBOL programs’ classes can be loaded either from the class path or from the code prefix, depending on the configuration property [iscobol.code_prefix](\).
 
-If iscobol.code_prefix is set, the isCOBOL runtime framework searches for COBOL program classes in the paths specified by the property. Whether iscobol.code_prefix is set or not, isCOBOL will always look for classes in the paths specified in the class path. If the same class is found in both code prefix paths and class paths, then the class is loaded from the class path. For this reason, it’s not good practice to add the same path to both the class path and iscobol.code_prefix.
+If [iscobol.code_prefix](\) is set, the isCOBOL runtime framework searches for COBOL program classes in the paths specified by the property. Whether [iscobol.code_prefix](\) is set or not, isCOBOL will always look for classes in the paths specified in the class path. If the same class is found in both code prefix paths and class paths, then the class is loaded from the class path. For this reason, it’s not good practice to add the same path to both the class path and [iscobol.code_prefix](\).
 
 Classes loaded from the code prefix can be cancelled and reloaded multiple times during the runtime session. Classes loaded from the class path are loaded once and then kept in memory for the whole runtime session.
 
 Classes loaded from the code prefix are reloaded in these situations:
 
 - Default situation:
-  - oiscobol.code_prefix.reload * is set to 1,
-  - the program was cancelled by the CANCEL statement or because it’s an INITIAL program,
+  - [iscobol.code_prefix.reload *](\) is set to 1,
+  - the program was cancelled by the [CANCEL](\) statement or because it’s an INITIAL program,
   - the program class file changed on disc since the last time the program was called.
 
 - Optimized situation:
-  - oiscobol.code_prefix.reload * is set to 0 or 2
-  - the program was unloaded from the JVM by the C$UNLOAD library routine.
+  - [iscobol.code_prefix.reload *](\) is set to 0 or 2
+  - the program was unloaded from the JVM by the [C$UNLOAD](\) library routine.
 
 The second situation provides better performance because the runtime doesn’t have to access the disc at every CALL in order to find out if the program class file changed.
 

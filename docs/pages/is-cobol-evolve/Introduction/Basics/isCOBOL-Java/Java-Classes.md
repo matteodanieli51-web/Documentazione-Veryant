@@ -1,4 +1,4 @@
-## Java Classes
+### Java Classes
 
 Since the Java programming language is object-oriented, code is organized using object classes. The bytecode objects produced by the Java compiler are called “class files”, or simply “classes”, and are named using the .class file name extension.
 

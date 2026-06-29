@@ -1,6 +1,6 @@
 ## Debug configurations and Remote debugging
 
-![](images/vs-debug-configurations.png)
+![](../images/vs-debug-configurations.png)
 
 The secondary side bar that appears when you start debugging allows you to choose between two preset debug configurations:
 

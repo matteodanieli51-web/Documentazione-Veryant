@@ -14,7 +14,7 @@ Each mode can be configured to use a specific set of compiler options. For examp
 
 The current mode is shown on the bottom left corner of the window and clicking on it allows you to switch between Debug mode and Release mode.
 
-![](images/vs-modes.png)
+![](./images/vs-modes.png)
 
 • When COBOL:DEBUG is selected, the compiler uses the options specified by [Veryant > Compiler: Options](\) plus the options specified by [Veryant > Debug > Compiler: Options](\).
 

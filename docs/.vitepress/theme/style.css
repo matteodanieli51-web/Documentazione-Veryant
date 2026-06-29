@@ -158,25 +158,25 @@
   }
 }
 
-/* --- CONTEGGIO RISULTATI RICERCA (VERSIONE UNIVERSALE) --- */
-/* 1. Inizializziamo il contatore sul contenitore che racchiude TUTTA la lista */
+/* --- CONTEGGIO RISULTATI RICERCA (VERSIONE UNIVERSALE) --- 
+// 1. Inizializziamo il contatore sul contenitore che racchiude TUTTA la lista 
 .VPLocalSearchBox .results {
   counter-reset: search-counter;
   position: relative;
-  padding-top: 55px !important; /* Aumentato per dare respiro al badge */
+  padding-top: 55px !important;  Aumentato per dare respiro al badge 
 }
-/* 2. Incrementiamo per ogni elemento che ha la classe 'result' 
-   USIAMO LO SPAZIO (discente generico) invece di '>' per essere sicuri di trovarli */
+// 2. Incrementiamo per ogni elemento che ha la classe 'result' 
+   USIAMO LO SPAZIO (discente generico) invece di '>' per essere sicuri di trovarli 
 .VPLocalSearchBox .results .result {
   counter-increment: search-counter;
 }
-/* 3. Creazione del badge */
+// 3. Creazione del badge 
 .VPLocalSearchBox .results::before {
   content: "Search results found: " counter(search-counter);
   position: absolute;
   top: 10px;
   left: 12px;
-  /* Stile Brand */
+  // Stile Brand 
   font-weight: 700;
   font-size: 13px;
   color: var(--vp-c-brand-1);
@@ -187,13 +187,13 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   pointer-events: none;
-  z-index: 100; /* Assicuriamoci che stia sopra a tutto */
+  z-index: 100;  Assicuriamoci che stia sopra a tutto 
 }
-/* 4. Se la ricerca è vuota, il CSS counter mostrerà 0 automaticamente.  
-   Se vuoi nasconderlo del tutto quando non scrivi nulla: */
+// 4. Se la ricerca è vuota, il CSS counter mostrerà 0 automaticamente.  
+   Se vuoi nasconderlo del tutto quando non scrivi nulla: 
 .VPLocalSearchBox .results:empty::before {
   display: none !important; 
-} 
+} */
 
 /* Risultato selezionato/hover */
 .VPLocalSearchBox .result.selected {
@@ -354,7 +354,9 @@ mark.page-highlight {
 /* Forza il link della sidebar a non andare a capo */
 .VPSidebarItem.level-2 .item .link-text,
 .VPSidebarItem.level-3 .item .link-text,
-.VPSidebarItem.level-4 .item .link-text {
+.VPSidebarItem.level-4 .item .link-text,
+.VPSidebarItem.level-5 .item .link-text, 
+.VPSidebarItem.level-6 .item .link-text{
   white-space: nowrap !important; /* Impedisce l'andata a capo */
   overflow: hidden;               /* Nasconde il testo in eccesso */
   text-overflow: ellipsis;        /* Aggiunge i tre puntini ... se tagliato */

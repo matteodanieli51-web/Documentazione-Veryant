@@ -14,7 +14,7 @@ These wrappers are identified by exe files on the Windows platform and by shell 
 
 They're stored in the isCOBOL bin directory.
 
-When you launch a wrapper, the current directory ("."), all the jar libraries stored in the isCOBOL lib directory and all the jar libraries stored in the isCOBOL jars directory are automatically added to the Classpath, then your command is translated as follows:
+When you launch a wrapper, the current directory ("."), all the jar libraries stored in the isCOBOL *lib* directory and all the jar libraries stored in the isCOBOL jars directory are automatically added to the Classpath, then your command is translated as follows:
 
 ```cobol
 wrapper_name <Parameters>
@@ -30,7 +30,7 @@ java iscobol_product_class <Parameters>
 
 The following table lists all the standard wrappers, which are available for all platforms, followed by the corresponding isCOBOL class:
 
-| Wrapper | Class |
+| **Wrapper** | **Class** |
 | :--- | :--- |
 | cobfileio | com.iscobol.lib.COBFILEIO |
 | cpgen | com.iscobol.compiler.CopyGen |
@@ -86,7 +86,7 @@ iscrun --system PROG1
 
 Wrappers for WebClient commands run the Main class included in the corresponding war library with some command line options:
 
-| Wrapper | Class | Library |
+| **Wrapper** | **Class** | **Library** |
 | :--- | :--- | :--- |
 | webcclient | main.Main -j jetty.properties | webclient/webclient-server.war |
 | webcclient-admin | main.Main -j jetty.properties` | webclient/admin/webclient-admin-server.war |
@@ -98,7 +98,7 @@ Wrappers for WebClient commands run the Main class included in the corresponding
 
 On Windows platform five additional wrappers are available:
 
-| Wrapper | Class |
+| **Wrapper** | **Class** |
 | :--- | :--- |
 | iscclientd | com.iscobol.clientlstnr.ClientListener |
 | isclient | com.iscobol.gui.client.Client |
@@ -120,20 +120,20 @@ is the same as launching:
 javaw com.iscobol.invoke.Isrun PROGRAM
 ```
 
-With these wrappers that don't display output on the console, if an unexpected exception occurs or if the program displays data upon sysout and syserr, two files named *wrapper_out.log* and *wrapper_err.log* (where *wrapper* can be *isrun* or *isclient* depending on the exe you launched) are updated in the isCOBOL bin directory.
+With these wrappers that don't display output on the console, if an unexpected exception occurs or if the program displays data upon sysout and syserr, two files named *wrapper*_out.log and *wrapper*_err.log (where *wrapper* can be *isrun* or *isclient* depending on the exe you launched) are updated in the isCOBOL bin directory.
 
 ### Windows wrappers for Virtualized DPI
 
 On Windows platform the *bin* directory includes a subdirectory named *no_dpi_aware* with four additional wrappers:
 
-| Wrapper | Class |
+| **Wrapper** | **Class** |
 | :--- | :--- |
 | iscclient | com.iscobol.gui.client.Client |
 | isclient | com.iscobol.gui.client.Client |
 | iscrun | com.iscobol.invoke.Isrun |
 | isrun | com.iscobol.invoke.Isrun |
 
-These executable files include a manifest without the entry <dpiAware>true</dpiAware>. The Windows system is informed that the executable is not DPI-aware and takes care of increasing the pixels size when running on a higher DPI. This approach ensures that the aspect ratio of the windows is perfectly maintained even when the font is a little blurred as a result.
+These executable files include a manifest without the entry *<dpiAware>true</dpiAware>*. The Windows system is informed that the executable is not DPI-aware and takes care of increasing the pixels size when running on a higher DPI. This approach ensures that the aspect ratio of the windows is perfectly maintained even when the font is a little blurred as a result.
 
 These wrappers also automatically set the *sun.java2d.dpiaware* Java property to false.
 
@@ -244,4 +244,4 @@ Vmoptions files are particularly useful to pass Java options to Windows services
 
 Vmoptions files are text files that include a list of options. Every option is specified on a separate line. The # character comments the line. The options should be specified with the same syntax that you would use on the command line. The *-classpath* option can be followed by either "/p" or "/a", in this way the option value is prepended or appended to the default Class Path built by the wrapper, that includes the libraries stored in the isCOBOL’s "lib" and "jars" folders. The * character at the end of a path to assume “all jar files in that path” is not supported here; you have to specify the pathname of each single jar file.
 
-For more information see for example [Service configuration](./pag_creazione) in [isCOBOL Evolve: Application Server](./pag_creazione).
+For more information see for example [Service configuration](\) in [isCOBOL Evolve: Application Server](\).

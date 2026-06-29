@@ -1,10 +1,10 @@
-## JAR Files and the Jar Utility
+### JAR Files and the Jar Utility
 
 A Java Archive (JAR) file is an archive containing one or more files or directories, similar to a UNIX tar file or a Zip file. JAR files primarily contain Java class files, but any type of file can be included. These files use the file name extension “.jar”.
 
 Jar is also the name of the utility program that is used to create, update, list contents, and extract contents from JAR files. The jar utility is included in the JDK and its usage is similar to the UNIX tar utility.
 
-### Usage examples:
+#### Usage examples
 
 1. Create a jar library named *myApp.jar* putting all the classes of your project into it:
 
