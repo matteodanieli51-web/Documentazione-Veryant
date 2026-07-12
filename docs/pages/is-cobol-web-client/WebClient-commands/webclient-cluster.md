@@ -1,8 +1,11 @@
-﻿---
-title: webclient-cluster
-description: Documentazione per la sezione webclient-cluster
----
+﻿## webclient-cluster
 
-# webclient-cluster
+The webclient-cluster command allows you to install and manage the WebClient Cluster Server as a service on Windows and as a daemon on Linux.
 
-Contenuto provvisorio per la pagina di documentazione di webclient-cluster.
+### Usage
+
+```cobol
+webclient-cluster [options]
+```
+
+For more information see [Windows services and Unix daemons](./Windows-services-and-Unix-daemons/Windows-service).

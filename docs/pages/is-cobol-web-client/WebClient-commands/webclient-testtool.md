@@ -1,8 +1,11 @@
-﻿---
-title: webclient-testtool
-description: Documentazione per la sezione webclient-testtool
----
+﻿## webclient-testtool
 
-# webclient-testtool
+The webclient-testtool command allows you to install and manage the WebClient Test Tool as a service on Windows and as a daemon on Linux.
 
-Contenuto provvisorio per la pagina di documentazione di webclient-testtool.
+### Usage
+
+```cobol
+webclient-testtool [options]
+```
+
+For more information see [Windows services and Unix daemons](./Windows-services-and-Unix-daemons/Windows-service).

@@ -1,8 +1,5 @@
-﻿---
-title: Logs
-description: Documentazione per la sezione Logs
----
+﻿## Logs
 
-# Logs
+The Logs section shows the content of WebClient’s log files.
 
-Contenuto provvisorio per la pagina di documentazione di Logs.
+![](../images/webclient-logs.png)

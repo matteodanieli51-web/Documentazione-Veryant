@@ -1,8 +1,13 @@
-﻿---
-title: isserver usage
-description: Documentazione relativa a isserver usage
----
+﻿### isserver usage
 
-# isserver usage
+The isserver command has the following options:
 
-Contenuto segnaposto per la pagina di documentazione di isserver usage.
+| | |
+| --- | --- |
+| run | Run the isCOBOL Server service in foreground mode |
+| start | Run the isCOBOL Server service in background mode |
+| stop | Stop the isCOBOL Server service |
+| restart | Restart the isCOBOL Server service |
+| status | Show the status of the isCOBOL Server service |
+| env | Print the current environment settings |
+| | |

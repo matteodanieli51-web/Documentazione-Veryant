@@ -1,8 +1,11 @@
-﻿---
-title: webclient
-description: Documentazione per la sezione webclient
----
+﻿## webclient
 
-# webclient
+The webclient command allows you to install and manage the WebClient server as a service on Windows and as a daemon on Linux.
 
-Contenuto provvisorio per la pagina di documentazione di webclient.
+### Usage
+
+```cobol
+webclient [options]
+```
+
+For more information see [Windows services and Unix daemons](./Windows-services-and-Unix-daemons/Windows-service).

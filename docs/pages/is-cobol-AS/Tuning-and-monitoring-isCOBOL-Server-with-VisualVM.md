@@ -1,8 +1,5 @@
-﻿---
-title: Tuning and monitoring isCOBOL Server with VisualVM
-description: Documentazione relativa a Tuning and monitoring isCOBOL Server with VisualVM
----
+﻿# Tuning and monitoring isCOBOL Server with VisualVM
 
-# Tuning and monitoring isCOBOL Server with VisualVM
+VisualVM is a Java virtual machine monitoring, troubleshooting, and profiling tool.
 
-Contenuto segnaposto per la pagina di documentazione di Tuning and monitoring isCOBOL Server with VisualVM.
+See [Tuning and monitoring the Java Virtual Machine with VisualVM](\) for information on VisualVM and how to use it to monitor the isCOBOL Server activity, collecting dumps and more.

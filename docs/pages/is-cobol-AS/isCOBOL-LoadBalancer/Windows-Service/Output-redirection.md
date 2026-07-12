@@ -1,8 +1,3 @@
-﻿---
-title: Output redirection
-description: Documentazione relativa a Output redirection
----
+﻿#### Output redirection
 
-# Output redirection
-
-Contenuto segnaposto per la pagina di documentazione di Output redirection.
+The isCOBOL LoadBalancer service redirects all the console output (stderr and stdout) to two files named *isbalancer_err.log* and *isbalancer_out.log*. These files are located in the isCOBOL bin directory, which is the default directory of the service.

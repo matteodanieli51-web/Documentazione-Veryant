@@ -1,8 +1,11 @@
-﻿---
-title: webcclient
-description: Documentazione per la sezione webcclient
----
+﻿## webcclient
 
-# webcclient
+The webcclient command starts the WebClient server in foreground mode.
 
-Contenuto provvisorio per la pagina di documentazione di webcclient.
+### Usage
+
+```cobol
+webcclient [options]
+```
+
+See [Command-line startup options](./Command-line-startup-options) for the list of available options.

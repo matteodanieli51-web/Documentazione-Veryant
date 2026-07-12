@@ -1,8 +1,13 @@
-﻿---
-title: webcclient-cluster
-description: Documentazione per la sezione webcclient-cluster
----
+﻿## webcclient-cluster
 
-# webcclient-cluster
+The webcclient-cluster command starts the WebClient Cluster Server in foreground mode.
 
-Contenuto provvisorio per la pagina di documentazione di webcclient-cluster.
+### Usage
+
+```cobol
+webcclient-cluster [options]
+```
+
+See [Command-line startup options](./Command-line-startup-options) for the list of available options.
+
+See [Cluster Deployment](../Cluster-Deployment) for more information on this argument.

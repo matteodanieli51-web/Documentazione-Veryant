@@ -1,8 +1,11 @@
-﻿---
-title: webcclient-testtool
-description: Documentazione per la sezione webcclient-testtool
----
+﻿## webcclient-testtool
 
-# webcclient-testtool
+The webcclient-testtool command starts the WebClient Test Tool in foreground mode.
 
-Contenuto provvisorio per la pagina di documentazione di webcclient-testtool.
+### Usage
+
+```cobol
+webcclient-testtool [options]
+```
+
+See [Command-line startup options](./Command-line-startup-options) for the list of available options.
