@@ -1,18 +1,13 @@
-/*
- Customize default theme styling by overriding CSS variables:
- https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
- */
-
 /* Colors */
 :root {
-/* Tema Chiaro - Azzurro Corporate Veryant */
+/* Light Mode */
   --vp-c-brand-1: #3b82f6; /* Colore principale per link e testi evidenziati */
   --vp-c-brand-2: #2563eb; /* Colore per lo stato hover */
   --vp-c-brand-3: #1d4ed8; /* Colore per stati attivi o sfondi solidi */
   --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
 }
 .dark {
-/* Tema Scuro - Azzurro Brillante per contrasto elevato */
+/* Dark Mode */
   --vp-c-brand-1: #60a5fa; 
   --vp-c-brand-2: #93c5fd;
   --vp-c-brand-3: #bfdbfe;
@@ -78,18 +73,17 @@
 /* Component: local search */
 
 :root {
-  /* Variabili per coerenza cromatica Veryant */
   --vp-local-search-bg: var(--vp-c-bg-elevated);
   --vp-local-search-result-bg: var(--vp-c-bg-soft);
   --vp-local-search-result-hover-bg: var(--vp-c-brand-soft);
 }
 
-/* 1. Finestra di ricerca (Shell): Solida e definita */
+/* 1. Finestra di ricerca (Shell): */
 .VPLocalSearchBox .shell {
   background-color: var(--vp-c-bg) !important; /* Sfondo non trasparente */
   opacity: 1 !important;
   
-  /* Supporto Safari e Safari su iOS */
+  /* Supporto Safari su iOS */
   -webkit-backdrop-filter: none !important; 
   backdrop-filter: none !important; 
   
@@ -219,11 +213,11 @@
 .VPLocalSearchBox .result .excerpt {
   font-size: 0.9em !important;
   line-height: 1.4 !important;
-  color: var(--vp-c-text-1) !important; /* Contrasto massimo per la lettura */
+  color: var(--vp-c-text-1) !important;
   opacity: 1 !important;
 }
 
-/* 5. Footer del modal (Scorciatoie tastiera) */
+/* 5. Footer del modal */
 .VPLocalSearchBox .footer {
   background-color: var(--vp-c-bg-alt) !important;
   border-top: 1px solid var(--vp-c-divider);
@@ -251,7 +245,7 @@
 }
 
 /* 1. EVIDENZIAZIONE PAROLA RICERCATA */
-/* Questo colora le lettere mentre l'utente scrive nella barra di ricerca */
+/* colora le lettere mentre l'utente scrive nella barra di ricerca */
 .ui-mark {
   background-color: rgba(253, 224, 71, 0.35) !important; /* Giallo tenue */
   color: #000 !important; /* Testo nero per leggibilità massima sul giallo */
@@ -259,16 +253,15 @@
   padding: 0 2px;
   border-radius: 2px;
 }
-/* 2. EVIDENZIAZIONE SULLA PAGINA (Dopo il click) */
+/* 2. EVIDENZIAZIONE SULLA PAGINA  */
 mark.page-highlight {
-  background-color: rgba(253, 224, 71, 0.4); /* Giallo tenue invece dell'azzurro */
-  color: var(--vp-c-brand-1);              /* Manteniamo il testo azzurro scuro per brand */
+  background-color: rgba(253, 224, 71, 0.4); 
+  color: var(--vp-c-brand-1);
   font-weight: bold;
   padding: 0 2px;
   border-radius: 4px;
   border-bottom: 2px solid var(--vp-c-brand-1); 
   text-decoration: none;
-  /* Applichiamo l'animazione che avevi creato */
   animation: highlight-pulse 2s infinite;
 }
 /* 3. SELEZIONE RISULTATO NELLA LISTA */
@@ -316,8 +309,6 @@ mark.page-highlight {
   font-size: 16px;
 }
 
-/* Nota: La finestra laterale (sidebar AI) solitamente viene iniettata dal provider (Mendable/Algolia) via JavaScript */
-
 /* Features Home */
 :root {
   /* sfondo azzurro chiaro per tema chiaro */
@@ -357,9 +348,9 @@ mark.page-highlight {
 .VPSidebarItem.level-4 .item .link-text,
 .VPSidebarItem.level-5 .item .link-text, 
 .VPSidebarItem.level-6 .item .link-text{
-  white-space: nowrap !important; /* Impedisce l'andata a capo */
-  overflow: hidden;               /* Nasconde il testo in eccesso */
-  text-overflow: ellipsis;        /* Aggiunge i tre puntini ... se tagliato */
+  white-space: nowrap !important; 
+  overflow: hidden;               
+  text-overflow: ellipsis;
   display: block;
 }
 
@@ -418,14 +409,14 @@ mark.page-highlight {
   text-decoration: underline;
 }
 
-/* Riga Contatti: Azzurro Corporate intermedio */
+/* Riga Contatti */
 .custom-footer .footer-contact {
   margin-top: 15px;
-  color: #2563eb; /* Coerente con var(--vp-c-brand-2) */
+  color: #2563eb; 
   font-weight: 500;
 }
 
-/* Riga PDF: Azzurro più chiaro e brillante */
+/* Riga PDF */
 .custom-footer .footer-pdf {
   margin-top: 12px;
 }
@@ -443,20 +434,17 @@ mark.page-highlight {
 }
 
 .custom-footer {
-  /* Riduce la dimensione generale del testo nel footer */
   font-size: 0.8rem !important; 
-  color: var(--vp-c-text-3) !important; /* Colore leggermente più tenue */
+  color: var(--vp-c-text-3) !important; 
 }
 
 .custom-footer .footer-links a,
 .custom-footer .footer-contact,
 .custom-footer .footer-pdf a {
-  /* Assicura che anche i link e i contatti seguano la riduzione */
   font-size: 0.8rem !important;
 }
 
 .custom-footer .footer-copyright {
-  /* Il copyright può essere ancora più piccolo per non rubare l'occhio */
   font-size: 0.75rem !important;
   opacity: 0.8;
 }
@@ -483,8 +471,6 @@ mark.page-highlight {
 }
 
 /* Personalizzazione pagine MD */
-
-/* Applichiamo la rimozione a tutti i livelli di intestazione per sicurezza */
 .vp-doc h1,
 .vp-doc h2,
 .vp-doc h3,
@@ -492,12 +478,12 @@ mark.page-highlight {
   border: none !important;
   border-bottom: 0 !important;
   border-top: 0 !important;
-  box-shadow: none !important; /* Alcuni temi usano un'ombra sottile invece del bordo */
+  box-shadow: none !important; 
   padding-bottom: 0 !important;
   text-decoration: none !important;
 }
 
-/* Specifico per il Titolo Principale (h1) */
+/* Specifico per h1 */
 .vp-doc h1 {
   color: #3b82f6 !important; 
   font-weight: 800;
@@ -515,7 +501,6 @@ mark.page-highlight {
   margin-bottom: 16px !important;            
 }
 
-/* Coerenza per la Dark Mode */
 .dark .vp-doc h1 {
   color: var(--vp-c-brand-1) !important;
 }
@@ -537,33 +522,32 @@ mark.page-highlight {
 /* --- OTTIMIZZAZIONE LEGGIBILITÀ E SPAZIATURA --- */
 
 .vp-doc p {
-  margin-bottom: 20px !important; /* Questa è l'unica "separazione" visibile */
+  margin-bottom: 20px !important; 
   line-height: 1.7;
 }
 
 .vp-doc li {
-  /* Aumenta lo spazio tra le righe per non affaticare la vista */
+  /* Aumenta lo spazio tra le righe */
   line-height: 1.7 !important;
   /* Aumenta lo spazio tra un paragrafo e l'altro */
   margin-bottom: 20px !important;
-  /* Colore del testo leggermente meno "nero assoluto" per un look premium */
   color: var(--vp-c-text-1);
 }
 
-/* Spaziatura specifica per le liste (bullet points) */
+/* Spaziatura specifica per le liste */
 .vp-doc ul, 
 .vp-doc ol {
   margin-bottom: 24px !important;
 }
-
+/* Spazio tra i vari punti di un elenco puntato */
 .vp-doc li {
-  margin-bottom: 8px !important; /* Spazio tra un punto elenco e l'altro */
+  margin-bottom: 8px !important; 
 }
 
 /* Bilanciamento degli spazi per i blocchi di codice */
 .vp-doc div[class*="language-"] {
   margin: 24px 0 !important;
-  border-radius: 12px !important; /* Arrotondiamo i blocchi codice come i box della Home */
+  border-radius: 12px !important; 
 }
 
 /* Spazio aggiuntivo prima di un sottotitolo per separare bene i concetti */
@@ -581,18 +565,17 @@ mark.page-highlight {
 
 /* Regola lo spazio tra la riga superiore e il blocco Next Page */
 .vp-doc .prev-next {
-  border-top: none !important; /* Rimuove la riga interna di VitePress per usare la tua */
+  border-top: none !important; 
   margin-top: 40px !important; 
   padding-top: 0 !important;
 }
 
 /* Regola lo spazio tra il blocco Next Page e la riga del copyright */
 .custom-footer {
-  margin-top: 40px !important; /* Uniforma la distanza alla riga superiore */
+  margin-top: 40px !important;
   padding-top: 40px !important;
 }
 
-/* Opzionale: Se vuoi che le righe stesse abbiano lo stesso aspetto */
 .vp-doc hr, 
 .custom-footer {
   border-top: 1px solid var(--vp-c-divider) !important;
@@ -602,7 +585,7 @@ mark.page-highlight {
 
 /* Colore base dei link nel corpo del testo */
 .vp-doc a {
-  color: #60a5fa !important; /* Un azzurro chiaro e moderno */
+  color: #60a5fa !important; 
   text-decoration: none;
   font-weight: 500;
   transition: color 0.25s;
@@ -610,8 +593,8 @@ mark.page-highlight {
 
 /* Colore dei link quando ci si passa sopra con il mouse */
 .vp-doc a:hover {
-  color: #3b82f6 !important; /* Diventa leggermente più scuro al passaggio */
-  text-decoration: underline; /* Sottolineatura opzionale per feedback visivo */
+  color: #3b82f6 !important; 
+  text-decoration: underline; 
 }
 
 /* Uniformiamo link footer */
@@ -630,29 +613,29 @@ mark.page-highlight {
 /* 1. Titoli della tabella (Header) in grassetto e con colore specifico */
 .vp-doc table th {
   font-weight: 800 !important;
-  color: var(--vp-c-text-1); /* Colore scuro per risaltare */
-  background-color: #f8fafc; /* Grigio chiarissimo per la testata (opzionale) */
+  color: var(--vp-c-text-1); 
+  background-color: #f8fafc; 
   text-transform: uppercase;
   font-size: 0.85rem;
 }
 
 /* 2. Sfondo uniforme per tutte le righe (Body) */
 .vp-doc table tr {
-  background-color: #ffffff !important; /* Forza lo sfondo bianco su tutte le righe */
+  background-color: #ffffff !important; 
   border-top: 1px solid var(--vp-c-divider);
 }
 
-/* 3. Rimuove l'alternanza di colore (striping) predefinita di VitePress */
+/* 3. Rimuove l'alternanza di colore predefinita di VitePress */
 .vp-doc table tr:nth-child(2n) {
   background-color: #ffffff !important; 
 }
 
 /* 4. Opzionale: Effetto hover per evidenziare la riga che si sta leggendo */
 .vp-doc table tr:hover {
-  background-color: #f1f5f9 !important; /* Azzurro/grigio molto tenue al passaggio del mouse */
+  background-color: #f1f5f9 !important; 
 }
 
-/* 5. Coerenza per la Dark Mode */
+/* 5. Analogo per la Dark Mode */
 .dark .vp-doc table tr,
 .dark .vp-doc table tr:nth-child(2n) {
   background-color: var(--vp-c-bg-soft) !important;
@@ -662,7 +645,7 @@ mark.page-highlight {
   background-color: var(--vp-c-bg-mute) !important;
 }
 
-/* --- STILE NOTE A PIÈ DI PAGINA (Footnotes) --- */
+/* STILE NOTE A PIÈ DI PAGINA */
 
 .footnote-ref a {
   font-size: 0.75em !important;
@@ -698,11 +681,10 @@ mark.page-highlight {
   color: #60a5fa !important;
   text-decoration: none !important;
   margin-left: 5px;
-  -webkit-user-select: none; /* Anche per la freccina di ritorno */
+  -webkit-user-select: none; 
   user-select: none;
 }
 
-/* Colpisce i link delle note ovunque siano, anche dentro le liste */
 .vp-doc sup.footnote-ref a {
   font-size: 0.75em !important;
   vertical-align: super !important;
@@ -719,11 +701,10 @@ mark.page-highlight {
 
 /* Riduzione sezione laterale Dx x sottotitoli */
 :root {
-  /* Larghezza della colonna destra (default è circa 256px-320px) */
   --vp-aside-width: 200px; 
 }
 
-/* Regola per schermi grandi per evitare che il contenuto centrale "balli" */
+/* Regola per schermi grandi */
 @media (min-width: 1280px) {
   .VPDoc .aside {
     width: var(--vp-aside-width) !important;
@@ -731,7 +712,7 @@ mark.page-highlight {
 }
 /* Rimpicciolisce il titolo "On this page" e i link dei sottotitoli 
 .VPDocAside .content {
-  font-size: 11px !important; /* Testo più piccolo e discreto 
+  font-size: 11px !important;  
   line-height: 1.4 !important;
 }
 
