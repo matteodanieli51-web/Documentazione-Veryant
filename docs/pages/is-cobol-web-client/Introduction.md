@@ -45,4 +45,4 @@ The latency threshold of acceptable user experience is around 200ms. Beyond that
 
 The recommended latency is 100ms or less.
 
-The bandwidth is required mainly for images. When [DirectDraw Rendering](./Applications-Monitoring-and-Configuration/Applications/Change-the-application-configuration/Change-the-application-configuration) is disabled, all the user interface is rendered via PNG images, so you might consider to keep [DirectDraw Rendering](./Applications-Monitoring-and-Configuration/Applications/Change-the-application-configuration/Change-the-application-configuration) enabled for networks with low responsiveness.
+The bandwidth is required mainly for images. When [DirectDraw Rendering](./Applications-Monitoring-and-Configuration/Applications/Change-the-application-configuration/Change-the-application-configuration#app-config) is disabled, all the user interface is rendered via PNG images, so you might consider to keep [DirectDraw Rendering](./Applications-Monitoring-and-Configuration/Applications/Change-the-application-configuration/Change-the-application-configuration#app-config) enabled for networks with low responsiveness.

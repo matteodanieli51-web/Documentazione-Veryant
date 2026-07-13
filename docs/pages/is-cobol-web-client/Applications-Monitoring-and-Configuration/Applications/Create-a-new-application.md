@@ -1,8 +1,5 @@
-﻿---
-title: Create a new application
-description: Documentazione per la sezione Create a new application
----
+﻿### Create a new application
 
-# Create a new application
+Click on the "Create New App" button and provide a name for your application. The new application appears in the list. Click on it to alter its configuration.
 
-Contenuto provvisorio per la pagina di documentazione di Create a new application.
+Refer to [Getting Started](../../Getting-Started/Getting-Started) for a step by step tutorial to create your first application.

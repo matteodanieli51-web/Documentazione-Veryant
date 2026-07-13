@@ -1,8 +1,5 @@
-﻿---
-title: Remove an application
-description: Documentazione per la sezione Remove an application
----
+﻿### Remove an application
 
-# Remove an application
+Click on the "Disable" button to make the application unavailable to the users. You will be prompted to kill active connections, if any.
 
-Contenuto provvisorio per la pagina di documentazione di Remove an application.
+Once the application is disabled, click on the "Remove" button to delete the application from the WebClient environment.

@@ -1,8 +1,7 @@
-﻿---
-title: Enable or Disable applications
-description: Documentazione per la sezione Enable or Disable applications
----
+﻿### Enable or Disable applications
 
-# Enable or Disable applications
+Click on the "Disable" button to make the application unavailable to the users. You will be prompted to kill active connections, if any.
 
-Contenuto provvisorio per la pagina di documentazione di Enable or Disable applications.
+Disabling an application is useful during maintenance (e.g. during a update of program classes).
+
+Click on the "Enable" button in order to make the application available to the users.

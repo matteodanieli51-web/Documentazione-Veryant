@@ -1,8 +1,12 @@
-﻿---
-title: Known Limitations
-description: Documentazione per la sezione Known Limitations
----
+﻿## Known Limitations
 
-# Known Limitations
+WebClient Test Tool has the following known limitations:
 
-Contenuto provvisorio per la pagina di documentazione di Known Limitations.
+- it's necessary to click on every new window to activate it before issuing any keyboard input (including Space bar or Enter to activate default buttons)
+- the following controls are currently not fully supported:
+  - Tab-Control with the Allow-container style
+  - Scroll-bar
+  - List-box paged
+  - Tree-view
+- encapsulated apps are not supported
+- complex user interface may not work.
