@@ -610,7 +610,7 @@ mark.page-highlight {
 
 /* --- PERSONALIZZAZIONE TABELLE MD  */
 
-/* 1. Titoli della tabella (Header) in grassetto e con colore specifico */
+/* 1. Titoli della tabella in grassetto e con colore specifico */
 .vp-doc table th {
   font-weight: 800 !important;
   color: var(--vp-c-text-1); 
@@ -619,7 +619,7 @@ mark.page-highlight {
   font-size: 0.85rem;
 }
 
-/* 2. Sfondo uniforme per tutte le righe (Body) */
+/* 2. Sfondo uniforme per tutte le righe */
 .vp-doc table tr {
   background-color: #ffffff !important; 
   border-top: 1px solid var(--vp-c-divider);
@@ -630,7 +630,7 @@ mark.page-highlight {
   background-color: #ffffff !important; 
 }
 
-/* 4. Opzionale: Effetto hover per evidenziare la riga che si sta leggendo */
+/* 4. Effetto hover per evidenziare la riga che si sta leggendo */
 .vp-doc table tr:hover {
   background-color: #f1f5f9 !important; 
 }
@@ -643,6 +643,34 @@ mark.page-highlight {
 
 .dark .vp-doc table th {
   background-color: var(--vp-c-bg-mute) !important;
+}
+
+/* 6. Allarghiamo la tabella verso il menu "On this page" */
+@media (min-width: 960px) {
+  .VPDoc .content-body {
+    max-width: 880px !important; /* Estende il testo verso destra */
+  }
+}
+
+.vp-doc table {
+  width: 100% !important;
+  display: table !important;
+}
+
+/* 7. La prima colonna non va MAI a capo x questioni di leggibilità */
+.vp-doc td:first-child,
+.vp-doc th:first-child {
+  white-space: nowrap !important; 
+  width: 1%;                 
+  padding-right: 24px !important;
+}
+
+/* 8. La seconda colonna e le successive andranno a capo in base ai relativi contenuti */
+.vp-doc td:nth-child(2),
+.vp-doc th:nth-child(2) {
+  white-space: normal !important;
+  word-break: break-word;
+  width: auto;      
 }
 
 /* STILE NOTE A PIÈ DI PAGINA */
@@ -710,7 +738,28 @@ mark.page-highlight {
     width: var(--vp-aside-width) !important;
   }
 }
-/* Rimpicciolisce il titolo "On this page" e i link dei sottotitoli 
+
+/* 1. Ampliamento sezione laterale dx "ON THIS PAGE" 
+@media (min-width: 1280px) {
+  /* Aumentiamo la larghezza del contenitore dell'aside 
+  .VPDoc .aside {
+    width: 200px !important; /* Di default è 224px, la portiamo a 280px 
+  }
+
+  /*  Spostiamo leggermente a sinistra l'aside per sfruttare lo spazio vuoto 
+  .VPDoc.has-aside .aside-container {
+    width: 280px !important;
+    margin-left: -40px !important; /* Trasla la colonna verso sinistra di 40px 
+  }
+
+  /* Permettiamo al testo dei link nell'indice di mostrare le parole lunghe 
+  .VPDocAsideOutline .outline-link {
+    white-space: normal !important; /* Consente al testo molto lungo di andare a capo se necessario 
+    word-break: break-word;
+  }
+} */
+
+/* 2. Riduzione sezione laterale dx "On this page" e i link dei sottotitoli 
 .VPDocAside .content {
   font-size: 11px !important;  
   line-height: 1.4 !important;

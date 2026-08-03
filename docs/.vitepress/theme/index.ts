@@ -12,7 +12,7 @@ export default {
       // bottone AI
       'nav-bar-content-before': () => h('button', { 
         class: 'ask-ai-btn',
-        onClick: () => { /* Logica per aprire la chat */ }
+        onClick: () => { }
       }, [
         h('span', { class: 'ai-icon' }, '✨'),
         h('span', 'AI')
@@ -49,7 +49,7 @@ export default {
       // Funzione per evidenziare il testo
       const highlightSearchTerm = () => {
         const urlParams = new URLSearchParams(window.location.search);
-        const term = urlParams.get('highlight'); // VitePress usa spesso questo parametro o simili
+        const term = urlParams.get('highlight'); // VitePress usa spesso questo parametro
         
         if (!term) return;
 
@@ -63,7 +63,7 @@ export default {
         }
       };
 
-      // Esegue l'evidenziazione al caricamento e al cambio rotta
+      // Esegue l'evidenziazione al caricamento della pagina e quando il percorso cambia
       onMounted(highlightSearchTerm);
       watch(() => router.route.path, () => setTimeout(highlightSearchTerm, 100));
     }
