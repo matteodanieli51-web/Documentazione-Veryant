@@ -1,6 +1,6 @@
 ## Startup options
 
-The isCOBOL IDE runs inside a Java Virtual Machine (JVM). The command-line options used by this JVM at startup are stored in a configuration file named isIDE.ini, placed in the product installation directory.
+The isCOBOL IDE runs inside a Java Virtual Machine (JVM). The command-line options used by this JVM at startup are stored in a configuration file named *isIDE.ini*, placed in the product installation directory.
 
 By changing this file it’s possible to change the associated JVM and change the JVM options.
 

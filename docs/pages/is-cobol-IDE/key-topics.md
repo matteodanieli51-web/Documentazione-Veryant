@@ -1,11 +1,7 @@
 # Key Topics
 
-- [Configuration](./Configuration/configuration)
-  
-- [The isCOBOL IDE Perspective](./The-isCOBOL-IDE-Perspective/iscobolIDE-perspective)
-  
-- [Working with Projects](./Working-With-Projects/working-with-projects)
-  
-- [Screen Programs](./Screen-Programs/screen-programs)
-  
-- [Importing programs from AcuBench](./Importing-programs-from-AcuBench/importing)
+- [Configuration](./Configuration/Configuration)
+- [The isCOBOL IDE Perspective](./The-isCOBOL-IDE-Perspective/The-isCOBOL-IDE-Perspective)
+- [Working with Projects](./Working-With-Projects/Working-with-Projects)
+- [Screen Programs](./Screen-Programs/Screen-Programs)
+- [Importing programs from AcuBench](./Importing-programs-from-AcuBench/Importing-programs-from-AcuBench)

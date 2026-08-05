@@ -1,6 +1,8 @@
 ## Download and install the Java Development Kit (JDK)
 
-A JDK must be installed on your machine in order to use isCOBOL IDE. For best results and performance, install the latest JDK version available for your platform. isCOBOL IDE is certified to work correctly with both Oracle JDK and OpenJDK from version 11 to version 21.
+A JDK must be installed on your machine in order to use isCOBOL IDE. For best results and performance, install the latest JDK version available for your platform.
+
+isCOBOL IDE is certified for use with both Oracle JDK and OpenJDK, supporting the following LTS versions: 11, 17, and 21.
 
 **Note** - Using Java 21 the default encoding is UTF-8 on every operating system.
 

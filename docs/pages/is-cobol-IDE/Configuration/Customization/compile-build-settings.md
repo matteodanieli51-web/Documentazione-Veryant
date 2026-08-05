@@ -14,4 +14,4 @@ By default the IDE generates a linked copybook in the cpy folder for each copybo
 
 When you compile the source code in the current editor, if the source doesn’t belong to any project, the IDE asks if you wish to add the file to a project. By unchecking the option 'Ask to link source file not belonging to the workspace', when you compile the source code in the current editor, if the source doesn’t belong to any project, the IDE shows an error.
 
-![](img/IDEcompBuild.png)
+![](../../images/IDEcompBuild.png)

@@ -6,7 +6,7 @@ Preferences: Java -> Installed JREs
 
 isCOBOL IDE is uses the Java runtime of the JDK that was associated during the installation. It’s possible to link external JREs in order to run your programs with a different version of Java.
 
-![](img/InstalledJRE.png)
+![](../../images/InstalledJRE.png)
 
 Click on the *Add* button and browse for the desired JRE main folder. The selected folder must include "bin" and "lib" subfolders where Java executables and libraries are found.
 

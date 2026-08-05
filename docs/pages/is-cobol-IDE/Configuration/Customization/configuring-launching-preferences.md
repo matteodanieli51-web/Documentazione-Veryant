@@ -10,4 +10,4 @@ When you run or debug a program, if there are some unsaved editors, a message bo
 
 This behavior is identical with or without 'Build Automatically' set for the project, altough, when the 'Build Automatically' is active, whenever you save a source, the build starts automatically.
 
-![](img/ConfigureLaunching.png)
+![](../../images/ConfigureLaunching.png)

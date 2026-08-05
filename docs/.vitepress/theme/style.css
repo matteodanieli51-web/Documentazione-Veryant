@@ -665,12 +665,38 @@ mark.page-highlight {
   padding-right: 24px !important;
 }
 
-/* 8. La seconda colonna e le successive andranno a capo in base ai relativi contenuti */
+/* 8. La seconda colonna e le successive andranno a capo in base ai relativi contenuti 
 .vp-doc td:nth-child(2),
 .vp-doc th:nth-child(2) {
   white-space: normal !important;
   word-break: break-word;
   width: auto;      
+} */
+
+/* 9. Nasconde la sezione laterlae dx al passaggio del mouse sopra la tabella */
+
+/* Applica l'effetto solo su schermi desktop dove l'aside è visibile */
+@media (min-width: 1280px) {
+  
+  /* Rende la scomparsa e la riapparizione dell'aside fluida e morbida */
+  .VPDoc .aside {
+    transition: opacity 0.3s ease, visibility 0.3s ease !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Scompare la colonna di destra "On this page" */
+  :root:has(.vp-doc table:hover) .VPDoc .aside {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none;
+  }
+
+  /* Il contenuto centrale sfrutta subito lo spazio guadagnato a destra */
+  :root:has(.vp-doc table:hover) .VPDoc .content-body {
+    max-width: 100% !important;
+    transition: max-width 0.3s ease;
+  }
 }
 
 /* STILE NOTE A PIÈ DI PAGINA */

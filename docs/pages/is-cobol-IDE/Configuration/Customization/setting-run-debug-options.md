@@ -4,7 +4,7 @@
 Preferences: isCOBOL -> Run/Debug
 ```
 
-![](img/IDE_RunDebug.PNG)
+![](../../images/IDE_RunDebug.png)
 
 The ”Run/Debug” panel allows you to configure options for the *Run As* and *Debug As* functions.
 

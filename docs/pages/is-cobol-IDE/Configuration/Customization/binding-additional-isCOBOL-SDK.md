@@ -6,7 +6,7 @@ Preferences: isCOBOL -> Installed isCOBOL
 
 isCOBOL IDE embeds isCOBOL compiler and runtime libraries of the same version and bitness. It’s possible to link external isCOBOL SDKs in order to compile and run your programs with a different version of isCOBOL.
 
-![](img/InstalledISC.png)
+![](../../images/InstalledISC.png)
 
 Click on the *Add* button and browse for the desired isCOBOL SDK main folder. The selected folder must include "bin" and "lib" subfolders where isCOBOL compiler and runtime libraries are found.
 

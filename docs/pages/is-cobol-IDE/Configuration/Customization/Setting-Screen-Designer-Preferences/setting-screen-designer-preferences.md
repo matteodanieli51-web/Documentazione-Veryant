@@ -14,8 +14,8 @@ The "Show Locked Icon" option causes a lock icon to be shown on the bottom left 
 
 In this panel you can also configure the behavior of arrow keys on selected controls. By default, if you select a control on the screen designer and then press arrow keys, the control is moved. You can change this behavior in order to use the arrow keys to switch the selection to another control.
 
-The "Assign exception-value to control for ‘Link To’ procedure" option causes an exception-value to be automatically assigned to every new button you draw. When this option is unchecked, the exception-value property of new buttons is left blank. You can always set or change the exception-value property in the [Properties](\) view after the button has been drawn.
+The "Assign exception-value to control for ‘Link To’ procedure" option causes an exception-value to be automatically assigned to every new button you draw. When this option is unchecked, the exception-value property of new buttons is left blank. You can always set or change the exception-value property in the [Properties](../../../The-isCOBOL-IDE-Perspective/Properties) view after the button has been drawn.
 
-The "Show list of variables in the property editor" option allows you to disable the proposal of variable names in the Variables tab of the [Properties](\) view. Disabling this proposal may help in having a more responsive UI when you’re editing programs that include hundreds of data items.
+The "Show list of variables in the property editor" option allows you to disable the proposal of variable names in the *Variables* tab of the [Properties](../../../The-isCOBOL-IDE-Perspective/Properties) view. Disabling this proposal may help in having a more responsive UI when you’re editing programs that include hundreds of data items.
 
-![](img/ScreenDesignerPrefs.PNG)
+![](../../../images/ScreenDesignerPrefs.png)

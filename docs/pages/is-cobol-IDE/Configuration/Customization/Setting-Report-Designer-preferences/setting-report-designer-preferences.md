@@ -10,4 +10,4 @@ Another feature that allows you to easily align controls is the ‘Snap To Guide
 
 From this panel you can also configure the behavior of arrow keys on selected controls and the mesaurement unit.
 
-![](img/IDEPrefRep.png)
+![](../../../images/IDEPrefRep.png)
