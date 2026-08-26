@@ -699,6 +699,24 @@ mark.page-highlight {
   }
 }
 
+/* 10. Adattamento per schermi molto grandi x evitare spazi bianchi laterali 
+
+@media (min-width: 1440px) {
+  .VPDoc .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 32px !important;  
+    padding-right: 32px !important; 
+  }
+  .VPDoc .content {
+    max-width: none !important;
+    padding-left: 0 !important;
+  }
+  .VPDoc .content-body {
+    max-width: calc(100% - 260px) !important; 
+  }
+} */
+
 /* STILE NOTE A PIÈ DI PAGINA */
 
 .footnote-ref a {
@@ -814,3 +832,4 @@ mark.page-highlight {
     gap: 40px;
   }
 }
+

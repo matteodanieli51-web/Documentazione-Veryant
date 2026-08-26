@@ -6,7 +6,7 @@
 isIDE -data workspaceLocation -nosplash --launcher.suppressErrors -application com.iscobol.plugins.screenpainter.IscobolScreenPainter.builderApplication [project projectName] [refresh] [clean] [build] [generate] [logfile logFilename]
 ```
 
-- **workspaceLocation** is the workspace directory.
+- *workspaceLocation* is the workspace directory.
 - **-nosplash** is suggested to avoid the splash screen.
 - **--launcher.suppressErrors** is suggested to avoid interactive message boxes on error. If this option is used, then errors are saved to the file ".log" in the workspace ".metadata" folder.
 - **project** specifies the name of the project to process. If omitted, all the projects in the workspace are processed.
