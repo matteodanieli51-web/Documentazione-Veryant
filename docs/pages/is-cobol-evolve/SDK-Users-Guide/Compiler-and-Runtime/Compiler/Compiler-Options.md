@@ -22,8 +22,8 @@ These options allow you to pass a configuration file and enable the compilation 
 | --- | --- |
 | -c=*config_file* | Use the configuration file identified by *config_file*. See Configuration for the list of the configuration properties that are applicable to the Compiler. The properties found in the configuration file are appended to the existing configuration. |
 | -conly=*config_file* | Use only the configuration file identified by *config_file*. See Configuration for the list of the configuration properties that are applicable to the Compiler. |
-| -d | Include basic debug information.Not all the debugger features are enabled when this option is used.You might consider using -dx to have all the debugger features enabled, though -dx produces bigger class files. |
-| -dx | Enable extended debugger functions. This option implies -d.In addition to the standard debug features, all the variables in the class are generated, including those not used in the program and the literal constants that are generated during the execution and not as static fields in the generated class. When a program is compiled with -dx, the Debugger is able to query and set all the items of the program Data Division including the items that are not used in the Procedure Division and the IDE allows the source code to be changed while debugging. With -dx the Debugger is able to skip statements (except DECLARE statements) through the jump command. |
+| -d <span id="d"></span> | Include basic debug information.Not all the debugger features are enabled when this option is used.You might consider using -dx to have all the debugger features enabled, though -dx produces bigger class files. |
+| -dx <span id="dx"></span> | Enable extended debugger functions. This option implies -d.In addition to the standard debug features, all the variables in the class are generated, including those not used in the program and the literal constants that are generated during the execution and not as static fields in the generated class. When a program is compiled with -dx, the Debugger is able to query and set all the items of the program Data Division including the items that are not used in the Procedure Division and the IDE allows the source code to be changed while debugging. With -dx the Debugger is able to skip statements (except DECLARE statements) through the jump command. |
 | | |
 
 #### Compatibility Options
@@ -278,7 +278,7 @@ These options enable the generation of additional compiler warnings to help you 
 | -watn | Show warnings for MOVEs of alphanumeric items to numeric items.<br>Note that all figurative constants except ZERO and ZEROES are alphanumeric. |
 | -wd2 | Show warnings for features that are currently not supported by WebDirect. This option helps the programmer understand how their program will behave when running with WebDirect. |
 | -wdbz | Show warnings for possible divide by zero without ON SIZE ERROR. |
-| -whttp | Show warnings for statements that are not supported by EIS. |
+| -whttp <span id="whttp"></span> | Show warnings for statements that are not supported by EIS. |
 | -wlu | Show warnings for LINKAGE/USING mismatch, if there are parameters that are defined in the program LINKAGE SECTION but not in the PROCEDURE DIVISION USING phrase. |
 | -wmwc | Show warnings for long variables in MOVE WITH CONVERSION. <br>It affects also the MOVE with conversion from alphanumeric to numeric edited, hence warnings may be shown also for normal MOVE from alphanumeric to numeric edited if -caec is used in addition to this option. |
 | -wr | Extends the REDEFINES TOO LONG warning also to group items.<br>Without this option the warning is returned only when both the redefined item and the redefining item have a picture. |

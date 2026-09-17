@@ -1,8 +1,27 @@
-﻿---
-title: HTTPHandler - getContentType
-description: Documentazione per la sezione HTTPHandler - getContentType
----
+﻿### getContentType
 
-# HTTPHandler - getContentType
+Return the HTTP Content Type of the request
 
-Contenuto segnaposto per la pagina di documentazione di HTTPHandler - getContentType.
+#### General format
+
+```cobol
+String getContentType( )
+```
+
+#### Example
+
+Check if the Content-Type header is "text/xml":
+
+```cobol
+       CONFIGURATION SECTION.
+       REPOSITORY.
+           CLASS WEB-AREA AS "com.iscobol.rts.HTTPHandler"
+           .
+       LINKAGE SECTION.
+       01 LNK-AREA OBJECT REFERENCE WEB-AREA.
+ 
+       PROCEDURE DIVISION USING LNK-AREA.
+       MAIN.
+           if LNK-AREA:>getContentType() = "text/xml"
+              ...
+```

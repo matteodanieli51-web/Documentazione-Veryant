@@ -1,8 +1,28 @@
-﻿---
-title: HTTPHandler - Constructor
-description: Documentazione per la sezione HTTPHandler - Constructor
----
+﻿### Constructor
 
-# HTTPHandler - Constructor
+Creates a new instance of the HTTPHandler class.
 
-Contenuto segnaposto per la pagina di documentazione di HTTPHandler - Constructor.
+#### General format
+
+```cobol
+HTTPHandler
+```
+
+#### General rules
+
+1. A reference to HTTPHandler should be defined in the program’s Linkage Section.
+
+#### Example
+
+```cobol
+...
+configuration section.
+repository.
+    class HTTPHandler  as "com.iscobol.rts.HTTPHandler"
+....
+linkage section.
+77 objHTTPHandler object reference HTTPHandler.
+...
+procedure division using objHTTPHandler.
+...
+```
