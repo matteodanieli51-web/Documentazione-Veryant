@@ -6,7 +6,7 @@ The TurboRun daemon can be started with the following command:
 iscserver -tr [-c config_file] [-trport TRport] [-hostname host] [-as] [-port ASport] [-force]
 ```
 
-Setting [iscobol.as.turborun (boolean)](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-PropertieS#iscobol-server-thin-client-configuration) to true in the configuration produces the same effect as using the -tr option while setting [iscobol.as.appserver (boolean)](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-PropertieS#iscobol-server-thin-client-configuration) to true in the configuration produces the same effect as using the -as option.
+Setting [iscobol.as.turborun (boolean)](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#iscobol-server-thin-client-configuration) to true in the configuration produces the same effect as using the -tr option while setting [iscobol.as.appserver (boolean)](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#iscobol-server-thin-client-configuration) to true in the configuration produces the same effect as using the -as option.
 
 The following command starts the TurboRun on the local pc on the default port 10995:
 

@@ -2,15 +2,15 @@
 
 ### Alphabet-Name
 
-A [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), in the [SPECIAL-NAMES Paragraph](../Language%20Reference/Chapter3_EnvironmentDivision.07.05.html#ww999015 "SPECIAL-NAMES Paragraph") of the Environment Division, that assigns a name to a [Collating Sequence](../Language%20Reference/Preface_LangRef.04.05.html#ww1027848 "Definitions").
+A [User-defined word](./Definitions#user-defined-word), in the [SPECIAL-NAMES Paragraph](../../Language-Reference/Environment-Division/Configuration-Section/Special-names) of the Environment Division, that assigns a name to a [Collating Sequence](./Definitions#collating-sequence).
 
 ### Alphabetic Character
 
-A [Letter](../Language%20Reference/Preface_LangRef.04.05.html#ww1027863 "Definitions") or a space [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions").
+A [Letter](./Definitions#letter) or a space [Character](./Definitions#character).
 
 ### Alphanumeric Character
 
-Any [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions") in the computer character set.
+Any [Character](./Definitions#character) in the computer character set.
 
 ### Character
 
@@ -22,11 +22,11 @@ A character position is the amount of physical storage required to store a singl
 
 ### Character-String
 
-A sequence of contiguous [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions")s which form a [COBOL Word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027845 "Definitions"), a [Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027870 "Definitions"), a PICTURE character-string, or a [Comment-Entry](../Language%20Reference/Preface_LangRef.04.05.html#ww1027851 "Definitions").
+A sequence of contiguous [Character](./Definitions#character)s which form a [COBOL Word](./Definitions#cobol-word), a [Literal](./Definitions#literal), a PICTURE character-string, or a [Comment-Entry](./Definitions#comment-entry).
 
 ### COBOL Word
 
-A [Character-String](../Language%20Reference/Preface_LangRef.04.05.html#ww1027842 "Definitions") which forms a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), a [System name](../Language%20Reference/Preface_LangRef.04.05.html#ww1027888 "Definitions"), or a [Reserved Word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027885 "Definitions").
+A [Character-String](./Definitions#character-string) which forms a [User-defined word](./Definitions#user-defined-word), a [System name](./Definitions#system-name), or a [Reserved Word](./Definitions#reserved-word).
 
 ### Collating Sequence
 
@@ -34,11 +34,11 @@ The sequence in which the characters that are acceptable to a computer are order
 
 ### Comment-Entry
 
-An entry in the [Identification Division](../Language%20Reference/Chapter2_IdentificationDivision.06.1.html#ww998962 "Identification Division") that may be any combination of [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions")s from the computer character set.
+An entry in the [Identification Division](../Identification-Division/Identification-Division) that may be any combination of [Character](./Definitions#character)s from the computer character set.
 
 ### Data Item
 
-A unit of data (excluding [Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027870 "Definitions")s) defined by the COBOL program.
+A unit of data (excluding [Literal](./Definitions#literal)s) defined by the COBOL program.
 
 ### Figurative Constant
 
@@ -60,11 +60,11 @@ An identifier is a term used to reflect a data-name that, if not unique in a pro
 
 ### Integer
 
-A [Numeric Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027882 "Definitions") or a numeric data item that does not include any digit position to the right of the assumed decimal point. When the term 'integer' appears in general formats, integer must not be a numeric data item, and must not be signed, nor zero unless explicitly allowed by the rules of that format.
+A [Numeric Literal](./Definitions#numeric-literal) or a numeric data item that does not include any digit position to the right of the assumed decimal point. When the term 'integer' appears in general formats, integer must not be a numeric data item, and must not be signed, nor zero unless explicitly allowed by the rules of that format.
 
 ### Letter
 
-A [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions") belonging to one of the following sets:
+A [Character](./Definitions#character) belonging to one of the following sets:
 
 1. Uppercase letters: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z;
 2. Lowercase letters: a, b, c, d, e, f, g, h, i, j, k, 1, m, n, o, p, q, r, s, t, u, v, w, x, y, z
@@ -73,15 +73,15 @@ A [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Defi
 
 ### Literal
 
-A [Character-String](../Language%20Reference/Preface_LangRef.04.05.html#ww1027842 "Definitions") whose value is implied by the ordered set of characters comprising the string.
+A [Character-String](./Definitions#character-string) whose value is implied by the ordered set of characters comprising the string.
 
 ### DBCS Literal
 
-A double-byte [Character-String](../Language%20Reference/Preface_LangRef.04.05.html#ww1027842 "Definitions"), a character set that uses two-byte (16-bit) characters rather than one-byte (8-bit) characters.
+A double-byte [Character-String](./Definitions#character-string), a character set that uses two-byte (16-bit) characters rather than one-byte (8-bit) characters.
 
 ### Nonnumeric Literal
 
-- A [Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027870 "Definitions") bound by quotation marks or apostrophes. The beginning and ending delimiters must be the same (that is, either both quotes or both apostrophes). The string of characters may include any [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions") in the computer's character set. To place the delimiter character in a nonnumeric literal, use two contiguous delimiter characters (either two quotes or two apostrophes). These two characters represent a single occurrence of that character.
+- A [Literal](./Definitions#literal) bound by quotation marks or apostrophes. The beginning and ending delimiters must be the same (that is, either both quotes or both apostrophes). The string of characters may include any [Character](./Definitions#character) in the computer's character set. To place the delimiter character in a nonnumeric literal, use two contiguous delimiter characters (either two quotes or two apostrophes). These two characters represent a single occurrence of that character.
 
 - The hexadecimal value of one or more characters using the native character set. Any of the following formats are recognized:
 
@@ -111,15 +111,15 @@ A sequence of 0 and 1 symbols prefixed by the B symbol, where B'1' represents tr
 
 ### Numeric Character
 
-A [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions") that belongs to the following set of digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+A [Character](./Definitions#character) that belongs to the following set of digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
 
 ### Numeric Data Item
 
-A [Data Item](../Language%20Reference/Preface_LangRef.04.05.html#ww1027854 "Definitions") whose description restricts its content to a value represented by characters chosen from the digits '0' through '9'; if signed, the item may also contain a '+', '-', or other representation of an operational sign. (See the [SIGN clause](../Language%20Reference/Chapter4_DataDivision.08.031.html#ww1001338 "SIGN clause").)
+A [Data Item](./Definitions#data-item) whose description restricts its content to a value represented by characters chosen from the digits '0' through '9'; if signed, the item may also contain a '+', '-', or other representation of an operational sign. (See the [SIGN clause](../../Language-Reference/Data-Division/Data-Description/SIGN-clause).)
 
 ### Numeric Literal
 
-A [Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027870 "Definitions") composed of one or more [Numeric Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1069022 "Definitions")s that may contain either a decimal point, or an algebraic sign, or both. The decimal point must not be the rightmost character. The algebraic sign, if present, must be the leftmost character.
+A [Literal](./Definitions#literal) composed of one or more [Numeric Character](./Definitions#numeric-character)s that may contain either a decimal point, or an algebraic sign, or both. The decimal point must not be the rightmost character. The algebraic sign, if present, must be the leftmost character.
 
 Numeric literals may also be specified using binary, octal, or hexadecimal notation. To specify a numeric literal in one of these forms, preface the number with one of the following prefixes:
 
@@ -132,15 +132,15 @@ Numeric literals may also be specified using binary, octal, or hexadecimal notat
 
 ### Reserved Word
 
-A [COBOL Word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027845 "Definitions") specified in the list of words which may be used in a COBOL source program, but which must not appear in the program as a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions") or [System name](../Language%20Reference/Preface_LangRef.04.05.html#ww1027888 "Definitions").
+A [COBOL Word](./Definitions#cobol-word) specified in the list of words which may be used in a COBOL source program, but which must not appear in the program as a [User-defined word](./Definitions#user-defined-word) or [System name](./Definitions#system-name).
 
 ### System name
 
-A [COBOL Word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027845 "Definitions") that is used to communicate with the operating environment.
+A [COBOL Word](./Definitions#cobol-word) that is used to communicate with the operating environment.
 
 ### User-defined word
 
-A user-defined word is a [COBOL Word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027845 "Definitions") that must be supplied by the user to satisfy the format of a clause or statement. Each [Character](../Language%20Reference/Preface_LangRef.04.05.html#ww1027836 "Definitions") of a user-defined word is selected from [Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027870 "Definitions"), [Numeric Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027882 "Definitions"), '_' and '-', except that '_' and '-' may not appear as the first character.
+A user-defined word is a [COBOL Word](./Definitions#cobol-word) that must be supplied by the user to satisfy the format of a clause or statement. Each [Character](./Definitions#character) of a user-defined word is selected from [Literal](./Definitions#literal), [Numeric Literal](./Definitions#numeric-literal), '_' and '-', except that '_' and '-' may not appear as the first character.
 
 ### Concatenation Expressions
 

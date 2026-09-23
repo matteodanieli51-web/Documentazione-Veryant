@@ -5,7 +5,7 @@ The isCOBOL 2017R1 IDE is now based on Eclipse 4.5 Mars. These are some of the n
 - New IDE dark theme, which looks great for dark lovers.
 - Powerful terminal emulator, providing access to the system terminal directly from the IDE, as shown in Figure 1, Terminal configuration
 
-![](..images/Mars-Terminal.png)
+![](../images/Mars-Terminal.png)
 
 - New keyboard shortcuts to split editors horizontally ( CTRL+\_ ) or vertically ( CTRL+{ ) allowing editing of two parts of a file at the same time.
 - Native support of Git flow

@@ -14,8 +14,8 @@ Where:
 
 - *host* is the IP address where isCOBOL Server is listening. Note that you can specify only an IP address here; hostnames are not accepted. By default 127.0.0.1 is used.
 - *port* is the port number where isCOBOL Server is listening. By default 10995 is used.
-- *usr* is the user name for the connection to the isCOBOL Server in case [iscobol.as.authentication \*](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-PropertieS#iscobol-server-thin-client-configuration) is enabled.
-- *pwd* is the password for the connection to the isCOBOL Server in case [iscobol.as.authentication \*](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-PropertieS#iscobol-server-thin-client-configuration) is enabled.
+- *usr* is the user name for the connection to the isCOBOL Server in case [iscobol.as.authentication \*](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#iscobol-server-thin-client-configuration) is enabled.
+- *pwd* is the password for the connection to the isCOBOL Server in case [iscobol.as.authentication \*](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#iscobol-server-thin-client-configuration) is enabled.
 - *config_file* is an isCOBOL properties file on the server machine. The system environment variables set on the local machine are passed as well to the runtime session that will be generated in the isCOBOL Server.
 - *s* is the connection timeout expressed in seconds. If omitted, the default timeout in the system is used.
 - *p1, p2 ... pn* are command line parameters that will be received by the program as chaining parameters.

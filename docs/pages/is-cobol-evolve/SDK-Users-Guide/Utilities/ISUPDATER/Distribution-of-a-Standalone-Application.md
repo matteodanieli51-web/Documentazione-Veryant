@@ -2,9 +2,9 @@
 
 To deploy the application through the Update Facility of isCOBOL Server, the isCOBOL Runtime Framework must be installed on the client machines.
 
-Downlad and launch isCOBOL_*yyyy_R_n*_Windows_*arc*.msi where *yyyy* is the year, *R* is the release number, *n* is the build number and *arc* is the system architecture. Choose "isCOBOL Runtime" from the list of products:![](../../../images/setup-runtime-1.png)
+Downlad and launch isCOBOL_*yyyy*\_*R*\_*n*\_Windows_*arc*.msi where *yyyy* is the year, *R* is the release number, *n* is the build number and *arc* is the system architecture. Choose "isCOBOL Runtime" from the list of products:![](../../../images/setup-runtime-1.png)
 
-When prompted, choose to associate the isws extension to the SDK that you’re installing:![](../SDK%20User's%20Guide/images/setup-runtime-2.png)
+When prompted, choose to associate the isws extension to the SDK that you’re installing:![](../../../images/setup-runtime-2.png)
 
 The isws files are property files that include the isUpdater configuration. See [Client Configuration (isupdater.properties)](../../Compiler-and-Runtime/Configuration/Configuration-Properties#client-configuration-isupdaterproperties) for the list of properties that you could include in this kind of file. The isws files could be passed to isUpdater via the -c option. The installer creates an association between the isws extension and the command:
 

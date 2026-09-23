@@ -9,7 +9,7 @@ You can easily perform a test coverage as follows:
 
 The above operations trigger the program execution.
 
-When the runtime session terminates, the [Coverage](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective) view shows the coverage report.![](../../../images/IDE-coverage.png)
+When the runtime session terminates, the [Coverage](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/Coverage) view shows the coverage report. ![](../../../images/IDE-coverage.png)
 
 isCOBOL IDE automatically sets the isCOBOL Code Coverage configuration as follows:
 

@@ -9,7 +9,7 @@ The wizard procedure allows you to choose between creating a blank screen or sta
 
 When the program contains more than one screen, it’s necessary to set which one is the main screen. To specify the main screen, right click on the program name and select *Properties* from the pop-up menu.
 
-![](../isCOBOL%20IDE/images/WhichScreen.PNG)
+![](../../images/WhichScreen.png)
 
 When the program contains more than one screen, it’s very important to set the proper window type for each one of the screens. The main screen should be STANDARD or INITIAL, while the other ones must be FLOATING or INDEPENDENT. To set the window type:
 

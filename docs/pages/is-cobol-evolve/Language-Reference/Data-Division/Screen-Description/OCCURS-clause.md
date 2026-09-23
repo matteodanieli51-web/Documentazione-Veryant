@@ -22,7 +22,7 @@ OCCURS Integer-6 TIMES
 3. During a [DISPLAY](../../Procedure-Division-Statements/DISPLAY) screen or an [ACCEPT](../../Procedure-Division-Statements/ACCEPT) screen Statement that references a screen item whose description includes the OCCURS clause and whose description or whose subordinate's description includes a [FROM](./FROM-clause), [TO](./TO-clause), or [USING](./USING-clause) clause, the data values for corresponding table elements are moved from the data table element to the screen table element or from the screen table element to the data table element.
 4. If the description of a screen item includes the OCCURS clause, the positioning within the screen record of each occurrence of that screen item is as follows:
 
-a. If the description of that screen item contains a [COLUMN clause](../Language%20Reference/Chapter4_DataDivision.08.048.html#ww1002948 "COLUMN clause"), each occurrence behaves as though it had the same [COLUMN clause](../Language%20Reference/Chapter4_DataDivision.08.048.html#ww1002948 "COLUMN clause") specified.
+a. If the description of that screen item contains a [COLUMN clause](./COLUMN-clause), each occurrence behaves as though it had the same [COLUMN clause](./COLUMN-clause) specified.
 
 b. If that screen item is a group item with a subordinate screen item whose description contains a [COLUMN clause](./COLUMN-clause) with the PLUS or '\-' phrase and that group screen item is subordinate to a screen item whose description contains a [LINE clause](./LINE-clause), each occurrence behaves as though it had the same subordinate entries with the same [COLUMN clause](./COLUMN-clause) specified.
 

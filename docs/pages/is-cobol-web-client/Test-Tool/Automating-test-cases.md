@@ -12,7 +12,7 @@ For a 3rd party service just search for "Selenium Grid in cloud" or use one of t
 
 To setup Selenium Grid yourself please refer to the [Selenium documentation](https://www.selenium.dev/documentation/grid/getting_started/).
 
-First configure your Selenium Grid. Enter the URL of the running Selenium Hub, e.g. http://localhost:4444. The connection will be validated, wait until you see "Status: Running". Test Tool also tries to retrieve information about running nodes.
+First configure your Selenium Grid. Enter the URL of the running Selenium Hub, e.g. [http://localhost:4444](https://www.example.com). The connection will be validated, wait until you see "Status: Running". Test Tool also tries to retrieve information about running nodes.
 
 ![](../images/testtool-selenium-running.png)
 
@@ -26,7 +26,7 @@ After you save the edited test suite it will be stored in the file.
 
 ![](../images/testtool-tests.png)
 
-Finally, configure the test case runner. Enter the URL of test tool server instance (this can be the same instance, i.e. http://localhost:8888 or some other instance). This URL must be accessible from the Selenium node.
+Finally, configure the test case runner. Enter the URL of test tool server instance (this can be the same instance, i.e. [http://localhost:8888](https://www.example.com) or some other instance). This URL must be accessible from the Selenium node.
 
 You can choose between a single run-through or a parallel run. Single run-through will simply execute test cases one-by-one, one instance at a time.
 
@@ -42,7 +42,7 @@ Click Start to start the runner. You can see the progress in the test suite tabl
 
 There is a simple REST API in case you want to execute a test suite with one or more tests from an external application, e.g. for a WebClient server health check.
 
-Send a POST request to http://localhost:8888/rest/runTest, set Content-Type header to "application/json" with following body:
+Send a POST request to [http://localhost:8888/rest/runTest](https://www.example.com), set Content-Type header to "application/json" with following body:
 
 ```cobol
 {

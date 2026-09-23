@@ -73,7 +73,7 @@ DCI_EFDPATH C:\myapp\efd
 
 #### Library Routines
 
-Refer to [DCI Routines](../Appendices/appendixb_LibraryRoutines.05.265.html#ww1182898 "DCI Routines") for the list of supported DCI library routines.
+Refer to [DCI Routines](../../../Appendices/Library-Routines/DCI-Routines) for the list of supported DCI library routines.
 
 #### Troubleshooting
 

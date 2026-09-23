@@ -22,7 +22,7 @@ You can optionally specify an External File Description (EFD) XML file. This kin
 
 - List view (default), showing multiple records at once.![](../../images/gife1.png)
 - Byte view, showing one record at once, displayed byte by byte.![](../../images/gife2.png)
-- Field view, showing one record at once, displayed field by field.![](../..S/images/gife3.png)
+- Field view, showing one record at once, displayed field by field.![](../../images/gife3.png)
 
 The program shows the first record as soon as the file is open. ASCII view of the record content is shown on the left; this view is useful to handle USAGE DISPLAY items. Hex view is shown on the right; this view is useful to handle USAGE COMP and other kind of items that can’t be correctly represented in ASCII.
 

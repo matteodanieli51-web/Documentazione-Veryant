@@ -4,7 +4,7 @@
 
 ISL provides an easy and quick way to run an isCOBOL program without knowing the options and properties that will be used. Looking at the screenshot below, it is clear that ISL could help new isCOBOL users to understand how many ways they can interact with isCOBOL objects. On the status bar of the utility, new users can start to learn the needed options.
 
-![](..w/images/isl.png)
+![](../images/isl.png)
 
 - New GUI interface for XML2WRK utility
 

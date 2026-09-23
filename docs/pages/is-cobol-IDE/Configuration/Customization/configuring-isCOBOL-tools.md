@@ -6,7 +6,7 @@
 Preferences: isCOBOL -> Tools -> Index and Relative File Editor
 ```
 
-These panels allow you to configure the Class Path and the Environment for the GIFE utility. See [Setting the Class Path](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.034.html#ww1195999 "Configuring isCOBOL Tools") and [Setting the Environment](../isCOBOL%20IDE/Chapter1-isCOBOL_IDE.3.034.html#ww1196012 "Configuring isCOBOL Tools") for details about the Class Path and Environment panels. This kind of setting is particularly useful in order to add JDBC driver libraries for the “easydb” file handler.
+These panels allow you to configure the Class Path and the Environment for the GIFE utility. See [Setting the Class Path](./Configuring-isCOBOL-tools#setting-the-class-path) and [Setting the Environment](./Configuring-isCOBOL-tools#setting-the-environment) for details about the Class Path and Environment panels. This kind of setting is particularly useful in order to add JDBC driver libraries for the “easydb” file handler.
 
 ```cobol
 Preferences: isCOBOL -> Tools -> Index File Migration

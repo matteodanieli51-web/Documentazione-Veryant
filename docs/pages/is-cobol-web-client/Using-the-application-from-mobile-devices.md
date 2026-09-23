@@ -4,9 +4,9 @@ Mobile devices like smartphones and tablets include web browser applications and
 
 When developing applications that could run on mobile devices, developers should keep in mind the restrictions on display size. This means that windows may not fit in the available space, and windows cannot be dragged on mobile browsers.
 
-We suggest you open your windows maximized, and use the [LM-RESPONSIVE](../is-cobol-evolve/User-Interface/Working-With-UI-Controls/Creating-control/layout) layout manager to resize the controls.
+We suggest you open your windows maximized, and use the [LM-RESPONSIVE](../is-cobol-evolve/User-Interface/Working-With-UI-and-Controls/Creating-a-control/Layout-managers/LM-RESPONSIVE) layout manager to resize the controls.
 
-When the virtual keyboard appears over a maximized window, the [NTF-RESIZED](../is-cobol-evolve/User-Interface/Working-With-UI-Controls/Creating-control/layout) event is fired.
+When the virtual keyboard appears over a maximized window, the [NTF-RESIZED](../is-cobol-evolve/User-Interface/Controls-Reference/WINDOW/Events/NTF-RESIZED) event is fired.
 
 The virutal keyboard doesn’t appear by default for character-based ACCEPTs. To obtain the virtual keyboard also for character-based ACCEPTs, add the following entry to the [JVM Arguments](./Applications-Monitoring-and-Configuration/Applications/Change-the-application-configuration/Change-the-application-configuration#app-config) of your webapp configuration: -Dwebswing.customInputElements=com.iscobol.gui.client.TerminalAccept.
 

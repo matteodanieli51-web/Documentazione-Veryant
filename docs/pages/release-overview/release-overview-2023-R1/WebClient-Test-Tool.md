@@ -20,7 +20,7 @@ To run the Windows service or Linux daemon in the background, the command is:
 webclient-testtool -start
 ```
 
-The Test Tool application can be reached using a web browser and navigating to the URL [http://localhost:8888/](http://localhost:8888/).
+The Test Tool application can be reached using a web browser and navigating to the URL [http://localhost:8888/](https://www.example.com).
 
 From the html interface you can create test projects and start recording the actions taken when using the isCOBOL program running in WebClient. Every time a mouse click in the application is detected a new assertion is created. An assertion is a set of properties that will be validated in the test case, like component type, value, path, etc.
 
@@ -42,7 +42,7 @@ A test suite is a collection of tests that can be grouped to automate test cases
 
 A suite is a configuration file where you define which test cases to run and set options to be used. Automated test cases require Selenium Grid, a smart proxy server that makes it easy to run tests in parallel on multiple machines. This is done by routing commands to remote web browser instances, where one server acts as the hub. This hub routes test commands that are in JSON format to multiple registered Grid nodes.
 
-A Selenium Grid can be set up either in your local environment or as a third-party service. To set the Selenium Grid in the WebClient Test Tool, set the URL of the running Selenium Hub, for example: [http://localhost:4444](http://localhost:4444). After the connection is validated, choose the platform and browser based on the availability of the environment on Selenium nodes. Finally, you can choose a “single run-through” or a “parallel run”. The first option executes test cases one-by-one, one instance at a time. The second option can run tests in parallel, and you can set the number of instances you want to run at the same time or after a timeout set in seconds.
+A Selenium Grid can be set up either in your local environment or as a third-party service. To set the Selenium Grid in the WebClient Test Tool, set the URL of the running Selenium Hub, for example: [http://localhost:4444](https://www.example.com). After the connection is validated, choose the platform and browser based on the availability of the environment on Selenium nodes. Finally, you can choose a “single run-through” or a “parallel run”. The first option executes test cases one-by-one, one instance at a time. The second option can run tests in parallel, and you can set the number of instances you want to run at the same time or after a timeout set in seconds.
 
 As shown in Figure 6, *WebClient Test Tool Suite with Selenium*, the suite is ready to be executed on different browsers.
 
@@ -50,7 +50,7 @@ Figure 6. WebClient Test Tool Suite with Selenium.
 
 ![](../images/suite-test.png)
 
-When Selenium is used with WebClient Test Tool, it also provides a simple REST API to execute a test suite with one or more tests from an external application. A POST request can be sent to [http://localhost:8888/rest/runTest](http://localhost:8888/rest/runTest), setting the Content-Type header to "application/json" with the following body:
+When Selenium is used with WebClient Test Tool, it also provides a simple REST API to execute a test suite with one or more tests from an external application. A POST request can be sent to [http://localhost:8888/rest/runTest](https://www.example.com), setting the Content-Type header to "application/json" with the following body:
 
 ```cobol
 {

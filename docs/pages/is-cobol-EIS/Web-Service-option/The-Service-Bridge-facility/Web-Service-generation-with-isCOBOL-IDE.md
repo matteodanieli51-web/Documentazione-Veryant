@@ -24,11 +24,11 @@ If no action is taken, the Compiler generates a Web Service parameter for each e
 2. Delete *lnk-return-status* | *input* from the *Service Fields* list as we want this field only as output
 3. Delete *lnk-op-code* | *output* from the *Service Fields* list as we want this field only as input
 
-![](../isCOBOL%20EIS/../ServiceEditor2.png)
+![](../../images/ServiceEditor2.png)
 
 By double clicking on items in the *Service Fields* list, a pop-up dialog appears and allows you to set additional attributes:
 
-![](../isCOBOL%20EIS/../ServiceEditor5.png)
+![](../../images/ServiceEditor5.png)
 
 As soon as you save modification in this editor, the SONGS.cbl source file is automatically updated as follows:
 

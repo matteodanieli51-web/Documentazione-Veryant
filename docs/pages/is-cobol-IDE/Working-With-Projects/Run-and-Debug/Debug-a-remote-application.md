@@ -6,7 +6,7 @@ isCOBOL IDE allows you to debug a program that is running in a local or remote A
 2. choose *Debug Configurations*....
 3. choose *Remote isCOBOL Application* from the tree
 
-![](../isCOBOL%20IDE/images/IDE-dbg-remote.PNG)
+![](../../images/IDE-dbg-remote.png)
 
 4. compile the fields as follows
 

@@ -125,7 +125,7 @@ A correct startup shows a message like this at the bottom of the console output:
 oejs.Server:main: Started @3792ms
 ```
 
-Browse to http://localhost:8090 to reach the WebClient Admin web application. In the home page you can see an overview of active session pools.
+Browse to [http://localhost:8090](https://www.example.com) to reach the WebClient Admin web application. In the home page you can see an overview of active session pools.
 
 ![](./images/wc-cluster-overview.png)
 

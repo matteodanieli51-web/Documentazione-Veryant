@@ -331,13 +331,13 @@ The following actions can be used in association with the current control, if it
 | SELECT-ALL-SELECTION | Selects all the text in the entry field. In a multi-line entry field, this includes the text in all lines. |
 | | |
 
-The ITEM-HELP action produces context-sensitive help for the control with the current input focus. See [Help automation](../../User-Interface/Working-With-UI-Controls/Creating-control/Help-automation) for more details.
+The ITEM-HELP action produces context-sensitive help for the control with the current input focus. See [Help automation](../../User-Interface/Working-With-UI-and-Controls/Creating-a-control/Help-automation) for more details.
 
 #### Format 14
 
 29. A Format 14 SET statement returns the result of a method invokation or the value of a field in object oriented programming.
 30. Result-Item should be defined according to the result of the method and the field type. To receive strings and numbers, Result-Item can be a standard COBOL data-item with picture PIC X(n) or PIC 9(n). To receive an instance of an object, then Result-Item should be defined as OBJECT REFERENCE to that object.
-31. If the field is a COBOL data item, it must be indicated upper case with hyhpens replaced by underscores, that is the way isCOBOL internally defines data items. For example, having 77 my-item pic x, you will reference it using SELF:>MY\_ITEM and not SELF:>my-item.
+31. If the field is a COBOL data item, it must be indicated upper case with hyhpens replaced by underscores, that is the way isCOBOL internally defines data items. For example, having 77 my-item pic x, you will reference it using SELF:>MY_ITEM and not SELF:>my-item.
 32. SELF means the current class. It can be used in a OBJECT paragraph. In a FACTORY paragraph the class logical name must be used in order to reference the current class.
 
 ```cobol

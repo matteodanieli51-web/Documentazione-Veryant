@@ -20,7 +20,7 @@ Context path: /
 WAR file: C:\Veryant\NoSQL\nosqlbridge\veryant-nsb.war
 ```
 
-Now you can navigate to [http://localhost:8080](http://localhost:8080) with a web-browser to access the administration page or send POST requests to this URL to use the NoSQL Bridge functions.
+Now you can navigate to [http://localhost:8080](https://www.example.com) with a web-browser to access the administration page or send POST requests to this URL to use the NoSQL Bridge functions.
 
 Refer to [NoSQL Bridge Administration](../NoSQL-Bridge-Administration/NoSQL-Bridge-Administration) for information on how to configure users and catalogs in the administration page.
 

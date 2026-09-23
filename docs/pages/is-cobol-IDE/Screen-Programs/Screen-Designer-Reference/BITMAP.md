@@ -30,7 +30,7 @@ Refer to [BITMAP](../../../is-cobol-evolve/User-Interface/Controls-Reference/BIT
 | hint | Specifies the value for the *Hint* property. |
 | id | Specifies the control id. This property is set automatically when the control is drawn. |
 | key | Specifies the value for the *Key* property. |
-| layout-data | Opens a dialog that allows the user to choose the control resize rules.<br>![](../../ide-prop-layout.png) <br>If the option "Follows Layout-Manager defaults" is checked, the *Layout-Data* property is not generated. |
+| layout-data | Opens a dialog that allows the user to choose the control resize rules.<br>![](../../images/ide-prop-layout.png) <br>If the option "Follows Layout-Manager defaults" is checked, the *Layout-Data* property is not generated. |
 | line | Specifies the Y coordinate of the control as expressed in cells. This property is set automatically when the control is drawn. |
 | line pixels | Specifies the Y coordinate of the control as expressed in pixels. This property is set automatically when the control is drawn. |
 | lines | Specifies the control height as expressed in cells. This property is set automatically when the control is drawn. |

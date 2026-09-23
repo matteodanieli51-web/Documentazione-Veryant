@@ -16,7 +16,7 @@ To create a new recording, click the *Add Recording* button, provide a name for 
 
 **Note** - the instructions and screenshots below use the isCOBOL Modernization sample program for the demonstration. They assume that you have a WebClient application that runs the CUSTOMER program and you configured it as explained in the [Setup](./Test-Tool#setup) paragraph.
 
-When you open a new recording file it will open in manual testing mode. To record a test case enter URL of your WebClient application (i.e. "http://localhost:8080/sample") and click *Start recording*.
+When you open a new recording file it will open in manual testing mode. To record a test case enter URL of your WebClient application (i.e. "[http://localhost:8080/sample](https://www.example.com)") and click *Start recording*.
 
 ![](../images/testtool-appurl.png)
 

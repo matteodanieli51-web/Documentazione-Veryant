@@ -53,7 +53,7 @@ Click *Save* to apply your changes. After the modifications are saved, the butto
 
 ![](../../images/nosql-dates.png)
 
-Some FD fields might be marked with the EFD [DATE Directive](\) that describes the field as a date, time or timestamp in the EFD dictionary, specifying a format string to interpret the value.
+Some FD fields might be marked with the EFD [DATE Directive](../../../is-cobol-evolve/Language-Reference/EFD-Directives/DATE-Directive) that describes the field as a date, time or timestamp in the EFD dictionary, specifying a format string to interpret the value.
 
 By default, NoSQL Bridge maps the format string in the EFD dictionary with the format string in the Catalog settings without any validation on the date and time value. For example, consider the following field
 
@@ -74,7 +74,7 @@ When the field contains the invalid date 12345678, NoSQL will return "5678-12-34
 
 No date conversion error is raised.
 
-In this default situation, date formats that include the day of year (the E character in the format string specified by the [DATE Directive](\)) are not supported.
+In this default situation, date formats that include the day of year (the E character in the format string specified by the [DATE Directive](../../../is-cobol-evolve/Language-Reference/EFD-Directives/DATE-Directive)) are not supported.
 
 To enable support of date formats that include the day of year, check the ENABLE SEMANTIC DATE CONVERSIONS option in the Catalog settings.
 
@@ -96,4 +96,4 @@ Date and time format strings in the Catalog settings support the following chara
 | S | Second (00-59) |
 | T | Cents (00-99) |
 
-Any other character is not mapped to the corresponding character in the [DATE Directive](\) format string and is returned as is.
+Any other character is not mapped to the corresponding character in the [DATE Directive](../../../is-cobol-evolve/Language-Reference/EFD-Directives/DATE-Directive) format string and is returned as is.

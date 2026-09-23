@@ -117,7 +117,7 @@ General Rules
   - If *Literal-4* and *Literal-5* are [Integer](../../Preface/Definitions#integer)s, they represent the ordinal number of a character within the native character set.
   - If the THROUGH phrase is specified, the contiguous characters in the native character set beginning with the character specified by the value of *Literal-4*, and ending with the character specified by the value of *Literal-5*, are included in the set of characters identified by *Class-Name-1*. In addition, the contiguous characters specified by a given THROUGH phrase may specify characters of the native character set in either ascending or descending sequence.
 
-9. When the CONSOLE phrase is specified, all ANSI-style [DISPLAY](../Language%20Reference/Chapter7_ProcedureDivisionStatements.10.17.html#ww1016921 "DISPLAY") Statements will send information to the screen instead of sending them to the default output channel.
+9. When the CONSOLE phrase is specified, all ANSI-style [DISPLAY](../../Procedure-Division-Statements/DISPLAY) Statements will send information to the screen instead of sending them to the default output channel.
 10. When the CRT STATUS phrase is specified, the value of the data item identified by *Crt-Status* will be updated with the last Exception or Termination value. If *Crt-Status* is defined as a group Data Item, it must have the following structure.
 
 ```cobol

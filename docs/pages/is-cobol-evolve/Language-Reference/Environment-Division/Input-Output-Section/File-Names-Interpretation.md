@@ -6,7 +6,7 @@ The first element of the file name, that is, all the text before the first slash
 
 If a DD_<name\> setting is not found in the system environment, the following procedure is performed:
 
-1. If [iscobol.file.env\_naming (boolean)](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.31.html#ww1125008 "Configuration Properties") is set in the configuration, the physical file name is searched for among the environment variables. During this search hyphens are translated to underscores and names are made lowercase to be case insensitive before the comparison between file name and configuration property name.
+1. If [iscobol.file.env_naming (boolean)](../../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#file_env_naming) is set in the configuration, the physical file name is searched for among the environment variables. During this search hyphens are translated to underscores and names are made lowercase to be case insensitive before the comparison between file name and configuration property name.
 
 **Note**: the conversion affects only properties set through SET ENVIRONMENT. For properties set in the external configuration, it’s your responsibility to use underscores and lowercase names, otherwise they will not match.
 

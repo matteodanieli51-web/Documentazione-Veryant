@@ -10,7 +10,7 @@ RECORD-POSITION OF Data-Name
 
 #### Syntax Rules
 
-1. *Data-name* is a [Data Item](../../Preface/Definitions#data-item), as defined in the [Definitions](../../Preface/Definition) section in the Preface of this document.
+1. *Data-name* is a [Data Item](../../Preface/Definitions#data-item), as defined in the [Definitions](../../Preface/Definitions) section in the Preface of this document.
 2. *Data-Name* may be qualified.
 3. *Data-Name* may not be reference modified.
 4. If *Data-Name* is subordinate to an OCCURS clause, then it must be referenced with subscripting or indexing.

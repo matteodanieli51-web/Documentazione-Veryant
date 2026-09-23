@@ -73,5 +73,5 @@ b. Arithmetic operations are executed sequentially in the order they appear in t
 
 ##### Format 2
 
-c. A Format 2 VALUE clause defines a [Condition-name condition](../../Procedure-Division-Statements/Condition-name-condition).
+c. A Format 2 VALUE clause defines a [Condition-name condition](../../Procedure-Division/Conditional-expressions/Condition-name-condition).
 

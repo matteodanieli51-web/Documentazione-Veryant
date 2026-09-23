@@ -24,7 +24,7 @@
 
 9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./Activate-the-License).
 
-10. You will also be asked if you want to install the Application Server as a system service or not. If you don’t install the service, you will have to start the Application Server in foreground mode from a command prompt as explained in [Usage of isCOBOL Server](../Usage-of-isCOBOL-Server/Usage-of-isCOBOL-Server). See [Windows service and Unix daemon](../Windows-service-and-Unix-daemon/Windows-service/Windows-Service) for details about the system service.
+10. You will also be asked if you want to install the Application Server as a system service or not. If you don’t install the service, you will have to start the Application Server in foreground mode from a command prompt as explained in [Usage of isCOBOL Server](../Usage-of-isCOBOL-Server/Usage-of-isCOBOL-Server). See [Windows service and Unix daemon](../Windows-service-and-Unix-daemon/Windows-service/Windows-service) for details about the system service.
 
 ![](../images/winsetup-service.png)
 

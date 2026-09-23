@@ -8,7 +8,7 @@ EXEC SQL VAR Host-Variable IS Type END-EXEC
 
 Where
 
-- *Host-Variable* is a [host variable](./Host-variables").
+- *Host-Variable* is a [host variable](./Host-variables).
 - *Type* can be one of the following keywords:
   - BINARY
   - LONG RAW

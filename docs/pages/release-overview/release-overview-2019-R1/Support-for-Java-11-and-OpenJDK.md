@@ -18,7 +18,7 @@ The newest isUPDATER supports the HTTPS protocol, which can be configured using 
 
 ### Media Type application
 
-Veryant is in the process of registering two new mime types as applications of vnd.veryant.thin at [www.iana.org](www.iana.org). These will enable the automatic execution of isCOBOL Thin Client and the isCOBOL updater tool.
+Veryant is in the process of registering two new mime types as applications of vnd.veryant.thin at [www.iana.org](https://www.iana.org/). These will enable the automatic execution of isCOBOL Thin Client and the isCOBOL updater tool.
 
 These file suffix registrations, done from the isCOBOL installation setup screen, will simplify the execution and the automatic update for the end user. The registered files contain all the isCOBOL properties needed to set up the desired execution of isCOBOL THIN and isUPDATER technologies on the client side.
 

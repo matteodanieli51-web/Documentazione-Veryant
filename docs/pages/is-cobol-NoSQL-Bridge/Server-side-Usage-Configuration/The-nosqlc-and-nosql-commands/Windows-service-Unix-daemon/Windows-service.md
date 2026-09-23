@@ -6,7 +6,7 @@ On Windows you can install NoSQL Bridge as a Windows Service.
 
 The NoSQL Bridge service can be installed during the setup process:
 
-![](../images/nosql-setup-service.png)
+![](../../../images/nosql-setup-service.png)
 
 When NoSQL Bridge has been installed, the service can be installed, removed and managed through the nosql.exe command line utility.
 
@@ -22,7 +22,7 @@ nosql -install
 
 If the operation is successful, there will be a new entry in the Windows service manager.
 
-![](../images/nosql-service.png)
+![](../../../images/nosql-service.png)
 
 The service is installed in auto mode, which means the service will automatically start along with the system.
 

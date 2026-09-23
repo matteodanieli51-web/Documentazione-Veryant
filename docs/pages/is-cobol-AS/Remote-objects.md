@@ -6,9 +6,9 @@ Programs loaded from remote.code_prefix are executed server-side using server re
 
 C functions can’t be called remotely; only COBOL programs can. If you need to call a C function on the server, create a bridge COBOL program, install the bridge program on the server along with the C function and call the bridge program instead of calling the C function directly.
 
-The runtime will only search for remote COBOL programs that are called synchronously with a Format 1 [CALL](../is-cobol-evolve/Language-Reference/Procedure-Division/CALL). In order to call a remote program asynchronously, use the [C$ASYNCRUN](\) routine.
+The runtime will only search for remote COBOL programs that are called synchronously with a Format 1 [CALL](../is-cobol-evolve/Language-Reference/Procedure-Division-Statements/CALL). In order to call a remote program asynchronously, use the [C$ASYNCRUN](../is-cobol-evolve/Appendices/Library-Routines/C$ASYNCRUN) routine.
 
-The call to a remote object establishes a connection between the local runtime and the isCOBOL Application Server that hosts the object. This connection is closed when a Format 2 [CANCEL](../is-cobol-evolve/Language-Reference/Procedure-Division/CANCEL) statement is executed by the local runtime or when the local runtime session terminates.
+The call to a remote object establishes a connection between the local runtime and the isCOBOL Application Server that hosts the object. This connection is closed when a Format 2 [CANCEL](../is-cobol-evolve/Language-Reference/Procedure-Division-Statements/CANCEL) statement is executed by the local runtime or when the local runtime session terminates.
 
 ## Example:
 

@@ -127,7 +127,7 @@ where:
 
 The standard dialog that appears with this command looks like this:
 
-![](../isCOBOL%20Application%20Server/images/panelStandard.PNG)
+![](../images/panelStandard.png)
 
 A row for each connected client (including the client you used to start the panel) is shown. Columns have the following meaning:
 
@@ -146,7 +146,7 @@ A row for each connected client (including the client you used to start the pane
 | Host address | IP address of the client PC |
 | Host name | Host name of the client PC. If the host name can’t be retrieved, the IP address is shown |
 | Launched program | Program name passed in the client command-line or the last program called through CHAIN statement. <br><br>The special value "File server" identifies a connection to the [isCOBOL File Server](../isCOBOL-File-Server/isCOBOL-File-Server). This kind of connection cannot be killed from the panel, it terminates along with the runtime sessions that opened the remote files. <br><br>The special value "Server Call Session" identifies a remote call. See [Remote objects](../Remote-objects) for details. The text between square brackets tells the name of the program that was remotely called. The word "Waiting" means that the last remote program terminated and the server is waiting for the client to execute a new remote program. This kind of connection cannot be killed from the panel, it terminates along with the runtime sessions that performed the remote calls. |
-| User information | Custom information stored by calling [A$USERINFO](\) |
+| User information | Custom information stored by calling [A$USERINFO](../../is-cobol-evolve/Appendices/Library-Routines/A$USERINFO/A$USERINFO) |
 | | |
 
 Tool-bar buttons and menu items allow you to

@@ -23,7 +23,7 @@ Refer to [BAR](../../../is-cobol-evolve/User-Interface/Controls-Reference/BAR/BA
 | horizontal | TRUE...The *Horizontal* style is generated<br>FALSE... The *Horizontal* style is not generated |
 | id | Specifies the control id. This property is set automatically when the control is drawn. |
 | key | Specifies the value for the *Key* property. |
-| layout-data | Opens a dialog that allows the user to choose the control resize rules.<br>![](../../ide-prop-layout.png) <br>If the option "Follows Layout-Manager defaults" is checked, the *Layout-Data* property is not generated. |
+| layout-data | Opens a dialog that allows the user to choose the control resize rules.<br>![](../../images/ide-prop-layout.png) <br>If the option "Follows Layout-Manager defaults" is checked, the *Layout-Data* property is not generated. |
 | line | Specifies the Y coordinate of the control as expressed in cells. This property is set automatically when the control is drawn |
 | line pixels | Specifies the Y coordinate of the control as expressed in pixels. This property is set automatically when the control is drawn |
 | line styles | SOLID... no particular style is generated<br>DASHED.... The *Dashed* style is generated<br>DOTTED... The *Dotted* style is generated<br>DOT-DASH... The *Dot-Dash* style is generated |
@@ -37,7 +37,7 @@ Refer to [BAR](../../../is-cobol-evolve/User-Interface/Controls-Reference/BAR/BA
 | min-width | Specifies the control minimum width as expressed in cells |
 | no-tab | TRUE...The *No-Tab* style is generated<br>FALSE...The *No-Tab* style is not generated |
 | notify-mouse | TRUE...The *Notify-Mouse* style is generated<br>FALSE...The *Notify-Mouse* style is not generated |
-| pixel line settings | Opens a dialog that allows the user to set *Color, Shading, Leading Shift and Trailing Shift* for each line of pixel when the Width property is set to a value greater than 1. <br>![](../../ide-prop-pixel-line.png) |
+| pixel line settings | Opens a dialog that allows the user to set *Color, Shading, Leading Shift and Trailing Shift* for each line of pixel when the Width property is set to a value greater than 1. <br>![](../../images/ide-prop-pixel-line.png) |
 | position shift | Specifies the value for the *Position-Shift* property |
 | size | Specifies the control width as expressed in cells. This property is set automatically when the control is drawn |
 | size pixels | Specifies the control width as expressed in pixels. This property is set automatically when the control is drawn |

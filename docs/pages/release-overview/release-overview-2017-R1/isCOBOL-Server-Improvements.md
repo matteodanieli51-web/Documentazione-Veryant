@@ -39,7 +39,7 @@ These debugger sessions don’t interfere with other Clients running without deb
 
 The isCOBOL Server administration Panel has a new "Threads View", which shows CPU usage of all isCOBOL Server threads:
 
-![](../PANELTHREADS.png)
+![](../images/PANELTHREADS.png)
 
 The Clients View in the Panel now has the new Stack column, that can now show the list of running threads for each TID, if the application uses multithread programming, and the COBOL stack trace for each thread
 

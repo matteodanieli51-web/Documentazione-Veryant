@@ -12,7 +12,7 @@ Data mapping (any COMP type could be used, mapping is done according to the digi
 | PIC S9(n)V9(m) | DECIMAL(n+m,m) |
 | | |
 
-\[1\] It will be CHAR if you used either the [-defCHAR](../DatabaseBridge-generator-edbiis#command-line-options) option with the edbiis command or the [-ca]() option in the Compiler command line.
+\[1\] It will be CHAR if you used either the [-defCHAR](../DatabaseBridge-generator-edbiis#command-line-options) option with the edbiis command or the [-ca](../../is-cobol-evolve/SDK-Users-Guide/Compiler-and-Runtime/Compiler/Compiler-Options#ca) option in the Compiler command line.
 
 ### Peculiar jdbc settings:
 

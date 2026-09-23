@@ -46,7 +46,7 @@ Notes:
 - Tomcat should be executed from its root folder, otherwise the path to *webclient.war* needs to be adjusted.
 - The above snippets use the Tomcat’s default port 8080. Change this port number if you started Tomcat on a different port.
 
-7. Browse to "http://localhost:8080/webclient-server" to reach the WebClient home page.
+7. Browse to "[http://localhost:8080/webclient-server](https://www.example.com)" to reach the WebClient home page.
 
 ## WebClient Cluster Server & Admin
 
@@ -102,7 +102,7 @@ Notes:
 - Tomcat should be executed from its root folder, otherwise the path to *webclient.war* needs to be adjusted.
 - The above snippets use the Tomcat’s default port 8080. Change this port number if you started Tomcat on a different port.
 
-7. Browse to "http://localhost:8080/webclient" to reach the WebClient home page.
+7. Browse to "[http://localhost:8080/webclient](https://www.example.com)" to reach the WebClient home page.
 
 ## Deploying in Tomcat on headless Linux
 

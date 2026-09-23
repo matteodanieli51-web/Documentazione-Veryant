@@ -1,6 +1,6 @@
 ### Files in factory objects
 
-When a file is specified in a factory, this means that the factory definition contains the FILE-CONTROL paragraph and FILE SECTION. One or more of the factory methods will contain the file processing statements such as [OPEN](../../../Procedure-Division-Statements/OPEN), [CLOSE](../../Procedure-Division-Statements/CLOSE), [READ](../../Procedure-Division-Statements/READ) and [WRITE](../../Procedure-Division-Statements/WRITE). All of the factory methods have visibility to the data on the file without the use of the EXTERNAL clause.
+When a file is specified in a factory, this means that the factory definition contains the FILE-CONTROL paragraph and FILE SECTION. One or more of the factory methods will contain the file processing statements such as [OPEN](../../Procedure-Division-Statements/OPEN), [CLOSE](../../Procedure-Division-Statements/CLOSE), [READ](../../Procedure-Division-Statements/READ) and [WRITE](../../Procedure-Division-Statements/WRITE). All of the factory methods have visibility to the data on the file without the use of the EXTERNAL clause.
 
 ### Inherited Factory Object Definitions
 

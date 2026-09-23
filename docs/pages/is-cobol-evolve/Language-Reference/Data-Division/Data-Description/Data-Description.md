@@ -118,8 +118,8 @@ d. An index data item.
 2. If *Nonnumeric-Literal-1* is specified, the [class and category](../Concept-of-Classes-of-Data) of *Constant-Name-1* is the same as that of *Nonnumeric-Literal-1*.
 3. If *Numeric-Literal-1* is specified, the [class and category](../Concept-of-Classes-of-Data) of *Constant-Name-1* is numeric.
 4. If the BYTE-LENGTH phrase is specified, the [class and category](../Concept-of-Classes-of-Data) of *Constant-Name-1* is numeric. *Constant-Name-1* is an integer. The value of *Constant-Name-1* is determined as specified in the BYTE-LENGTH intrinsic function with the exception that when *Data-Name-9* is an occurs-depending group item, the maximum size of the data item is used.
-5. If the LENGTH phrase is specified, the [class and category](../Language%20Reference/Chapter4_DataDivision.08.087.html#ww1003574 "Concept of Classes of Data") of *Constant-Name-1* is numeric. *Constant-Name-1* is an integer. The value of *Constant-Name-1* is determined as specified in the LENGTH intrinsic function with the exception that when *Data-Name-10* is an occurs-depending group item, the maximum size of the data item is used.
-6. If the START phrase is specified, the [class and category](../Language%20Reference/Chapter4_DataDivision.08.087.html#ww1003574 "Concept of Classes of Data") of *Constant-Name-1* is numeric. *Constant-Name-1* is an integer. The value of *Constant-Name-1* is determined as the offset of *Data-Name-10*.
+5. If the LENGTH phrase is specified, the [class and category](../Concept-of-Classes-of-Data) of *Constant-Name-1* is numeric. *Constant-Name-1* is an integer. The value of *Constant-Name-1* is determined as specified in the LENGTH intrinsic function with the exception that when *Data-Name-10* is an occurs-depending group item, the maximum size of the data item is used.
+6. If the START phrase is specified, the [class and category](../Concept-of-Classes-of-Data) of *Constant-Name-1* is numeric. *Constant-Name-1* is an integer. The value of *Constant-Name-1* is determined as the offset of *Data-Name-10*.
 7. *Constant-Name-1* may be omitted to specify a data item which is not referenced explicitly.
 
 #### Format 5

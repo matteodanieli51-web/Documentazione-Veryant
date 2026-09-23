@@ -19,7 +19,7 @@ Refer to [DATE-ENTRY](../../../is-cobol-evolve/User-Interface/Controls-Reference
 | column pixels | Specifies the X coordinate of the control as expressed in pixels. This property is set automatically when the control is drawn. |
 | css-base-style-name<br>css-style-name | Specify the CSS style associated with the control. It works only in a WebDirect environment.<br>See [Customize the WebDirect Layout using CSS](../../../is-cobol-EIS/WebDirect-option/Customize-the-WebDirect-Layout-using-CSS) for more information. |
 | custom-data | Specifies the value for the *Custom-Data* property. |
-| decoration background | Opens a dialog to retrieve the value for the *Decoration-Background* property. <br>![](../../images/ide-prop-decb.png) |
+| decoration background | Opens a dialog to retrieve the value for the *Decoration-Background* property. <br>![](../../images/ide-prop-decbk.png) |
 | decoration background visible | TRUE...The *Decoration-Background-Visible* style is generated<br>FALSE...The *Decoration-Background-Visible* style is not generated |
 | decoration border visible | TRUE...The *Decoration-Border-Visible* style is generated<br>FALSE...The *Decoration-Border-Visible* style is not generated |
 | destroy type | AUTOMATIC...neither the *Temporary* nor Permanent styles are generated<br>TEMPORARY...*Temporary* style is generated<br>PERMANENT...*Permanent* style is generated |

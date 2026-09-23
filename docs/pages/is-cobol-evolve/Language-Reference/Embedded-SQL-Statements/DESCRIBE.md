@@ -33,7 +33,7 @@ END-EXEC
 
 #### Format 2
 
-3. The [-csdb2](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.07.html#ww1124460 "Compiler Options") Compiler option must be used in order to compile this statement.
+3. The [-csdb2](../../SDK-Users-Guide/Compiler-and-Runtime/Compiler/Compiler-Options#csdb2) Compiler option must be used in order to compile this statement.
 4. *Prepared-Statement* is a [Nonnumeric Literal](../Preface/Definitions#nonnumeric-literal), as defined in the [Definitions](../Preface/Definitions) section of the Preface of this document.
 5. *Sql-Descriptor* is the group item that identifies the [IBM DB2 SQLDA implementation](../Embedded-SQL-ESQL/SQLDA/IBM-DB2-SQLDA-implementation).
 

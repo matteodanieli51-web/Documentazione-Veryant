@@ -65,7 +65,7 @@ END-EXEC
 
 The host variables management is conditioned by the [HOSTVAR Directive](../SQL-Directives/HOSTVAR-Directive), the [iscobol.compiler.esql.procedure.ProcedureName](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#databasebridge-and-jdbcesql-configuration) configuration property and the [iscobol.esql.default_param_type](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#databasebridge-and-jdbcesql-configuration) configuration property.
 
-5. If the [iscobol.esql.prepare_handler \*]() configuration property specifies a valid class, then the queryDecoder() method of that class is invoked to confirm or alter the statement. The runtime will then execute the new statement returned by that method. The following snippet shows a prototype of a valid class
+5. If the [iscobol.esql.prepare_handler \*](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#esql_prepare_handler) configuration property specifies a valid class, then the queryDecoder() method of that class is invoked to confirm or alter the statement. The runtime will then execute the new statement returned by that method. The following snippet shows a prototype of a valid class
 
 ```cobol
 import com.iscobol.types.CobolVar;

@@ -47,4 +47,4 @@ In an EIS environment, a COBOL program may occasionally perform a DISPLAY or ACC
 
 VisualVM is a Java virtual machine monitoring, troubleshooting, and profiling tool.
 
-See [Tuning and monitoring the Java Virtual Machine with VisualVM](../../is-cobol-evolve/Appendices/Troubleshooting/Tuning-and-monitoring-the-Java-Virtual-Machine-with-VisualVM) for information on VisualVM and how to use it to monitor the Tomcat activity, collecting dumps and more.
+See [Tuning and monitoring the Java Virtual Machine with VisualVM](../../is-cobol-evolve/Appendices/Troubleshooting/Tuning-and-monitoring-the-Java-Virtual-Machine-with-VisualVM/Tuning-and-monitoring-the-Java-Virtual-Machine-with-VisualVM) for information on VisualVM and how to use it to monitor the Tomcat activity, collecting dumps and more.

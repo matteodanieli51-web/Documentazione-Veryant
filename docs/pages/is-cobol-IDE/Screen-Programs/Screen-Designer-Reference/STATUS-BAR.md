@@ -1,6 +1,6 @@
 ### STATUS BAR
 
-Refer to [STATUS-BAR](../../../is-cobol-evolve/User-Interface/Controls-Reference/STATUS-BAR/STATUS.BAR) for details about properties, styles and events of this control.
+Refer to [STATUS-BAR](../../../is-cobol-evolve/User-Interface/Controls-Reference/STATUS-BAR/STATUS-BAR) for details about properties, styles and events of this control.
 
 | Properties | |
 | --- | --- |

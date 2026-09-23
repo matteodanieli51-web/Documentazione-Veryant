@@ -16,11 +16,11 @@
 
 7. Select "isCOBOL Compiler and Runtime Environment" from the list of products when prompted.
 
-![](.../images/winsetup-comprun.PNG)
+![](../../../images/winsetup-comprun.png)
 
 8. Select your JDK when prompted
 
-![](../images/winsetup-jdk.PNG)
+![](../../../images/winsetup-jdk.png)
 
 9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./Activate-the-License).
 

@@ -68,4 +68,4 @@ iscrun CLIENTH
 
 this is the result:
 
-![](../..images/iscrunclienth.png)
+![](../../images/iscrunclienth.png)

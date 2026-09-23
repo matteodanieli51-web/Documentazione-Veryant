@@ -39,17 +39,17 @@ b. If condition-1 is false, the corresponding data item is declared to be absent
 
 3. Within a report group description, any PRESENT WHEN clauses are taken into account when assessing the validity of the arrangement of LINE and COLUMN clauses, the manner in which the report group will be printed and the effect of sum counters, as follows:
 
-a. The rules for positioning the first line of the report group ignore any LINE clauses specified at the start of the report group where the LINE clauses are associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause).)
+a. The rules for positioning the first line of the report group ignore any LINE clauses specified at the start of the report group where the LINE clauses are associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause))
 
-b. The rules forbidding overlap of absolute lines in the report group are not applied to lines associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause).)
+b. The rules forbidding overlap of absolute lines in the report group are not applied to lines associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause)).
 
-c. The rules preventing trailing relative lines in the report group from exceeding the report group's lower limit are not applied to lines associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause).)
+c. The rules preventing trailing relative lines in the report group from exceeding the report group's lower limit are not applied to lines associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause))
 
-d. The page fit test for body groups disregards all lines associated with absent data items. (See [LINE clause](.../Screen-Description/LINE-clause).)
+d. The page fit test for body groups disregards all lines associated with absent data items. (See [LINE clause](../Screen-Description/LINE-clause))
 
 e. The rules forbidding overlap of absolute printable items in a report line are not applied to items associated with absent data items. (See [COLUMN clause](../Screen-Description/COLUMN-clause), general rule 4.)
 
-f. The rules preventing trailing relative printable items in the line from exceeding the page width are not applied to items associated with absent data items. (See [COLUMN clause](../Screen-Description/COLUMN-clause).)
+f. The rules preventing trailing relative printable items in the line from exceeding the page width are not applied to items associated with absent data items. (See [COLUMN clause](../Screen-Description/COLUMN-clause))
 
 g. If an entry with a SUM clause is associated with an absent data item, the sum counter is not printed and is not reset to zero.
 

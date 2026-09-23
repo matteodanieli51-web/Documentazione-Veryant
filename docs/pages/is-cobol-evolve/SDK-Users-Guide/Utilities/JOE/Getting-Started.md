@@ -24,6 +24,6 @@ iscrun -joe myscript.joe
 
 JOE scripts can also be edited and executed in the isCOBOL IDE.
 
-To edit a script within the IDE, add it to your project and open it with the [JOE Editor](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective).
+To edit a script within the IDE, add it to your project and open it with the [JOE Editor](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/Editors/JOE-Editor).
 
-To run a script from the IDE, right click on the script name in the File View and choose *Run As > Joe Application*. The output is shown in the [Console](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective) view.
+To run a script from the IDE, right click on the script name in the File View and choose *Run As > Joe Application*. The output is shown in the [Console](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/Console) view.

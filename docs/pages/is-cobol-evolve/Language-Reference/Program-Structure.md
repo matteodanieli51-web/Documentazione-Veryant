@@ -130,12 +130,12 @@ The schema below shows how a COBOL program is structured. For simplifying access
 
 ### Syntax rules
 
-1. *Program-Name* is a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document.
-2. Each reference to *Comment-Entry* is a [Comment-Entry](../Language%20Reference/Preface_LangRef.04.05.html#ww1027851 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document.
-3. Each reference to *Class-Name* is a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document
-4. *Interface-Name* is a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document.
-5. Each reference to *Method-Name* is a [User-defined word](../Language%20Reference/Preface_LangRef.04.05.html#ww1027891 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document.
-6. Each reference to *Literal* is a [Nonnumeric Literal](../Language%20Reference/Preface_LangRef.04.05.html#ww1027873 "Definitions"), as defined in the [Definitions](../Language%20Reference/Preface_LangRef.04.05.html#ww1027826 "Definitions") section in the Preface of this document.
+1. *Program-Name* is a [User-defined word](./Preface/Definitions#user-defined-word), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document.
+2. Each reference to *Comment-Entry* is a [Comment-Entry](./Preface/Definitions#comment-entry), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document.
+3. Each reference to *Class-Name* is a [User-defined word](./Preface/Definitions#user-defined-word), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document
+4. *Interface-Name* is a [User-defined word](./Preface/Definitions#user-defined-word), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document.
+5. Each reference to *Method-Name* is a [User-defined word](./Preface/Definitions#user-defined-word), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document.
+6. Each reference to *Literal* is a [Nonnumeric Literal](./Preface/Definitions#nonnumeric-literal), as defined in the [Definitions](./Preface/Definitions) section in the Preface of this document.
 
 ### General rules
 

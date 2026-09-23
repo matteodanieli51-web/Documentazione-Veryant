@@ -2,7 +2,7 @@
 
 ### Windows
 
-1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./Download-and-install-the-Java-Runtime-Environment).
+1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./Download-and-install-the-Java-Runtime-Environment-(JRE)).
 2. Go to "[https://support.veryant.com](https://support.veryant.com)".
 3. Sign in with your User ID and Password.
 4. Click on the "Download Current Release" link.
@@ -23,11 +23,11 @@
 9. Follow the wizard procedure to the end. In the process you will be asked to provide the installation path ("C:\\Veryant" by default) and license keys. You can skip license activation and perform it later, as explained in [Activate the License](./Activate-the-License).
 10. You will also be asked if you want to install the WebClient tools as system services or not. If you don't install the services during setup, you will need to start the WebClient components in the foreground or install the services from a command prompt. You will also need to set the secret key manually in the *webclient.properties* and *webclient-admin.properties* files.
 
-![](../winsetup-wc-service.png)
+![](../images/winsetup-wc-service.png)
 
 ### Linux
 
-1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./Download-and-install-the-Java-Runtime-Environment) .
+1. If you haven't already done so, [Download and install the Java Runtime Environment (JRE)](./Download-and-install-the-Java-Runtime-Environment-(JRE)) .
 2. Go to "[https://support.veryant.com](https://support.veryant.com)".
 3. Sign in with your User ID and Password.
 4. Click on the "Download Current Release" link.

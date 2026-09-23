@@ -193,7 +193,7 @@ When the floating insertion character is the editing control symbol '+' or '-', 
 
 If all numeric character positions in the PICTURE character-string are represented by the insertion character, the result depends upon the value of the data. If the value is zero the entire data item will contain spaces. If the value is not zero, the result is the same as when the insertion character is only to the left of the decimal point.
 
-To avoid truncation, the minimum size of the PICTURE character-string for the receiving data item must be the number of characters in the sending data item, plus the number of nonfloating insertion characters being edited into the receiving data item, plus one for the floating insertion character. If truncation does occur, the value of the data that is used for editing is the value after truncation. See [Standard Alignment Rules](../Standard-Alignment-Rules").
+To avoid truncation, the minimum size of the PICTURE character-string for the receiving data item must be the number of characters in the sending data item, plus the number of nonfloating insertion characters being edited into the receiving data item, plus one for the floating insertion character. If truncation does occur, the value of the data that is used for editing is the value after truncation. See [Standard Alignment Rules](../Standard-Alignment-Rules).
 
 8. Zero suppression editing. The suppression of leading zeros in numeric character positions is indicated by the use of the alphabetic character 'Z' or the character '\*' (asterisk) as suppression symbols in a PICTURE character-string. These symbols are mutually exclusive in a given PICTURE character-string. Each suppression symbol is counted in determining the size of the item. If 'Z' is used the replacement character will be the space and if the asterisk is used, the replacement character will be '\*'.
 
@@ -316,4 +316,4 @@ Where n is the number of digits specified in Character-String. The first field c
 
 2. VARYING items shouldn’t be used to intercept NULL values. The length parameter is set to unpredictable values in this case.
 
-For more information see [Mapping a VARCHAR field to a COBOL group data item](../../Embedded-SQL-Statements/Mapping-a-VARCHAR-field-to-a-COBOL-group-data-item).
+For more information see [Mapping a VARCHAR field to a COBOL group data item](../../Embedded-SQL-ESQL/Host-variables/Mapping-a-VARCHAR-field-to-a-COBOL-group-data-item).

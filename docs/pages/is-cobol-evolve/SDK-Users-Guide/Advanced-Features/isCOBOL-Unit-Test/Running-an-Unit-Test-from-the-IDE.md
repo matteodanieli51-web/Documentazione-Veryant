@@ -18,7 +18,7 @@ In order to create a Unit Test in the IDE, a dedicated Run Configuration must be
 
 4. Click on the *Apply* button, then on the Run button
 
-The Unit Test will run and the results will be shown in the [isUnit](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective) view.
+The Unit Test will run and the results will be shown in the [isUnit](../../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/The-isCOBOL-IDE-Perspective) view.
 
 ![](../../../images/isUnitView.png)
 

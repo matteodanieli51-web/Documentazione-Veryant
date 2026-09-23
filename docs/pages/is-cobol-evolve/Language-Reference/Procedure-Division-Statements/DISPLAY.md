@@ -1218,7 +1218,7 @@ A. Type describes the set of buttons contained in the box. The possible values a
 
 i. If type is omitted, or if it contains an invalid value, then MB-OK is used.
 
-B. Icon describes the icon that will appear. The icon appears only under Windows. On other systems, the icon selected is ignored. If icon is set to MB-ERROR-ICON, then a "stop" icon is shown. If icon is set to MB-WARNING-ICON, then an "exclamation" icon displays. If icon is set to MB-DEFAULT-ICON, then boxes with "OK" buttons will display an "information" icon, and boxes with "Yes/No" buttons will display a "question mark" icon. If icon is omitted or contains an invalid value, then MB-DEFAULT-ICON is used. Icons are customizable by providing custom GIF files as described in [Default icons](../../User-Interface/Working-With-UI-Controls/Default-icons).
+B. Icon describes the icon that will appear. The icon appears only under Windows. On other systems, the icon selected is ignored. If icon is set to MB-ERROR-ICON, then a "stop" icon is shown. If icon is set to MB-WARNING-ICON, then an "exclamation" icon displays. If icon is set to MB-DEFAULT-ICON, then boxes with "OK" buttons will display an "information" icon, and boxes with "Yes/No" buttons will display a "question mark" icon. If icon is omitted or contains an invalid value, then MB-DEFAULT-ICON is used. Icons are customizable by providing custom GIF files as described in [Default icons](../../User-Interface/Working-With-UI-and-Controls/Default-Icons).
 
 C. Font-1 describes the font used to rendered the text in the message box. If omitted, the font specified by [iscobol.gui.messagebox.font](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#graphical-user-ingerface-gui) is used.
 
@@ -1293,7 +1293,7 @@ G. The CENTERED clause causes the message box dialog to be centered in the curre
 
 The program receives the message box specifications as Linkage parameters and can return a numeric exit code, that is useful to communicate the user choice for yes-no messages.
 
-To associate the COBOL program to the message box implementation, use the [iscobol.gui.messagebox.custom_prog](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#graphical-user-ingerface-gui) configuration property, e.g.
+To associate the COBOL program to the message box implementation, use the [iscobol.gui.messagebox.custom_prog](../../SDK-Users-Guide/Compiler-and-Runtime/Configuration/Configuration-Properties#graphical-user-interface-gui) configuration property, e.g.
 
 ```cobol
 iscobol.gui.messagebox.custom_prog=MYMESSAGEBOX

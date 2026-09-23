@@ -43,6 +43,6 @@ There is also *webclient-testtool.properties* configuration file where you can c
 | test.appStartWaitSec | wait in automated test run for WebClient application to be started and ready to be tested |
 | | |
 
-Open the Test Tool on http://localhost:8888.
+Open the Test Tool on [http://localhost:8888](https://www.example.com).
 
 ![](../images/testtool-main.png)

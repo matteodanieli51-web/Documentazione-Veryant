@@ -55,8 +55,8 @@ Configure the application settings (in the *Settings* tab) as follows, changing 
 
 | | |
 | --- | --- |
-| Allowed Callback URLs | http://localhost:8080/webclient-demo/login?client_name=SAML2Client |
-| Allowed Web Origins | http://localhost:8080/webclient-demo |
+| Allowed Callback URLs | [http://localhost:8080/webclient-demo/login?client_name=SAML2Client](https://www.example.com) |
+| Allowed Web Origins | [http://localhost:8080/webclient-demo](https://www.example.com) |
 | | |
 
 In the *Addons* enable SAML2 WebApp![](../images/saml2-enable.png)
@@ -78,7 +78,7 @@ In the Web Config section:
 | Security Module Class Path: | ${webclient.rootDir}/api/saml2/*.jar |
 | Security Module Name: | org.webswing.security.modules.saml2.Saml2SecurityModule |
 | Identity Provider Metadata URI: | use the link provided in the Auth0 Addon: SAML2 Web App dialog in the Usage tab, in the Identity Provider Metadata’s Download link |
-| Service Provider Consumer URL: | http://localhost:8080/webclient-demo/login?client_name=SAML2Client |
+| Service Provider Consumer URL: | [http://localhost:8080/webclient-demo/login?client_name=SAML2Client ](https://www.example.com) |
 | Service Provider Entity ID | copy the link in the Identity Provider Login URL setting on the Addon: SAML2 Web App Usage dialog. |
 | | |
 

@@ -25,7 +25,7 @@ The SOURCE directive sets the format of the source code.
 2. The default reference format of a compilation group is fixed form.
 3. The default reference format of library text is the reference format that was in effect for the COPY statement that resulted in processing of this library text.
 4. If a SOURCE FORMAT directive is specified in library text, the specified format shall be in effect until another SOURCE FORMAT directive is encountered or the end of the library text is reached. When the processing of that library text is completed, the reference format shall revert to the reference format that was in effect for the COPY statement that resulted in processing of that library text.
-5. This directive overrides [-sa](\), [-sf](\), [-smat](../SDK%20User's%20Guide/Chapter1-CompilerRuntime.05.07.html#ww1084597 "Compiler Options"), [-st](\) and [-sv](\) compiler options.
+5. This directive overrides [-sa](../Compiler-Options#sa), [-sf](../Compiler-Options#sf), [-smat](../Compiler-Options#smat), [-st](../Compiler-Options#st) and [-sv](../Compiler-Options#sv) compiler options.
 
 ##### Alternative syntax
 

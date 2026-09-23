@@ -131,4 +131,4 @@ A warning is shown and only the first feature (coverage, in this case) is activa
 
 #### The C$COVERAGE library routine
 
-Another way to customize the Code Coverage behavior and the report files is by calling the [C$COVERAGE](\) library routine. The routine is even more powerful than the javaagent option because it allows you to choose when the data gathered by the Code Coverage should be flushed to disc (see [CCOV-FLUSH](\)).
+Another way to customize the Code Coverage behavior and the report files is by calling the [C$COVERAGE](../../../Appendices/Library-Routines/C$COVERAGE/C$COVERAGE) library routine. The routine is even more powerful than the javaagent option because it allows you to choose when the data gathered by the Code Coverage should be flushed to disc (see [CCOV-FLUSH](../../../Appendices/Library-Routines/C$COVERAGE/CCOV-FLUSH)).

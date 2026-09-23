@@ -37,7 +37,7 @@ The isCOBOL Runtime will execute all the programs in the list files, one by one.
 
 An assertion is a predicate connected to a point in the program that should always evaluate to true at that point in code execution. Assertions can help a programmer read the code, help a compiler compile it, or help the program detect its own defects.
 
-You can add assertions to the source code of your program using the [ASSERT](../../../Language%20Reference/Procedure-Division-Statements/ASSERT) statement, for example:
+You can add assertions to the source code of your program using the [ASSERT](../../../Language-Reference/Procedure-Division-Statements/ASSERT) statement, for example:
 
 ```cobol
      assert string1 = "my string"

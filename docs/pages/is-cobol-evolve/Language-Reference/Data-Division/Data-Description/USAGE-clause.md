@@ -100,7 +100,7 @@ The USAGE clause specifies the format of a data item in the computer storage.
 12. The words COMP-N and COMPUTATIONAL-N are equivalent.
 13. The words COMP-X and COMPUTATIONAL-X are equivalent.
 14. The words SIGNED-INT and INTEGER are equivalent.
-15. The [BLANK WHEN ZERO](./BLANK-WHEN-ZERO-clause), [JUSTIFIED](./JUSTIFIED-clause), [PICTURE](./PICTURE-clause"), [SYNCHRONIZED](../Language%20Reference/Chapter4_DataDivision.08.033.html#ww1001364 "SYNCHRONIZED clause"), and [VALUE](./VALUE-clause) clauses must not be specified for data items whose usage is Usage-String-2.
+15. The [BLANK WHEN ZERO](./BLANK-WHEN-ZERO-clause), [JUSTIFIED](./JUSTIFIED-clause), [PICTURE](./PICTURE-clause), [SYNCHRONIZED](./SYNCHRONIZED-clause), and [VALUE](./VALUE-clause) clauses must not be specified for data items whose usage is Usage-String-2.
 16. Class-Name may be a [Nonnumeric Literal](../../Preface/Definitions#nonnumeric-literal) referring to a primitive Java type (i.e. "int") an existing class (i.e. "java.lang.Integer") or a class defined in the [REPOSITORY Paragraph](../../Environment-Division/Configuration-Section/Repository) in the Configuration Section of the ENVIRONMENT DIVISION. You can add "\[\]" to specify an array. You can add the class type enclosed between < and > (generics). When referring to a primitive Java type or to an existing class, you can add the "..." suffix to define a variable number of occurrences of the class (varargs).
 17. Control may be one of the supported controls. See the [Controls Reference](../../../User-Interface/Controls-Reference/Controls-Reference) for the complete list.
 18. The words COMP-0, COMPUTATIONAL-0 and SIGNED-SHORT are equivalent.
@@ -253,7 +253,7 @@ The effective size of data item depends on the [PICTURE clause](./PICTURE-clause
 
 17. The USAGE IS COMPUTATIONAL-N clause specifies that the numeric item is stored in Big Endian binary format.
 
-The effective size of data item depends on the [PICTURE clause](./PICTURE-clause"), according to the following table:
+The effective size of data item depends on the [PICTURE clause](./PICTURE-clause), according to the following table:
 
 | Number of digits | Bytes |
 | --- | --- |
@@ -358,13 +358,13 @@ a. If none of the optional phrases is specified, the data item being defined is 
 
 b. Items defined as USAGE IS HANDLE OF Control can be used with the [DISPLAY](../../Procedure-Division-Statements/DISPLAY), [ACCEPT](../../Procedure-Division-Statements/ACCEPT), [MODIFY](../../Procedure-Division-Statements/MODIFY), [INQUIRE](../../Procedure-Division-Statements/INQUIRE) and [DESTROY](../../Procedure-Division-Statements/DESTROY) Statements.
 
-c. Items defined as USAGE IS HANDLE OF MENU can be used with the [W$MENU](\) routine and as an argument of the POP-UP property of [Controls](../../../User-Interface/Controls-Reference/Controls-Reference).
+c. Items defined as USAGE IS HANDLE OF MENU can be used with the [W$MENU](../../../Appendices/Library-Routines/W$MENU/W$MENU) routine and as an argument of the POP-UP property of [Controls](../../../User-Interface/Controls-Reference/Controls-Reference).
 
 d. Items defined as USAGE IS HANDLE OF SUBWINDOW can be used with the [DISPLAY](../../Procedure-Division-Statements/DISPLAY) and [CLOSE](../../Procedure-Division-Statements/CLOSE) Statements.
 
 e. Items defined as USAGE IS HANDLE OF THREAD can be used with the [ACCEPT](../../Procedure-Division-Statements/ACCEPT), [CALL](../../Procedure-Division-Statements/CALL), [PERFORM](../../Procedure-Division-Statements/PERFORM), [RECEIVE](../../Procedure-Division-Statements/RECEIVE), [SEND](../../Procedure-Division-Statements/SEND) and [WAIT](../../Procedure-Division-Statements/WAIT) Statements.
 
-f. Items defined as USAGE IS HANDLE OF FONT can be used with the [W$FONT](\) routine, as an argument of the FONT and CONTROL FONT properties of [Controls](../../../User-Interface/Controls-Reference/Controls-Reference) and with the [DESTROY](../../Procedure-Division-Statements/DESTROY) Statement.
+f. Items defined as USAGE IS HANDLE OF FONT can be used with the [W$FONT](../../../Appendices/Library-Routines/W$FONT/W$FONT) routine, as an argument of the FONT and CONTROL FONT properties of [Controls](../../../User-Interface/Controls-Reference/Controls-Reference) and with the [DESTROY](../../Procedure-Division-Statements/DESTROY) Statement.
 
 When one of the optional phrases DEFAULT-FONT, FIXED-FONT, LARGE-FONT, MEDIUM-FONT, SMALL-FONT or TRADITIONAL-FONT is specified, the data item being defined will refer to the corresponding font. The iscobol.font.\* properties can be used to set the fonts to be used.
 

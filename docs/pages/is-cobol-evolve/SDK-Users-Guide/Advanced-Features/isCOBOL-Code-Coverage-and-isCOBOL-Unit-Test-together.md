@@ -20,4 +20,4 @@ In order to use both features in the IDE, follow the steps described in [Running
 2. choose *isCOBOL Coverage History*,
 3. select the Run Configuration previously created.
 
-The [Coverage](../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective) view and the [isUnit](../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/iscobolIDE-perspective) view will show the report of the test.
+The [Coverage](../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/Coverage) view and the [isUnit](../../../is-cobol-IDE/The-isCOBOL-IDE-Perspective/isUnit) view will show the report of the test.

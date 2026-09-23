@@ -14,7 +14,7 @@ The Fixed format (also known as the Ansi format) divides the COBOL source row in
 - Level numbers can appear either in Area A or Area B.
 - All other COBOL text must start in Area B.
 - Comments are identified by an asterisk, a slash or a dollar sign in the Indicator area (in this case the whole row is commented) or by a pipe in Area B (in this case only the text after the pipe is commented).
-- Conditional debugging lines are identified by the "D" character in the Indicator area. These lines are treated as comment unless WITH DEBUGGING MODE is specified in the [SOURCE-COMPUTER Paragraph](../Language%20Reference/Chapter3_EnvironmentDivision.07.03.html#ww998990 "SOURCE-COMPUTER Paragraph").
+- Conditional debugging lines are identified by the "D" character in the Indicator area. These lines are treated as comment unless WITH DEBUGGING MODE is specified in the [SOURCE-COMPUTER Paragraph](../../Environment-Division/Configuration-Section/Source-computer).
 - All text before column 7 and after column 72 is ignored by the Compiler.
 
 **Note** - this source format is affected by the [-sl](../../../SDK-Users-Guide/Compiler-and-Runtime/Compiler/Compiler-Options#source-options) compiler option and by the [IMP MARGIN-R IS AFTER END OF RECORD Directive](../../../SDK-Users-Guide/Compiler-and-Runtime/Compiler/Compiler-Directives/IMP-MARGIN-R-IS-AFTER-END-OF-RECORD-Directive.md). When one of them is used, Area B is no longer limited to column 72; it has no limit.

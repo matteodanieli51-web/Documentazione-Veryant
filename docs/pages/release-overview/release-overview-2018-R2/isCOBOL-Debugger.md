@@ -20,7 +20,7 @@ In large programs with many copybook files, sometimes it’s difficult to determ
 
 To simplify jumping to a given paragraph or variable definition, the hyperlink feature has been introduced. When hovering the mouse pointer on a paragraph name or a variable name, the name will be underlined and the mouse cursor will change to hand shape point, as shown in Figure 10, *Debugger hyperlink*. Left clicking the name will cause the debugger to display the definition.
 
-**Figure 10.** Debugger hyperlink![](../Release%20Overview/debug-hyperlink-hand.png)
+**Figure 10.** Debugger hyperlink![](../images/debug-hyperlink-hand.png)
 
 ### Command line parameters
 
